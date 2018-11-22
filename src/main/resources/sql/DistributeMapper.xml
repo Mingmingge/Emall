@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.emall.spring.dao.DistributeMapper" >
+  <resultMap id="BaseResultMap" type="com.emall.spring.entity.Distribute" >
+    <id column="distributeid" property="distributeid" jdbcType="VARCHAR" />
+    <result column="distributename" property="distributename" jdbcType="VARCHAR" />
+    <result column="distributetel" property="distributetel" jdbcType="VARCHAR" />
+    <result column="distributeaddr" property="distributeaddr" jdbcType="VARCHAR" />
+    <result column="distributepassword" property="distributepassword" jdbcType="VARCHAR" />
+    <result column="type" property="type" jdbcType="INTEGER" />
+    <result column="balance" property="balance" jdbcType="DECIMAL" />
+    <result column="status" property="status" jdbcType="INTEGER" />
+    <result column="credit" property="credit" jdbcType="VARCHAR" />
+    <result column="info" property="info" jdbcType="VARCHAR" />
+    <result column="registtime" property="registtime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    distributeid, distributename, distributetel, distributeaddr, distributepassword, 
+    type, balance, status, credit, info, registtime
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from distribute
+    where distributeid = #{distributeid,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from distribute
+    where distributeid = #{distributeid,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.emall.spring.entity.Distribute" >
+    insert into distribute (distributeid, distributename, distributetel, 
+      distributeaddr, distributepassword, type, 
+      balance, status, credit, 
+      info, registtime)
+    values (#{distributeid,jdbcType=VARCHAR}, #{distributename,jdbcType=VARCHAR}, #{distributetel,jdbcType=VARCHAR}, 
+      #{distributeaddr,jdbcType=VARCHAR}, #{distributepassword,jdbcType=VARCHAR}, #{type,jdbcType=INTEGER}, 
+      #{balance,jdbcType=DECIMAL}, #{status,jdbcType=INTEGER}, #{credit,jdbcType=VARCHAR}, 
+      #{info,jdbcType=VARCHAR}, #{registtime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.emall.spring.entity.Distribute" >
+    insert into distribute
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="distributeid != null" >
+        distributeid,
+      </if>
+      <if test="distributename != null" >
+        distributename,
+      </if>
+      <if test="distributetel != null" >
+        distributetel,
+      </if>
+      <if test="distributeaddr != null" >
+        distributeaddr,
+      </if>
+      <if test="distributepassword != null" >
+        distributepassword,
+      </if>
+      <if test="type != null" >
+        type,
+      </if>
+      <if test="balance != null" >
+        balance,
+      </if>
+      <if test="status != null" >
+        status,
+      </if>
+      <if test="credit != null" >
+        credit,
+      </if>
+      <if test="info != null" >
+        info,
+      </if>
+      <if test="registtime != null" >
+        registtime,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="distributeid != null" >
+        #{distributeid,jdbcType=VARCHAR},
+      </if>
+      <if test="distributename != null" >
+        #{distributename,jdbcType=VARCHAR},
+      </if>
+      <if test="distributetel != null" >
+        #{distributetel,jdbcType=VARCHAR},
+      </if>
+      <if test="distributeaddr != null" >
+        #{distributeaddr,jdbcType=VARCHAR},
+      </if>
+      <if test="distributepassword != null" >
+        #{distributepassword,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null" >
+        #{type,jdbcType=INTEGER},
+      </if>
+      <if test="balance != null" >
+        #{balance,jdbcType=DECIMAL},
+      </if>
+      <if test="status != null" >
+        #{status,jdbcType=INTEGER},
+      </if>
+      <if test="credit != null" >
+        #{credit,jdbcType=VARCHAR},
+      </if>
+      <if test="info != null" >
+        #{info,jdbcType=VARCHAR},
+      </if>
+      <if test="registtime != null" >
+        #{registtime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.emall.spring.entity.Distribute" >
+    update distribute
+    <set >
+      <if test="distributename != null" >
+        distributename = #{distributename,jdbcType=VARCHAR},
+      </if>
+      <if test="distributetel != null" >
+        distributetel = #{distributetel,jdbcType=VARCHAR},
+      </if>
+      <if test="distributeaddr != null" >
+        distributeaddr = #{distributeaddr,jdbcType=VARCHAR},
+      </if>
+      <if test="distributepassword != null" >
+        distributepassword = #{distributepassword,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null" >
+        type = #{type,jdbcType=INTEGER},
+      </if>
+      <if test="balance != null" >
+        balance = #{balance,jdbcType=DECIMAL},
+      </if>
+      <if test="status != null" >
+        status = #{status,jdbcType=INTEGER},
+      </if>
+      <if test="credit != null" >
+        credit = #{credit,jdbcType=VARCHAR},
+      </if>
+      <if test="info != null" >
+        info = #{info,jdbcType=VARCHAR},
+      </if>
+      <if test="registtime != null" >
+        registtime = #{registtime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where distributeid = #{distributeid,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.emall.spring.entity.Distribute" >
+    update distribute
+    set distributename = #{distributename,jdbcType=VARCHAR},
+      distributetel = #{distributetel,jdbcType=VARCHAR},
+      distributeaddr = #{distributeaddr,jdbcType=VARCHAR},
+      distributepassword = #{distributepassword,jdbcType=VARCHAR},
+      type = #{type,jdbcType=INTEGER},
+      balance = #{balance,jdbcType=DECIMAL},
+      status = #{status,jdbcType=INTEGER},
+      credit = #{credit,jdbcType=VARCHAR},
+      info = #{info,jdbcType=VARCHAR},
+      registtime = #{registtime,jdbcType=TIMESTAMP}
+    where distributeid = #{distributeid,jdbcType=VARCHAR}
+  </update>
+</mapper>

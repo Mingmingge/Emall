@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.emall.spring.dao.RepertoryMapper" >
+  <resultMap id="BaseResultMap" type="com.emall.spring.entity.Repertory" >
+    <id column="repertoryid" property="repertoryid" jdbcType="VARCHAR" />
+    <result column="repertoryname" property="repertoryname" jdbcType="VARCHAR" />
+    <result column="repertoryaddr" property="repertoryaddr" jdbcType="VARCHAR" />
+    <result column="repertoryinfo" property="repertoryinfo" jdbcType="VARCHAR" />
+    <result column="repertorytel" property="repertorytel" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    repertoryid, repertoryname, repertoryaddr, repertoryinfo, repertorytel
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from repertory
+    where repertoryid = #{repertoryid,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from repertory
+    where repertoryid = #{repertoryid,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.emall.spring.entity.Repertory" >
+    insert into repertory (repertoryid, repertoryname, repertoryaddr, 
+      repertoryinfo, repertorytel)
+    values (#{repertoryid,jdbcType=VARCHAR}, #{repertoryname,jdbcType=VARCHAR}, #{repertoryaddr,jdbcType=VARCHAR}, 
+      #{repertoryinfo,jdbcType=VARCHAR}, #{repertorytel,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.emall.spring.entity.Repertory" >
+    insert into repertory
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="repertoryid != null" >
+        repertoryid,
+      </if>
+      <if test="repertoryname != null" >
+        repertoryname,
+      </if>
+      <if test="repertoryaddr != null" >
+        repertoryaddr,
+      </if>
+      <if test="repertoryinfo != null" >
+        repertoryinfo,
+      </if>
+      <if test="repertorytel != null" >
+        repertorytel,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="repertoryid != null" >
+        #{repertoryid,jdbcType=VARCHAR},
+      </if>
+      <if test="repertoryname != null" >
+        #{repertoryname,jdbcType=VARCHAR},
+      </if>
+      <if test="repertoryaddr != null" >
+        #{repertoryaddr,jdbcType=VARCHAR},
+      </if>
+      <if test="repertoryinfo != null" >
+        #{repertoryinfo,jdbcType=VARCHAR},
+      </if>
+      <if test="repertorytel != null" >
+        #{repertorytel,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.emall.spring.entity.Repertory" >
+    update repertory
+    <set >
+      <if test="repertoryname != null" >
+        repertoryname = #{repertoryname,jdbcType=VARCHAR},
+      </if>
+      <if test="repertoryaddr != null" >
+        repertoryaddr = #{repertoryaddr,jdbcType=VARCHAR},
+      </if>
+      <if test="repertoryinfo != null" >
+        repertoryinfo = #{repertoryinfo,jdbcType=VARCHAR},
+      </if>
+      <if test="repertorytel != null" >
+        repertorytel = #{repertorytel,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where repertoryid = #{repertoryid,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.emall.spring.entity.Repertory" >
+    update repertory
+    set repertoryname = #{repertoryname,jdbcType=VARCHAR},
+      repertoryaddr = #{repertoryaddr,jdbcType=VARCHAR},
+      repertoryinfo = #{repertoryinfo,jdbcType=VARCHAR},
+      repertorytel = #{repertorytel,jdbcType=VARCHAR}
+    where repertoryid = #{repertoryid,jdbcType=VARCHAR}
+  </update>
+</mapper>

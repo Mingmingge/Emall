@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.emall.spring.dao.ProductMapper" >
+  <resultMap id="BaseResultMap" type="com.emall.spring.entity.Product" >
+    <id column="productid" property="productid" jdbcType="VARCHAR" />
+    <result column="productname" property="productname" jdbcType="VARCHAR" />
+    <result column="price" property="price" jdbcType="DECIMAL" />
+    <result column="class" property="class" jdbcType="VARCHAR" />
+    <result column="imagedir" property="imagedir" jdbcType="VARCHAR" />
+    <result column="info" property="info" jdbcType="VARCHAR" />
+    <result column="status" property="status" jdbcType="INTEGER" />
+    <result column="nums" property="nums" jdbcType="INTEGER" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    productid, productname, price, class, imagedir, info, status, nums
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from product
+    where productid = #{productid,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from product
+    where productid = #{productid,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.emall.spring.entity.Product" >
+    insert into product (productid, productname, price, 
+      class, imagedir, info, 
+      status, nums)
+    values (#{productid,jdbcType=VARCHAR}, #{productname,jdbcType=VARCHAR}, #{price,jdbcType=DECIMAL}, 
+      #{class,jdbcType=VARCHAR}, #{imagedir,jdbcType=VARCHAR}, #{info,jdbcType=VARCHAR}, 
+      #{status,jdbcType=INTEGER}, #{nums,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.emall.spring.entity.Product" >
+    insert into product
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="productid != null" >
+        productid,
+      </if>
+      <if test="productname != null" >
+        productname,
+      </if>
+      <if test="price != null" >
+        price,
+      </if>
+      <if test="class != null" >
+        class,
+      </if>
+      <if test="imagedir != null" >
+        imagedir,
+      </if>
+      <if test="info != null" >
+        info,
+      </if>
+      <if test="status != null" >
+        status,
+      </if>
+      <if test="nums != null" >
+        nums,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="productid != null" >
+        #{productid,jdbcType=VARCHAR},
+      </if>
+      <if test="productname != null" >
+        #{productname,jdbcType=VARCHAR},
+      </if>
+      <if test="price != null" >
+        #{price,jdbcType=DECIMAL},
+      </if>
+      <if test="class != null" >
+        #{class,jdbcType=VARCHAR},
+      </if>
+      <if test="imagedir != null" >
+        #{imagedir,jdbcType=VARCHAR},
+      </if>
+      <if test="info != null" >
+        #{info,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null" >
+        #{status,jdbcType=INTEGER},
+      </if>
+      <if test="nums != null" >
+        #{nums,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.emall.spring.entity.Product" >
+    update product
+    <set >
+      <if test="productname != null" >
+        productname = #{productname,jdbcType=VARCHAR},
+      </if>
+      <if test="price != null" >
+        price = #{price,jdbcType=DECIMAL},
+      </if>
+      <if test="class != null" >
+        class = #{class,jdbcType=VARCHAR},
+      </if>
+      <if test="imagedir != null" >
+        imagedir = #{imagedir,jdbcType=VARCHAR},
+      </if>
+      <if test="info != null" >
+        info = #{info,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null" >
+        status = #{status,jdbcType=INTEGER},
+      </if>
+      <if test="nums != null" >
+        nums = #{nums,jdbcType=INTEGER},
+      </if>
+    </set>
+    where productid = #{productid,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.emall.spring.entity.Product" >
+    update product
+    set productname = #{productname,jdbcType=VARCHAR},
+      price = #{price,jdbcType=DECIMAL},
+      class = #{class,jdbcType=VARCHAR},
+      imagedir = #{imagedir,jdbcType=VARCHAR},
+      info = #{info,jdbcType=VARCHAR},
+      status = #{status,jdbcType=INTEGER},
+      nums = #{nums,jdbcType=INTEGER}
+    where productid = #{productid,jdbcType=VARCHAR}
+  </update>
+</mapper>
