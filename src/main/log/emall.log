@@ -295,3 +295,6 @@ java.sql.SQLException: Access denied for user 'xqfx'@'60.191.32.72' (using passw
 2018-11-23 09:54:02.330  INFO 966 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
 2018-11-23 09:54:06.318  INFO 966 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
 2018-11-23 09:54:07.541  INFO 966 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-11-23 10:13:34.381  INFO 966 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2018-11-23 10:13:34.382  INFO 966 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-11-23 10:13:34.394  INFO 966 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
