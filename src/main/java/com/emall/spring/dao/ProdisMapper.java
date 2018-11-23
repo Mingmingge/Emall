@@ -1,7 +1,9 @@
 package com.emall.spring.dao;
 
 import com.emall.spring.entity.Prodis;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface ProdisMapper {
     int deleteByPrimaryKey(String uuid);
 

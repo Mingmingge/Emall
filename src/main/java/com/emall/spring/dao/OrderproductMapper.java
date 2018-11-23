@@ -1,7 +1,9 @@
 package com.emall.spring.dao;
 
 import com.emall.spring.entity.Orderproduct;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface OrderproductMapper {
     int deleteByPrimaryKey(String uuid);
 

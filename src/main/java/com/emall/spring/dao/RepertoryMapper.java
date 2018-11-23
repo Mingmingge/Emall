@@ -1,7 +1,9 @@
 package com.emall.spring.dao;
 
 import com.emall.spring.entity.Repertory;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface RepertoryMapper {
     int deleteByPrimaryKey(String repertoryid);
 

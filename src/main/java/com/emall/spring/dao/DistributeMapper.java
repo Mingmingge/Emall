@@ -1,7 +1,9 @@
 package com.emall.spring.dao;
 
 import com.emall.spring.entity.Distribute;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface DistributeMapper {
     int deleteByPrimaryKey(String distributeid);
 

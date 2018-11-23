@@ -7,7 +7,7 @@ public class Product {
 
     private Long price;
 
-    private String class;
+    private String productclass;
 
     private String imagedir;
 
@@ -41,12 +41,12 @@ public class Product {
         this.price = price;
     }
 
-    public String getClass() {
-        return class;
+    public String getProductclass() {
+        return productclass;
     }
 
-    public void setClass(String class) {
-        this.class = class;
+    public void setProductclass(String productclass) {
+        this.productclass = productclass;
     }
 
     public String getImagedir() {

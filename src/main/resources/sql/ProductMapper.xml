@@ -5,14 +5,14 @@
     <id column="productid" property="productid" jdbcType="VARCHAR" />
     <result column="productname" property="productname" jdbcType="VARCHAR" />
     <result column="price" property="price" jdbcType="DECIMAL" />
-    <result column="class" property="class" jdbcType="VARCHAR" />
+    <result column="productclass" property="productclass" jdbcType="VARCHAR" />
     <result column="imagedir" property="imagedir" jdbcType="VARCHAR" />
     <result column="info" property="info" jdbcType="VARCHAR" />
     <result column="status" property="status" jdbcType="INTEGER" />
     <result column="nums" property="nums" jdbcType="INTEGER" />
   </resultMap>
   <sql id="Base_Column_List" >
-    productid, productname, price, class, imagedir, info, status, nums
+    productid, productname, price, productclass, imagedir, info, status, nums
   </sql>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
     select 
@@ -26,10 +26,10 @@
   </delete>
   <insert id="insert" parameterType="com.emall.spring.entity.Product" >
     insert into product (productid, productname, price, 
-      class, imagedir, info, 
+      productclass, imagedir, info, 
       status, nums)
     values (#{productid,jdbcType=VARCHAR}, #{productname,jdbcType=VARCHAR}, #{price,jdbcType=DECIMAL}, 
-      #{class,jdbcType=VARCHAR}, #{imagedir,jdbcType=VARCHAR}, #{info,jdbcType=VARCHAR}, 
+      #{productclass,jdbcType=VARCHAR}, #{imagedir,jdbcType=VARCHAR}, #{info,jdbcType=VARCHAR}, 
       #{status,jdbcType=INTEGER}, #{nums,jdbcType=INTEGER})
   </insert>
   <insert id="insertSelective" parameterType="com.emall.spring.entity.Product" >
@@ -44,8 +44,8 @@
       <if test="price != null" >
         price,
       </if>
-      <if test="class != null" >
-        class,
+      <if test="productclass != null" >
+        productclass,
       </if>
       <if test="imagedir != null" >
         imagedir,
@@ -70,8 +70,8 @@
       <if test="price != null" >
         #{price,jdbcType=DECIMAL},
       </if>
-      <if test="class != null" >
-        #{class,jdbcType=VARCHAR},
+      <if test="productclass != null" >
+        #{productclass,jdbcType=VARCHAR},
       </if>
       <if test="imagedir != null" >
         #{imagedir,jdbcType=VARCHAR},
@@ -96,8 +96,8 @@
       <if test="price != null" >
         price = #{price,jdbcType=DECIMAL},
       </if>
-      <if test="class != null" >
-        class = #{class,jdbcType=VARCHAR},
+      <if test="productclass != null" >
+        productclass = #{productclass,jdbcType=VARCHAR},
       </if>
       <if test="imagedir != null" >
         imagedir = #{imagedir,jdbcType=VARCHAR},
@@ -118,7 +118,7 @@
     update product
     set productname = #{productname,jdbcType=VARCHAR},
       price = #{price,jdbcType=DECIMAL},
-      class = #{class,jdbcType=VARCHAR},
+      productclass = #{productclass,jdbcType=VARCHAR},
       imagedir = #{imagedir,jdbcType=VARCHAR},
       info = #{info,jdbcType=VARCHAR},
       status = #{status,jdbcType=INTEGER},
