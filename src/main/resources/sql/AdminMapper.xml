@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.emall.spring.dao.AdminMapper" >
+  <resultMap id="BaseResultMap" type="com.emall.spring.entity.Admin" >
+    <id column="adminid" property="adminid" jdbcType="VARCHAR" />
+    <result column="adminname" property="adminname" jdbcType="VARCHAR" />
+    <result column="adminnickname" property="adminnickname" jdbcType="VARCHAR" />
+    <result column="sex" property="sex" jdbcType="INTEGER" />
+    <result column="age" property="age" jdbcType="INTEGER" />
+    <result column="registtime" property="registtime" jdbcType="TIMESTAMP" />
+    <result column="balance" property="balance" jdbcType="DECIMAL" />
+    <result column="admintel" property="admintel" jdbcType="VARCHAR" />
+    <result column="adminemail" property="adminemail" jdbcType="VARCHAR" />
+    <result column="admininfo" property="admininfo" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    adminid, adminname, adminnickname, sex, age, registtime, balance, admintel, adminemail, 
+    admininfo
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from admin
+    where adminid = #{adminid,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from admin
+    where adminid = #{adminid,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.emall.spring.entity.Admin" >
+    insert into admin (adminid, adminname, adminnickname, 
+      sex, age, registtime, 
+      balance, admintel, adminemail, 
+      admininfo)
+    values (#{adminid,jdbcType=VARCHAR}, #{adminname,jdbcType=VARCHAR}, #{adminnickname,jdbcType=VARCHAR}, 
+      #{sex,jdbcType=INTEGER}, #{age,jdbcType=INTEGER}, #{registtime,jdbcType=TIMESTAMP}, 
+      #{balance,jdbcType=DECIMAL}, #{admintel,jdbcType=VARCHAR}, #{adminemail,jdbcType=VARCHAR}, 
+      #{admininfo,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.emall.spring.entity.Admin" >
+    insert into admin
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="adminid != null" >
+        adminid,
+      </if>
+      <if test="adminname != null" >
+        adminname,
+      </if>
+      <if test="adminnickname != null" >
+        adminnickname,
+      </if>
+      <if test="sex != null" >
+        sex,
+      </if>
+      <if test="age != null" >
+        age,
+      </if>
+      <if test="registtime != null" >
+        registtime,
+      </if>
+      <if test="balance != null" >
+        balance,
+      </if>
+      <if test="admintel != null" >
+        admintel,
+      </if>
+      <if test="adminemail != null" >
+        adminemail,
+      </if>
+      <if test="admininfo != null" >
+        admininfo,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="adminid != null" >
+        #{adminid,jdbcType=VARCHAR},
+      </if>
+      <if test="adminname != null" >
+        #{adminname,jdbcType=VARCHAR},
+      </if>
+      <if test="adminnickname != null" >
+        #{adminnickname,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null" >
+        #{sex,jdbcType=INTEGER},
+      </if>
+      <if test="age != null" >
+        #{age,jdbcType=INTEGER},
+      </if>
+      <if test="registtime != null" >
+        #{registtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="balance != null" >
+        #{balance,jdbcType=DECIMAL},
+      </if>
+      <if test="admintel != null" >
+        #{admintel,jdbcType=VARCHAR},
+      </if>
+      <if test="adminemail != null" >
+        #{adminemail,jdbcType=VARCHAR},
+      </if>
+      <if test="admininfo != null" >
+        #{admininfo,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.emall.spring.entity.Admin" >
+    update admin
+    <set >
+      <if test="adminname != null" >
+        adminname = #{adminname,jdbcType=VARCHAR},
+      </if>
+      <if test="adminnickname != null" >
+        adminnickname = #{adminnickname,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null" >
+        sex = #{sex,jdbcType=INTEGER},
+      </if>
+      <if test="age != null" >
+        age = #{age,jdbcType=INTEGER},
+      </if>
+      <if test="registtime != null" >
+        registtime = #{registtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="balance != null" >
+        balance = #{balance,jdbcType=DECIMAL},
+      </if>
+      <if test="admintel != null" >
+        admintel = #{admintel,jdbcType=VARCHAR},
+      </if>
+      <if test="adminemail != null" >
+        adminemail = #{adminemail,jdbcType=VARCHAR},
+      </if>
+      <if test="admininfo != null" >
+        admininfo = #{admininfo,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where adminid = #{adminid,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.emall.spring.entity.Admin" >
+    update admin
+    set adminname = #{adminname,jdbcType=VARCHAR},
+      adminnickname = #{adminnickname,jdbcType=VARCHAR},
+      sex = #{sex,jdbcType=INTEGER},
+      age = #{age,jdbcType=INTEGER},
+      registtime = #{registtime,jdbcType=TIMESTAMP},
+      balance = #{balance,jdbcType=DECIMAL},
+      admintel = #{admintel,jdbcType=VARCHAR},
+      adminemail = #{adminemail,jdbcType=VARCHAR},
+      admininfo = #{admininfo,jdbcType=VARCHAR}
+    where adminid = #{adminid,jdbcType=VARCHAR}
+  </update>
+</mapper>

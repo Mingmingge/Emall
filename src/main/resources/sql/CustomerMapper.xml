@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.emall.spring.dao.CustomerMapper" >
+  <resultMap id="BaseResultMap" type="com.emall.spring.entity.Customer" >
+    <id column="customerid" property="customerid" jdbcType="VARCHAR" />
+    <result column="customername" property="customername" jdbcType="VARCHAR" />
+    <result column="nickname" property="nickname" jdbcType="VARCHAR" />
+    <result column="customerpassword" property="customerpassword" jdbcType="VARCHAR" />
+    <result column="tel" property="tel" jdbcType="VARCHAR" />
+    <result column="addr" property="addr" jdbcType="VARCHAR" />
+    <result column="registiontime" property="registiontime" jdbcType="TIMESTAMP" />
+    <result column="blance" property="blance" jdbcType="DECIMAL" />
+    <result column="credit" property="credit" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    customerid, customername, nickname, customerpassword, tel, addr, registiontime, blance, 
+    credit
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from customer
+    where customerid = #{customerid,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from customer
+    where customerid = #{customerid,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.emall.spring.entity.Customer" >
+    insert into customer (customerid, customername, nickname, 
+      customerpassword, tel, addr, 
+      registiontime, blance, credit
+      )
+    values (#{customerid,jdbcType=VARCHAR}, #{customername,jdbcType=VARCHAR}, #{nickname,jdbcType=VARCHAR}, 
+      #{customerpassword,jdbcType=VARCHAR}, #{tel,jdbcType=VARCHAR}, #{addr,jdbcType=VARCHAR}, 
+      #{registiontime,jdbcType=TIMESTAMP}, #{blance,jdbcType=DECIMAL}, #{credit,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.emall.spring.entity.Customer" >
+    insert into customer
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="customerid != null" >
+        customerid,
+      </if>
+      <if test="customername != null" >
+        customername,
+      </if>
+      <if test="nickname != null" >
+        nickname,
+      </if>
+      <if test="customerpassword != null" >
+        customerpassword,
+      </if>
+      <if test="tel != null" >
+        tel,
+      </if>
+      <if test="addr != null" >
+        addr,
+      </if>
+      <if test="registiontime != null" >
+        registiontime,
+      </if>
+      <if test="blance != null" >
+        blance,
+      </if>
+      <if test="credit != null" >
+        credit,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="customerid != null" >
+        #{customerid,jdbcType=VARCHAR},
+      </if>
+      <if test="customername != null" >
+        #{customername,jdbcType=VARCHAR},
+      </if>
+      <if test="nickname != null" >
+        #{nickname,jdbcType=VARCHAR},
+      </if>
+      <if test="customerpassword != null" >
+        #{customerpassword,jdbcType=VARCHAR},
+      </if>
+      <if test="tel != null" >
+        #{tel,jdbcType=VARCHAR},
+      </if>
+      <if test="addr != null" >
+        #{addr,jdbcType=VARCHAR},
+      </if>
+      <if test="registiontime != null" >
+        #{registiontime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="blance != null" >
+        #{blance,jdbcType=DECIMAL},
+      </if>
+      <if test="credit != null" >
+        #{credit,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.emall.spring.entity.Customer" >
+    update customer
+    <set >
+      <if test="customername != null" >
+        customername = #{customername,jdbcType=VARCHAR},
+      </if>
+      <if test="nickname != null" >
+        nickname = #{nickname,jdbcType=VARCHAR},
+      </if>
+      <if test="customerpassword != null" >
+        customerpassword = #{customerpassword,jdbcType=VARCHAR},
+      </if>
+      <if test="tel != null" >
+        tel = #{tel,jdbcType=VARCHAR},
+      </if>
+      <if test="addr != null" >
+        addr = #{addr,jdbcType=VARCHAR},
+      </if>
+      <if test="registiontime != null" >
+        registiontime = #{registiontime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="blance != null" >
+        blance = #{blance,jdbcType=DECIMAL},
+      </if>
+      <if test="credit != null" >
+        credit = #{credit,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where customerid = #{customerid,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.emall.spring.entity.Customer" >
+    update customer
+    set customername = #{customername,jdbcType=VARCHAR},
+      nickname = #{nickname,jdbcType=VARCHAR},
+      customerpassword = #{customerpassword,jdbcType=VARCHAR},
+      tel = #{tel,jdbcType=VARCHAR},
+      addr = #{addr,jdbcType=VARCHAR},
+      registiontime = #{registiontime,jdbcType=TIMESTAMP},
+      blance = #{blance,jdbcType=DECIMAL},
+      credit = #{credit,jdbcType=VARCHAR}
+    where customerid = #{customerid,jdbcType=VARCHAR}
+  </update>
+</mapper>

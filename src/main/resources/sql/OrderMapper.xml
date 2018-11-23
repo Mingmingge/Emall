@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.emall.spring.dao.OrderMapper" >
+  <resultMap id="BaseResultMap" type="com.emall.spring.entity.Order" >
+    <id column="orderid" property="orderid" jdbcType="VARCHAR" />
+    <result column="sendid" property="sendid" jdbcType="VARCHAR" />
+    <result column="reciveid" property="reciveid" jdbcType="VARCHAR" />
+    <result column="expressaddr" property="expressaddr" jdbcType="VARCHAR" />
+    <result column="expresstel" property="expresstel" jdbcType="VARCHAR" />
+    <result column="orderprice" property="orderprice" jdbcType="DECIMAL" />
+    <result column="state" property="state" jdbcType="INTEGER" />
+    <result column="orderdata" property="orderdata" jdbcType="TIMESTAMP" />
+    <result column="endtime" property="endtime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    orderid, sendid, reciveid, expressaddr, expresstel, orderprice, state, orderdata, 
+    endtime
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from order
+    where orderid = #{orderid,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from order
+    where orderid = #{orderid,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.emall.spring.entity.Order" >
+    insert into order (orderid, sendid, reciveid, 
+      expressaddr, expresstel, orderprice, 
+      state, orderdata, endtime
+      )
+    values (#{orderid,jdbcType=VARCHAR}, #{sendid,jdbcType=VARCHAR}, #{reciveid,jdbcType=VARCHAR}, 
+      #{expressaddr,jdbcType=VARCHAR}, #{expresstel,jdbcType=VARCHAR}, #{orderprice,jdbcType=DECIMAL}, 
+      #{state,jdbcType=INTEGER}, #{orderdata,jdbcType=TIMESTAMP}, #{endtime,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.emall.spring.entity.Order" >
+    insert into order
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="orderid != null" >
+        orderid,
+      </if>
+      <if test="sendid != null" >
+        sendid,
+      </if>
+      <if test="reciveid != null" >
+        reciveid,
+      </if>
+      <if test="expressaddr != null" >
+        expressaddr,
+      </if>
+      <if test="expresstel != null" >
+        expresstel,
+      </if>
+      <if test="orderprice != null" >
+        orderprice,
+      </if>
+      <if test="state != null" >
+        state,
+      </if>
+      <if test="orderdata != null" >
+        orderdata,
+      </if>
+      <if test="endtime != null" >
+        endtime,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="orderid != null" >
+        #{orderid,jdbcType=VARCHAR},
+      </if>
+      <if test="sendid != null" >
+        #{sendid,jdbcType=VARCHAR},
+      </if>
+      <if test="reciveid != null" >
+        #{reciveid,jdbcType=VARCHAR},
+      </if>
+      <if test="expressaddr != null" >
+        #{expressaddr,jdbcType=VARCHAR},
+      </if>
+      <if test="expresstel != null" >
+        #{expresstel,jdbcType=VARCHAR},
+      </if>
+      <if test="orderprice != null" >
+        #{orderprice,jdbcType=DECIMAL},
+      </if>
+      <if test="state != null" >
+        #{state,jdbcType=INTEGER},
+      </if>
+      <if test="orderdata != null" >
+        #{orderdata,jdbcType=TIMESTAMP},
+      </if>
+      <if test="endtime != null" >
+        #{endtime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.emall.spring.entity.Order" >
+    update order
+    <set >
+      <if test="sendid != null" >
+        sendid = #{sendid,jdbcType=VARCHAR},
+      </if>
+      <if test="reciveid != null" >
+        reciveid = #{reciveid,jdbcType=VARCHAR},
+      </if>
+      <if test="expressaddr != null" >
+        expressaddr = #{expressaddr,jdbcType=VARCHAR},
+      </if>
+      <if test="expresstel != null" >
+        expresstel = #{expresstel,jdbcType=VARCHAR},
+      </if>
+      <if test="orderprice != null" >
+        orderprice = #{orderprice,jdbcType=DECIMAL},
+      </if>
+      <if test="state != null" >
+        state = #{state,jdbcType=INTEGER},
+      </if>
+      <if test="orderdata != null" >
+        orderdata = #{orderdata,jdbcType=TIMESTAMP},
+      </if>
+      <if test="endtime != null" >
+        endtime = #{endtime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where orderid = #{orderid,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.emall.spring.entity.Order" >
+    update order
+    set sendid = #{sendid,jdbcType=VARCHAR},
+      reciveid = #{reciveid,jdbcType=VARCHAR},
+      expressaddr = #{expressaddr,jdbcType=VARCHAR},
+      expresstel = #{expresstel,jdbcType=VARCHAR},
+      orderprice = #{orderprice,jdbcType=DECIMAL},
+      state = #{state,jdbcType=INTEGER},
+      orderdata = #{orderdata,jdbcType=TIMESTAMP},
+      endtime = #{endtime,jdbcType=TIMESTAMP}
+    where orderid = #{orderid,jdbcType=VARCHAR}
+  </update>
+</mapper>

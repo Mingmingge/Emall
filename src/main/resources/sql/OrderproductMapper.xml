@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.emall.spring.dao.OrderproductMapper" >
+  <resultMap id="BaseResultMap" type="com.emall.spring.entity.Orderproduct" >
+    <id column="uuid" property="uuid" jdbcType="VARCHAR" />
+    <result column="orderid" property="orderid" jdbcType="VARCHAR" />
+    <result column="productid" property="productid" jdbcType="VARCHAR" />
+    <result column="count" property="count" jdbcType="INTEGER" />
+    <result column="countprice" property="countprice" jdbcType="DECIMAL" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    uuid, orderid, productid, count, countprice
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from orderproduct
+    where uuid = #{uuid,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from orderproduct
+    where uuid = #{uuid,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.emall.spring.entity.Orderproduct" >
+    insert into orderproduct (uuid, orderid, productid, 
+      count, countprice)
+    values (#{uuid,jdbcType=VARCHAR}, #{orderid,jdbcType=VARCHAR}, #{productid,jdbcType=VARCHAR}, 
+      #{count,jdbcType=INTEGER}, #{countprice,jdbcType=DECIMAL})
+  </insert>
+  <insert id="insertSelective" parameterType="com.emall.spring.entity.Orderproduct" >
+    insert into orderproduct
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="uuid != null" >
+        uuid,
+      </if>
+      <if test="orderid != null" >
+        orderid,
+      </if>
+      <if test="productid != null" >
+        productid,
+      </if>
+      <if test="count != null" >
+        count,
+      </if>
+      <if test="countprice != null" >
+        countprice,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="uuid != null" >
+        #{uuid,jdbcType=VARCHAR},
+      </if>
+      <if test="orderid != null" >
+        #{orderid,jdbcType=VARCHAR},
+      </if>
+      <if test="productid != null" >
+        #{productid,jdbcType=VARCHAR},
+      </if>
+      <if test="count != null" >
+        #{count,jdbcType=INTEGER},
+      </if>
+      <if test="countprice != null" >
+        #{countprice,jdbcType=DECIMAL},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.emall.spring.entity.Orderproduct" >
+    update orderproduct
+    <set >
+      <if test="orderid != null" >
+        orderid = #{orderid,jdbcType=VARCHAR},
+      </if>
+      <if test="productid != null" >
+        productid = #{productid,jdbcType=VARCHAR},
+      </if>
+      <if test="count != null" >
+        count = #{count,jdbcType=INTEGER},
+      </if>
+      <if test="countprice != null" >
+        countprice = #{countprice,jdbcType=DECIMAL},
+      </if>
+    </set>
+    where uuid = #{uuid,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.emall.spring.entity.Orderproduct" >
+    update orderproduct
+    set orderid = #{orderid,jdbcType=VARCHAR},
+      productid = #{productid,jdbcType=VARCHAR},
+      count = #{count,jdbcType=INTEGER},
+      countprice = #{countprice,jdbcType=DECIMAL}
+    where uuid = #{uuid,jdbcType=VARCHAR}
+  </update>
+</mapper>
