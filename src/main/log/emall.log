@@ -273,3 +273,25 @@ java.sql.SQLException: Access denied for user 'xqfx'@'60.191.32.72' (using passw
 2018-11-23 09:25:01.069  INFO 843 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2018-11-23 09:25:01.070  INFO 843 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2018-11-23 09:25:01.077  INFO 843 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2018-11-23 09:53:10.481  INFO 843 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2018-11-23 09:53:44.096  INFO 966 --- [main] com.emall.spring.Application             : Starting Application on My-MacBook-Pro.local with PID 966 (started by Nick in /Users/hulimin/大三学习/需求分析/Emall/Emall)
+2018-11-23 09:53:44.100  INFO 966 --- [main] com.emall.spring.Application             : No active profile set, falling back to default profiles: default
+2018-11-23 09:53:45.255  INFO 966 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-11-23 09:53:45.275  INFO 966 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-11-23 09:53:45.276  INFO 966 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-11-23 09:53:45.283  INFO 966 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/hulimin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-11-23 09:53:45.363  INFO 966 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-11-23 09:53:45.364  INFO 966 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1208 ms
+2018-11-23 09:53:45.412  INFO 966 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-11-23 09:53:45.416  INFO 966 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-23 09:53:45.416  INFO 966 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-23 09:53:45.416  INFO 966 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2018-11-23 09:53:45.416  INFO 966 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-23 09:53:45.915  INFO 966 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-11-23 09:53:46.217  INFO 966 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-11-23 09:53:46.220  INFO 966 --- [main] com.emall.spring.Application             : Started Application in 17.502 seconds (JVM running for 28.372)
+2018-11-23 09:54:02.322  INFO 966 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-11-23 09:54:02.323  INFO 966 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2018-11-23 09:54:02.330  INFO 966 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2018-11-23 09:54:06.318  INFO 966 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-11-23 09:54:07.541  INFO 966 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
