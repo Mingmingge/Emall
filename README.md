@@ -1,4 +1,4 @@
-# 需求分析课程设计 网络销售系统 Emall
+# 需求分析课程设计 网络销售系统 Emall 
 
 ## 后台开发工具
 > [IntelliJ IDEA](https://www.jetbrains.com/idea/) 
