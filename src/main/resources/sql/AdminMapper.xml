@@ -150,4 +150,10 @@
       admininfo = #{admininfo,jdbcType=VARCHAR}
     where adminid = #{adminid,jdbcType=VARCHAR}
   </update>
+
+  <select id="selectByTel" resultMap="BaseResultMap" parameterType="java.lang.String">
+    SELECT *
+    FROM admin
+    WHERE admintel = #{admintel,jdbcType=VARCHAR}
+  </select>
 </mapper>
