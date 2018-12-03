@@ -1,7 +1,10 @@
 package com.emall.spring;
 
+import com.emall.spring.dao.DistributeMapper;
+import com.emall.spring.entity.Distribute;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -9,8 +12,20 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 public class ApplicationTests {
 
+	@Autowired
+	private DistributeMapper distributeMapper;
+
 	@Test
-	public void contextLoads() {
+	public void selectByTelPasswordTest() {
+		Distribute distribute = new Distribute();
+		distribute.setDistributetel("123");
+		distribute.setDistributepassword("123");
+		Distribute distribute1 = distributeMapper.selectByTelPassword(distribute);
+		if (distribute1 != null) {
+			System.out.println(distribute1.getRegisttime());
+		} else {
+			System.out.println("用户名或者密码错误！");
+		}
 	}
 
 }
