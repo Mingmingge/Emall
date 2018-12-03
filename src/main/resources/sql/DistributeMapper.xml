@@ -161,4 +161,13 @@
       registtime = #{registtime,jdbcType=TIMESTAMP}
     where distributeid = #{distributeid,jdbcType=VARCHAR}
   </update>
+  <select id="selectByTelPassword" resultMap="BaseResultMap" parameterType="com.emall.spring.entity.Distribute">
+    SELECT
+    <include refid="Base_Column_List"/>
+    FROM distribute
+    WHERE
+    distributetel = #{distributetel,jdbcType=VARCHAR}
+    AND
+    distributepassword = #{distributepassword,jdbcType=VARCHAR}
+  </select>
 </mapper>

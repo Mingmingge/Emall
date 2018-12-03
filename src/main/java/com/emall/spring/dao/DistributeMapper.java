@@ -16,4 +16,6 @@ public interface DistributeMapper {
     int updateByPrimaryKeySelective(Distribute record);
 
     int updateByPrimaryKey(Distribute record);
+
+    Distribute selectByTelPassword(Distribute distribute);
 }
