@@ -2,10 +2,14 @@ package com.emall.spring.services;
 
 import com.emall.spring.dao.CustomerMapper;
 import com.emall.spring.entity.Customer;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class CustomerService implements CustomerMapper{
+
+    @Autowired
+    private CustomerMapper customerMapper;
     @Override
     public int deleteByPrimaryKey(String customerid) {
         return 0;
@@ -13,7 +17,7 @@ public class CustomerService implements CustomerMapper{
 
     @Override
     public int insert(Customer record) {
-        return 0;
+        return customerMapper.insert(record);
     }
 
     @Override
@@ -23,7 +27,7 @@ public class CustomerService implements CustomerMapper{
 
     @Override
     public Customer selectByPrimaryKey(String customerid) {
-        return null;
+        return customerMapper.selectByPrimaryKey(customerid);
     }
 
     @Override
