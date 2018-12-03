@@ -27,7 +27,7 @@ public class AdminService implements AdminMapper{
 
     @Override
     public Admin selectByPrimaryKey(String adminid) {
-        return null;
+        return adminMapper.selectByPrimaryKey(adminid);
     }
 
     @Override
@@ -38,5 +38,10 @@ public class AdminService implements AdminMapper{
     @Override
     public int updateByPrimaryKey(Admin record) {
         return 0;
+    }
+
+    @Override
+    public Admin selectByTel(String admintel) {
+        return adminMapper.selectByTel(admintel);
     }
 }

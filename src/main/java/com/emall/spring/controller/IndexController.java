@@ -107,4 +107,29 @@ public class IndexController {
         return jsonObject;
     }
 
+
+    /**
+     * admin登陆
+     * @param admintel 电话
+     * @param httpSession session
+     * @return 1：登陆成功；0：电话密码错误；-1：数据库异常
+     */
+    @RequestMapping(value = "adminlogin", method = RequestMethod.POST)
+    public JSONObject adminlogin(@RequestParam("admintel") String admintel, HttpSession httpSession) {
+        JSONObject jsonObject = new JSONObject();
+        try {
+            Admin admin = adminService.selectByTel(admintel.trim().replace(" ", ""));
+            if (admin == null) {
+                jsonObject.put("result", 0);
+            } else {
+                jsonObject.put("result", 1);
+                httpSession.setAttribute("admin", admin);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            jsonObject.put("result", -1);
+        }
+        return jsonObject;
+    }
+
 }

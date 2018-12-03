@@ -1,6 +1,8 @@
 package com.emall.spring;
 
+import com.emall.spring.dao.AdminMapper;
 import com.emall.spring.dao.DistributeMapper;
+import com.emall.spring.entity.Admin;
 import com.emall.spring.entity.Distribute;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -15,6 +17,9 @@ public class ApplicationTests {
 	@Autowired
 	private DistributeMapper distributeMapper;
 
+	@Autowired
+    private AdminMapper adminMapper;
+
 	@Test
 	public void selectByTelPasswordTest() {
 		Distribute distribute = new Distribute();
@@ -27,5 +32,12 @@ public class ApplicationTests {
 			System.out.println("用户名或者密码错误！");
 		}
 	}
+
+	@Test
+    public void selectByTel() {
+	    String admintel = "123";
+        Admin admin = adminMapper.selectByTel(admintel);
+        System.out.println(admin);
+    }
 
 }
