@@ -5,13 +5,10 @@ import com.emall.spring.entity.Prodis;
 import com.emall.spring.entity.Product;
 import com.emall.spring.services.Productservice;
 import com.emall.spring.utils.FileUplaod;
-import net.sf.json.JSON;
 import net.sf.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.UUID;
 
