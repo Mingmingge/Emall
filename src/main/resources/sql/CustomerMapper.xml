@@ -139,4 +139,9 @@
       credit = #{credit,jdbcType=VARCHAR}
     where customerid = #{customerid,jdbcType=VARCHAR}
   </update>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select *
+    FROM
+    customer
+  </select>
 </mapper>

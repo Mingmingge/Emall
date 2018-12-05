@@ -5,14 +5,17 @@ import com.emall.spring.entity.Customer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+
 @Service
 public class CustomerService implements CustomerMapper{
 
     @Autowired
     private CustomerMapper customerMapper;
+
     @Override
     public int deleteByPrimaryKey(String customerid) {
-        return 0;
+        return customerMapper.deleteByPrimaryKey(customerid);
     }
 
     @Override
@@ -22,7 +25,7 @@ public class CustomerService implements CustomerMapper{
 
     @Override
     public int insertSelective(Customer record) {
-        return 0;
+        return customerMapper.insertSelective(record);
     }
 
     @Override
@@ -32,11 +35,16 @@ public class CustomerService implements CustomerMapper{
 
     @Override
     public int updateByPrimaryKeySelective(Customer record) {
-        return 0;
+        return customerMapper.updateByPrimaryKeySelective(record);
     }
 
     @Override
     public int updateByPrimaryKey(Customer record) {
-        return 0;
+        return customerMapper.updateByPrimaryKeySelective(record);
+    }
+
+    @Override
+    public ArrayList<Customer> selectAll() {
+        return customerMapper.selectAll();
     }
 }
