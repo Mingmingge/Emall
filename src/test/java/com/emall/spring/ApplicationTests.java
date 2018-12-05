@@ -2,6 +2,7 @@ package com.emall.spring;
 
 import com.emall.spring.dao.AdminMapper;
 import com.emall.spring.dao.DistributeMapper;
+import com.emall.spring.dao.OrderMapper;
 import com.emall.spring.dao.ProductMapper;
 import com.emall.spring.entity.Admin;
 import com.emall.spring.entity.Distribute;
@@ -26,6 +27,9 @@ public class ApplicationTests {
 
 	@Autowired
 	private ProductMapper productMapper;
+
+	@Autowired
+	private OrderMapper orderMapper;
 
 	@Test
 	public void selectByTelPasswordTest() {
@@ -62,5 +66,10 @@ public class ApplicationTests {
 		ArrayList list = productMapper.selectByNameLike("电脑");
 		jsonObject.put("product", list);
 		System.out.println(jsonObject);
+	}
+
+	@Test
+	public void selectAllTestOrder() {
+		System.out.println(orderMapper.selectAll());
 	}
 }

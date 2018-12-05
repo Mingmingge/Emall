@@ -115,9 +115,6 @@
       <if test="addr != null" >
         addr = #{addr,jdbcType=VARCHAR},
       </if>
-      <if test="registiontime != null" >
-        registiontime = #{registiontime,jdbcType=TIMESTAMP},
-      </if>
       <if test="blance != null" >
         blance = #{blance,jdbcType=DECIMAL},
       </if>
@@ -134,7 +131,6 @@
       customerpassword = #{customerpassword,jdbcType=VARCHAR},
       tel = #{tel,jdbcType=VARCHAR},
       addr = #{addr,jdbcType=VARCHAR},
-      registiontime = #{registiontime,jdbcType=TIMESTAMP},
       blance = #{blance,jdbcType=DECIMAL},
       credit = #{credit,jdbcType=VARCHAR}
     where customerid = #{customerid,jdbcType=VARCHAR}

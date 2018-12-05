@@ -28,6 +28,7 @@ public class ProductController {
      * @param product 实体
      * @param productadmin 上传者的uuid，经销商或者是管理员
      * @return 返回插入结果；成功则还返回这个商品实体
+     * 测试通过
      */
     @RequestMapping(value = "/product/insert", method = RequestMethod.POST)
     public JSONObject productAdd(@RequestParam(value = "productimg", required = false) MultipartFile productimg, @ModelAttribute Product product, String productadmin) {
@@ -61,13 +62,14 @@ public class ProductController {
 
     /**
      * 修改产品信息
-     * @param product 产品实体
-     * @param multipartFile 图片可以传可以不传
+     * @param product 产品实体,必须包含产品ID
+     * @param multipartFile 图片必须传
      * @return 成功标志以及更新后的product
+     * 测试通过
      */
 
-    @RequestMapping(value = "/product/update", method = RequestMethod.POST)
-    public JSONObject productUpdate(@ModelAttribute Product product, @RequestParam("productimg") MultipartFile multipartFile) {
+    @RequestMapping(value = "/product/updatewithimg", method = RequestMethod.POST)
+    public JSONObject productUpdatewithimg(@ModelAttribute Product product, @RequestParam("productimg") MultipartFile multipartFile) {
         JSONObject jsonObject = new JSONObject();
         FileUplaod fileUplaod = new FileUplaod();
         StringBuilder stringBuilder = new StringBuilder();
@@ -91,12 +93,36 @@ public class ProductController {
         return jsonObject;
     }
 
+    /**
+     * 更改产品信息
+     * @param product pruduct实体，不包括迷宫
+     * @return 成功 失败 product
+     */
+    @RequestMapping(value = "/product/updatenoimg", method = RequestMethod.POST)
+    public JSONObject productUpdatewithoutimg(@ModelAttribute Product product) {
+        JSONObject jsonObject = new JSONObject();
+        StringBuilder stringBuilder = new StringBuilder();
+        String imgname = stringBuilder.append(product.getProductid()).append(".png").toString();
+        try {
+            productservice.updateByPrimaryKeySelective(product);
+            jsonObject.put("result", 1);
+            jsonObject.put("product", productservice.selectByPrimaryKey(product.getProductid()));
+        } catch (Exception e) {
+            e.printStackTrace();
+            jsonObject.put("result", 0);
+        }
+        return jsonObject;
+    }
+
+
+
 
     /**
      * 跟新产品status
      * @param state 更新的状态
      * @param productid 产品ID
      * @return 成功 失败 实体
+     * 测试通过
      */
     @RequestMapping(value = "/product/updatestate", method = RequestMethod.POST)
     public JSONObject productUpdatestate(@RequestParam("state") String state, @RequestParam("productid") String productid) {
@@ -118,6 +144,7 @@ public class ProductController {
     /**
      * 查询所有产品信息
      * @return 成功 失败 实体列表
+     * 测试通过
      */
     @RequestMapping(value = "/product/searchall", method = RequestMethod.GET)
     public JSONObject searchAll() {
@@ -137,6 +164,7 @@ public class ProductController {
      * 模糊查询productname
      * @param productname name
      * @return 成功 失败 实体列表
+     * 测试通过
      */
     @RequestMapping(value = "/product/searchbyname", method = RequestMethod.POST)
     public JSONObject searchByName(@RequestParam("productname") String productname) {

@@ -19,15 +19,15 @@
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
     select 
     <include refid="Base_Column_List" />
-    from order
+    from ordermain
     where orderid = #{orderid,jdbcType=VARCHAR}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
-    delete from order
+    delete from ordermain
     where orderid = #{orderid,jdbcType=VARCHAR}
   </delete>
   <insert id="insert" parameterType="com.emall.spring.entity.Order" >
-    insert into order (orderid, sendid, reciveid, 
+    insert into ordermain (orderid, sendid, reciveid,
       expressaddr, expresstel, orderprice, 
       state, orderdata, endtime
       )
@@ -37,7 +37,7 @@
       )
   </insert>
   <insert id="insertSelective" parameterType="com.emall.spring.entity.Order" >
-    insert into order
+    insert into ordermain
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="orderid != null" >
         orderid,
@@ -98,7 +98,7 @@
     </trim>
   </insert>
   <update id="updateByPrimaryKeySelective" parameterType="com.emall.spring.entity.Order" >
-    update order
+    update ordermain
     <set >
       <if test="sendid != null" >
         sendid = #{sendid,jdbcType=VARCHAR},
@@ -128,7 +128,7 @@
     where orderid = #{orderid,jdbcType=VARCHAR}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.emall.spring.entity.Order" >
-    update order
+    update ordermain
     set sendid = #{sendid,jdbcType=VARCHAR},
       reciveid = #{reciveid,jdbcType=VARCHAR},
       expressaddr = #{expressaddr,jdbcType=VARCHAR},
@@ -140,6 +140,8 @@
     where orderid = #{orderid,jdbcType=VARCHAR}
   </update>
   <select id="selectAll" resultMap="BaseResultMap">
-    select * from order;
+    SELECT *
+    FROM
+    ordermain
   </select>
 </mapper>
