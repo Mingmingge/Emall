@@ -139,4 +139,7 @@
       endtime = #{endtime,jdbcType=TIMESTAMP}
     where orderid = #{orderid,jdbcType=VARCHAR}
   </update>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select * from order;
+  </select>
 </mapper>
