@@ -7,6 +7,8 @@ import com.emall.spring.entity.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+
 @Service
 public class Productservice implements ProductMapper{
 
@@ -16,7 +18,7 @@ public class Productservice implements ProductMapper{
 
     @Override
     public int deleteByPrimaryKey(String productid) {
-        return 0;
+        return productMapper.deleteByPrimaryKey(productid);
     }
 
     @Override
@@ -26,21 +28,36 @@ public class Productservice implements ProductMapper{
 
     @Override
     public int insertSelective(Product record) {
-        return 0;
+        return productMapper.insertSelective(record);
     }
 
     @Override
     public Product selectByPrimaryKey(String productid) {
-        return null;
+        return productMapper.selectByPrimaryKey(productid);
     }
 
     @Override
     public int updateByPrimaryKeySelective(Product record) {
-        return 0;
+        return productMapper.updateByPrimaryKeySelective(record);
     }
 
     @Override
     public int updateByPrimaryKey(Product record) {
-        return 0;
+        return productMapper.updateByPrimaryKey(record);
+    }
+
+    @Override
+    public ArrayList<Product> selectAll() {
+        return productMapper.selectAll();
+    }
+
+    @Override
+    public int updateState(Product record) {
+        return productMapper.updateState(record);
+    }
+
+    @Override
+    public ArrayList<Product> selectByNameLike(String productname) {
+        return productMapper.selectByNameLike(productname);
     }
 }

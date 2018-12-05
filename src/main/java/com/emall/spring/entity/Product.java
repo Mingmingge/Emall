@@ -80,4 +80,18 @@ public class Product {
     public void setNums(Integer nums) {
         this.nums = nums;
     }
+
+    @Override
+    public String toString() {
+        return "{" +
+                "productid:'" + productid + '\'' +
+                ", productname:'" + productname + '\'' +
+                ", price:'" + price +'\''+
+                ", productclass:'" + productclass + '\'' +
+                ", imagedir:'" + imagedir + '\'' +
+                ", info:'" + info + '\'' +
+                ", status:'" + status + '\''+
+                ", nums:'" + nums +'\''+
+                '}';
+    }
 }
