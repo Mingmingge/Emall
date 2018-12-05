@@ -125,4 +125,26 @@
       nums = #{nums,jdbcType=INTEGER}
     where productid = #{productid,jdbcType=VARCHAR}
   </update>
+
+  <select id="selectAll" resultMap="BaseResultMap">
+    select *
+    FROM product
+  </select>
+
+  <update id="updateState" parameterType="com.emall.spring.entity.Product">
+    UPDATE product
+    <set>
+      <if test="status != null" >
+        status = #{status,jdbcType=INTEGER},
+      </if>
+    </set>
+    where productid = #{productid,jdbcType=VARCHAR}
+  </update>
+
+  <select id="selectByNameLike" resultMap="BaseResultMap" parameterType="java.lang.String">
+    SELECT *
+    FROM product
+    WHERE
+    productname LIKE CONCAT(CONCAT('%',#{productname}),'%')
+  </select>
 </mapper>
