@@ -7,6 +7,7 @@ import net.sf.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 
 @RestController
@@ -22,10 +23,14 @@ public class OrderController {
     @RequestMapping(value = "/order/selectall", method = RequestMethod.GET)
     public JSONObject orderSelectAll() {
         JSONObject jsonObject = new JSONObject();
+        List<Order> list;
         try {
-            ArrayList list = orderService.selectAll();
+            list = orderService.selectAll();
+            if (list != null) {
+                list = orderService.selectAll();
+                jsonObject.put("orderlist", list);
+            }
             jsonObject.put("result", 1);
-            jsonObject.put("orderlist", list);
         } catch (Exception e) {
             e.printStackTrace();
             jsonObject.put("result", 0);

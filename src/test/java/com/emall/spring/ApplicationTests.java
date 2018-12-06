@@ -1,9 +1,6 @@
 package com.emall.spring;
 
-import com.emall.spring.dao.AdminMapper;
-import com.emall.spring.dao.DistributeMapper;
-import com.emall.spring.dao.OrderMapper;
-import com.emall.spring.dao.ProductMapper;
+import com.emall.spring.dao.*;
 import com.emall.spring.entity.Admin;
 import com.emall.spring.entity.Distribute;
 import net.sf.json.JSONObject;
@@ -30,6 +27,9 @@ public class ApplicationTests {
 
 	@Autowired
 	private OrderMapper orderMapper;
+
+	@Autowired
+	private ProductclassMapper productclassMapper;
 
 	@Test
 	public void selectByTelPasswordTest() {
@@ -71,5 +71,12 @@ public class ApplicationTests {
 	@Test
 	public void selectAllTestOrder() {
 		System.out.println(orderMapper.selectAll());
+	}
+
+	@Test
+	public void selectAllTestProductclass() {
+		JSONObject jsonObject = new JSONObject();
+		jsonObject.put("productclass", productclassMapper.selectAll());
+		System.out.println(jsonObject);
 	}
 }
