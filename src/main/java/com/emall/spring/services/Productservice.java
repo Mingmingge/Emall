@@ -60,4 +60,9 @@ public class Productservice implements ProductMapper{
     public ArrayList<Product> selectByNameLike(String productname) {
         return productMapper.selectByNameLike(productname);
     }
+
+    @Override
+    public ArrayList<Product> selectByProductclass(String productclass) {
+        return productMapper.selectByProductclass(productclass);
+    }
 }

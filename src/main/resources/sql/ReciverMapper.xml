@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.emall.spring.entity.ReciverMapper" >
+  <resultMap id="BaseResultMap" type="com.emall.spring.entity.Reciver" >
+    <id column="reciverid" property="reciverid" jdbcType="VARCHAR" />
+    <result column="customerid" property="customerid" jdbcType="VARCHAR" />
+    <result column="recivername" property="recivername" jdbcType="VARCHAR" />
+    <result column="reciveraddr" property="reciveraddr" jdbcType="VARCHAR" />
+    <result column="recivertel" property="recivertel" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    reciverid, customerid, recivername, reciveraddr, recivertel
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from reciver
+    where reciverid = #{reciverid,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from reciver
+    where reciverid = #{reciverid,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.emall.spring.entity.Reciver" >
+    insert into reciver (reciverid, customerid, recivername, 
+      reciveraddr, recivertel)
+    values (#{reciverid,jdbcType=VARCHAR}, #{customerid,jdbcType=VARCHAR}, #{recivername,jdbcType=VARCHAR}, 
+      #{reciveraddr,jdbcType=VARCHAR}, #{recivertel,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.emall.spring.entity.Reciver" >
+    insert into reciver
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="reciverid != null" >
+        reciverid,
+      </if>
+      <if test="customerid != null" >
+        customerid,
+      </if>
+      <if test="recivername != null" >
+        recivername,
+      </if>
+      <if test="reciveraddr != null" >
+        reciveraddr,
+      </if>
+      <if test="recivertel != null" >
+        recivertel,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="reciverid != null" >
+        #{reciverid,jdbcType=VARCHAR},
+      </if>
+      <if test="customerid != null" >
+        #{customerid,jdbcType=VARCHAR},
+      </if>
+      <if test="recivername != null" >
+        #{recivername,jdbcType=VARCHAR},
+      </if>
+      <if test="reciveraddr != null" >
+        #{reciveraddr,jdbcType=VARCHAR},
+      </if>
+      <if test="recivertel != null" >
+        #{recivertel,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.emall.spring.entity.Reciver" >
+    update reciver
+    <set >
+      <if test="customerid != null" >
+        customerid = #{customerid,jdbcType=VARCHAR},
+      </if>
+      <if test="recivername != null" >
+        recivername = #{recivername,jdbcType=VARCHAR},
+      </if>
+      <if test="reciveraddr != null" >
+        reciveraddr = #{reciveraddr,jdbcType=VARCHAR},
+      </if>
+      <if test="recivertel != null" >
+        recivertel = #{recivertel,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where reciverid = #{reciverid,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.emall.spring.entity.Reciver" >
+    update reciver
+    set customerid = #{customerid,jdbcType=VARCHAR},
+      recivername = #{recivername,jdbcType=VARCHAR},
+      reciveraddr = #{reciveraddr,jdbcType=VARCHAR},
+      recivertel = #{recivertel,jdbcType=VARCHAR}
+    where reciverid = #{reciverid,jdbcType=VARCHAR}
+  </update>
+</mapper>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.emall.spring.dao.BannerMapper" >
+  <resultMap id="BaseResultMap" type="com.emall.spring.entity.Banner" >
+    <id column="bannerid" property="bannerid" jdbcType="VARCHAR" />
+    <result column="bannername" property="bannername" jdbcType="VARCHAR" />
+    <result column="bannerimagedir" property="bannerimagedir" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    bannerid, bannername, bannerimagedir
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from banner
+    where bannerid = #{bannerid,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from banner
+    where bannerid = #{bannerid,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.emall.spring.entity.Banner" >
+    insert into banner (bannerid, bannername, bannerimagedir
+      )
+    values (#{bannerid,jdbcType=VARCHAR}, #{bannername,jdbcType=VARCHAR}, #{bannerimagedir,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.emall.spring.entity.Banner" >
+    insert into banner
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="bannerid != null" >
+        bannerid,
+      </if>
+      <if test="bannername != null" >
+        bannername,
+      </if>
+      <if test="bannerimagedir != null" >
+        bannerimagedir,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="bannerid != null" >
+        #{bannerid,jdbcType=VARCHAR},
+      </if>
+      <if test="bannername != null" >
+        #{bannername,jdbcType=VARCHAR},
+      </if>
+      <if test="bannerimagedir != null" >
+        #{bannerimagedir,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.emall.spring.entity.Banner" >
+    update banner
+    <set >
+      <if test="bannername != null" >
+        bannername = #{bannername,jdbcType=VARCHAR},
+      </if>
+      <if test="bannerimagedir != null" >
+        bannerimagedir = #{bannerimagedir,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where bannerid = #{bannerid,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.emall.spring.entity.Banner" >
+    update banner
+    set bannername = #{bannername,jdbcType=VARCHAR},
+      bannerimagedir = #{bannerimagedir,jdbcType=VARCHAR}
+    where bannerid = #{bannerid,jdbcType=VARCHAR}
+  </update>
+
+  <select id="selectAll" resultMap="BaseResultMap">
+    SELECT *
+    FROM
+    banner
+  </select>
+</mapper>

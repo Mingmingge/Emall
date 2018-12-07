@@ -1,86 +1,76 @@
-2018-12-05 10:58:36.267  INFO 1540 --- [main] com.emall.spring.ApplicationTests        : Starting ApplicationTests on My-MacBook-Pro.local with PID 1540 (started by Nick in /Users/hulimin/大三学习/需求分析/Emall/Emall)
-2018-12-05 10:58:36.282  INFO 1540 --- [main] com.emall.spring.ApplicationTests        : No active profile set, falling back to default profiles: default
-2018-12-05 10:58:41.167  INFO 1540 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2018-12-05 10:58:42.771  INFO 1540 --- [main] com.emall.spring.ApplicationTests        : Started ApplicationTests in 7.037 seconds (JVM running for 9.591)
-2018-12-05 10:58:43.126  INFO 1540 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2018-12-05 10:58:45.242  INFO 1540 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2018-12-05 10:58:45.468  INFO 1540 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2018-12-05 10:58:45.470  INFO 1540 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2018-12-05 10:58:46.437  INFO 1540 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2018-12-05 11:01:12.687  INFO 1549 --- [main] com.emall.spring.ApplicationTests        : Starting ApplicationTests on My-MacBook-Pro.local with PID 1549 (started by Nick in /Users/hulimin/大三学习/需求分析/Emall/Emall)
-2018-12-05 11:01:12.689  INFO 1549 --- [main] com.emall.spring.ApplicationTests        : No active profile set, falling back to default profiles: default
-2018-12-05 11:01:16.628  INFO 1549 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2018-12-05 11:01:17.232  INFO 1549 --- [main] com.emall.spring.ApplicationTests        : Started ApplicationTests in 20.108 seconds (JVM running for 21.536)
-2018-12-05 11:01:17.790  INFO 1549 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2018-12-05 11:01:20.103  INFO 1549 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2018-12-05 11:01:20.279  INFO 1549 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2018-12-05 11:01:20.283  INFO 1549 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2018-12-05 11:01:20.971  INFO 1549 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2018-12-05 11:05:26.079  INFO 1561 --- [main] com.emall.spring.ApplicationTests        : Starting ApplicationTests on My-MacBook-Pro.local with PID 1561 (started by Nick in /Users/hulimin/大三学习/需求分析/Emall/Emall)
-2018-12-05 11:05:26.081  INFO 1561 --- [main] com.emall.spring.ApplicationTests        : No active profile set, falling back to default profiles: default
-2018-12-05 11:05:28.666  INFO 1561 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2018-12-05 11:05:29.146  INFO 1561 --- [main] com.emall.spring.ApplicationTests        : Started ApplicationTests in 18.503 seconds (JVM running for 19.858)
-2018-12-05 11:05:29.403  INFO 1561 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2018-12-05 11:05:30.764  INFO 1561 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2018-12-05 11:05:30.975  INFO 1561 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2018-12-05 11:05:30.977  INFO 1561 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2018-12-05 11:05:31.646  INFO 1561 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2018-12-05 11:08:03.570  INFO 1567 --- [main] com.emall.spring.ApplicationTests        : Starting ApplicationTests on My-MacBook-Pro.local with PID 1567 (started by Nick in /Users/hulimin/大三学习/需求分析/Emall/Emall)
-2018-12-05 11:08:03.572  INFO 1567 --- [main] com.emall.spring.ApplicationTests        : No active profile set, falling back to default profiles: default
-2018-12-05 11:08:05.907  INFO 1567 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2018-12-05 11:08:06.461  INFO 1567 --- [main] com.emall.spring.ApplicationTests        : Started ApplicationTests in 18.384 seconds (JVM running for 19.67)
-2018-12-05 11:08:06.679  INFO 1567 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2018-12-05 11:08:08.592  INFO 1567 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2018-12-05 11:08:08.825  INFO 1567 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2018-12-05 11:08:08.830  INFO 1567 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2018-12-05 11:08:09.483  INFO 1567 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2018-12-05 12:11:45.159  INFO 1634 --- [main] com.emall.spring.ApplicationTests        : Starting ApplicationTests on My-MacBook-Pro.local with PID 1634 (started by Nick in /Users/hulimin/大三学习/需求分析/Emall/Emall)
-2018-12-05 12:11:45.161  INFO 1634 --- [main] com.emall.spring.ApplicationTests        : No active profile set, falling back to default profiles: default
-2018-12-05 12:11:48.434  INFO 1634 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2018-12-05 12:11:49.128  INFO 1634 --- [main] com.emall.spring.ApplicationTests        : Started ApplicationTests in 4.622 seconds (JVM running for 6.078)
-2018-12-05 12:11:49.454  INFO 1634 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2018-12-05 12:14:13.523  INFO 1642 --- [main] com.emall.spring.ApplicationTests        : Starting ApplicationTests on My-MacBook-Pro.local with PID 1642 (started by Nick in /Users/hulimin/大三学习/需求分析/Emall/Emall)
-2018-12-05 12:14:13.525  INFO 1642 --- [main] com.emall.spring.ApplicationTests        : No active profile set, falling back to default profiles: default
-2018-12-05 12:14:16.235  INFO 1642 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2018-12-05 12:14:16.660  INFO 1642 --- [main] com.emall.spring.ApplicationTests        : Started ApplicationTests in 3.788 seconds (JVM running for 4.953)
-2018-12-05 12:14:16.922  INFO 1642 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2018-12-05 12:14:18.329  INFO 1642 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2018-12-05 12:14:18.532  INFO 1642 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2018-12-05 12:14:18.534  INFO 1642 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2018-12-05 12:14:19.241  INFO 1642 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2018-12-05 12:15:21.239  INFO 1645 --- [main] com.emall.spring.ApplicationTests        : Starting ApplicationTests on My-MacBook-Pro.local with PID 1645 (started by Nick in /Users/hulimin/大三学习/需求分析/Emall/Emall)
-2018-12-05 12:15:21.241  INFO 1645 --- [main] com.emall.spring.ApplicationTests        : No active profile set, falling back to default profiles: default
-2018-12-05 12:15:23.797  INFO 1645 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2018-12-05 12:15:24.275  INFO 1645 --- [main] com.emall.spring.ApplicationTests        : Started ApplicationTests in 18.53 seconds (JVM running for 19.973)
-2018-12-05 12:15:24.530  INFO 1645 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2018-12-05 12:15:25.915  INFO 1645 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2018-12-05 12:15:26.173  INFO 1645 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2018-12-05 12:15:26.175  INFO 1645 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2018-12-05 12:15:26.795  INFO 1645 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2018-12-05 12:17:34.037  INFO 1650 --- [main] com.emall.spring.ApplicationTests        : Starting ApplicationTests on My-MacBook-Pro.local with PID 1650 (started by Nick in /Users/hulimin/大三学习/需求分析/Emall/Emall)
-2018-12-05 12:17:34.040  INFO 1650 --- [main] com.emall.spring.ApplicationTests        : No active profile set, falling back to default profiles: default
-2018-12-05 12:17:36.751  INFO 1650 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2018-12-05 12:17:37.537  INFO 1650 --- [main] com.emall.spring.ApplicationTests        : Started ApplicationTests in 18.926 seconds (JVM running for 20.447)
-2018-12-05 12:17:37.903  INFO 1650 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2018-12-05 12:17:39.980  INFO 1650 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2018-12-05 12:17:40.252  INFO 1650 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2018-12-05 12:17:40.257  INFO 1650 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2018-12-05 12:17:40.788  INFO 1650 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2018-12-05 12:18:10.753  INFO 1658 --- [main] com.emall.spring.ApplicationTests        : Starting ApplicationTests on My-MacBook-Pro.local with PID 1658 (started by Nick in /Users/hulimin/大三学习/需求分析/Emall/Emall)
-2018-12-05 12:18:10.756  INFO 1658 --- [main] com.emall.spring.ApplicationTests        : No active profile set, falling back to default profiles: default
-2018-12-05 12:18:13.341  INFO 1658 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2018-12-05 12:18:13.826  INFO 1658 --- [main] com.emall.spring.ApplicationTests        : Started ApplicationTests in 18.607 seconds (JVM running for 20.203)
-2018-12-05 12:18:14.079  INFO 1658 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2018-12-05 12:18:15.559  INFO 1658 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2018-12-05 12:18:15.775  INFO 1658 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2018-12-05 12:18:15.780  INFO 1658 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2018-12-05 12:18:16.546  INFO 1658 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2018-12-05 12:20:56.509  INFO 1662 --- [main] com.emall.spring.ApplicationTests        : Starting ApplicationTests on My-MacBook-Pro.local with PID 1662 (started by Nick in /Users/hulimin/大三学习/需求分析/Emall/Emall)
-2018-12-05 12:20:56.510  INFO 1662 --- [main] com.emall.spring.ApplicationTests        : No active profile set, falling back to default profiles: default
-2018-12-05 12:20:59.694  INFO 1662 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2018-12-05 12:21:00.219  INFO 1662 --- [main] com.emall.spring.ApplicationTests        : Started ApplicationTests in 19.165 seconds (JVM running for 20.823)
-2018-12-05 12:21:00.492  INFO 1662 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2018-12-05 12:21:02.014  INFO 1662 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2018-12-05 12:21:02.267  INFO 1662 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2018-12-05 12:21:02.270  INFO 1662 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2018-12-05 12:21:02.883  INFO 1662 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-12-07 09:52:14.151  INFO 799 --- [main] com.emall.spring.ApplicationTests        : Starting ApplicationTests on My-MacBook-Pro.local with PID 799 (started by Nick in /Users/hulimin/大三学习/需求分析/Emall/Emall)
+2018-12-07 09:52:14.156  INFO 799 --- [main] com.emall.spring.ApplicationTests        : No active profile set, falling back to default profiles: default
+2018-12-07 09:52:16.860  INFO 799 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-07 09:52:17.383  INFO 799 --- [main] com.emall.spring.ApplicationTests        : Started ApplicationTests in 18.694 seconds (JVM running for 20.688)
+2018-12-07 09:52:17.732  INFO 799 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2018-12-07 09:53:35.670  INFO 804 --- [main] com.emall.spring.ApplicationTests        : Starting ApplicationTests on My-MacBook-Pro.local with PID 804 (started by Nick in /Users/hulimin/大三学习/需求分析/Emall/Emall)
+2018-12-07 09:53:35.672  INFO 804 --- [main] com.emall.spring.ApplicationTests        : No active profile set, falling back to default profiles: default
+2018-12-07 09:53:38.420  INFO 804 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-07 09:53:39.023  INFO 804 --- [main] com.emall.spring.ApplicationTests        : Started ApplicationTests in 18.847 seconds (JVM running for 21.112)
+2018-12-07 09:53:39.391  INFO 804 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-12-07 09:53:41.525  INFO 804 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-12-07 09:53:41.721  INFO 804 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2018-12-07 09:53:41.730  INFO 804 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-12-07 09:53:42.526  INFO 804 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-12-07 10:01:41.803  INFO 827 --- [main] com.emall.spring.Application             : Starting Application on My-MacBook-Pro.local with PID 827 (started by Nick in /Users/hulimin/大三学习/需求分析/Emall/Emall)
+2018-12-07 10:01:41.806  INFO 827 --- [main] com.emall.spring.Application             : No active profile set, falling back to default profiles: default
+2018-12-07 10:01:42.954  INFO 827 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-12-07 10:01:42.974  INFO 827 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-12-07 10:01:42.974  INFO 827 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-12-07 10:01:42.982  INFO 827 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/hulimin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-12-07 10:01:43.072  INFO 827 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-12-07 10:01:43.072  INFO 827 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1220 ms
+2018-12-07 10:01:43.122  INFO 827 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-12-07 10:01:43.126  INFO 827 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-07 10:01:43.127  INFO 827 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-07 10:01:43.127  INFO 827 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2018-12-07 10:01:43.127  INFO 827 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-07 10:01:43.127  INFO 827 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2018-12-07 10:01:43.701  INFO 827 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-07 10:01:44.062  INFO 827 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-12-07 10:01:44.066  INFO 827 --- [main] com.emall.spring.Application             : Started Application in 17.572 seconds (JVM running for 28.225)
+2018-12-07 10:03:21.423  INFO 827 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-12-07 10:03:21.424  INFO 827 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2018-12-07 10:03:21.434  INFO 827 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2018-12-07 10:03:33.084  INFO 827 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-12-07 10:03:34.860  INFO 827 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-12-07 10:43:05.363  INFO 827 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2018-12-07 10:43:05.365  INFO 827 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-12-07 10:43:05.374  INFO 827 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-12-07 11:03:30.886  INFO 2523 --- [main] com.emall.spring.ApplicationTests        : Starting ApplicationTests on My-MacBook-Pro.local with PID 2523 (started by Nick in /Users/hulimin/大三学习/需求分析/Emall/Emall)
+2018-12-07 11:03:30.887  INFO 2523 --- [main] com.emall.spring.ApplicationTests        : No active profile set, falling back to default profiles: default
+2018-12-07 11:03:34.099  INFO 2523 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-07 11:03:34.607  INFO 2523 --- [main] com.emall.spring.ApplicationTests        : Started ApplicationTests in 19.264 seconds (JVM running for 21.067)
+2018-12-07 11:03:34.945  INFO 2523 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-12-07 11:03:36.734  INFO 2523 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-12-07 11:03:36.873  INFO 2523 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2018-12-07 11:03:36.877  INFO 2523 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-12-07 11:03:37.674  INFO 2523 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-12-07 11:04:17.989  INFO 2530 --- [main] com.emall.spring.Application             : Starting Application on My-MacBook-Pro.local with PID 2530 (started by Nick in /Users/hulimin/大三学习/需求分析/Emall/Emall)
+2018-12-07 11:04:17.993  INFO 2530 --- [main] com.emall.spring.Application             : No active profile set, falling back to default profiles: default
+2018-12-07 11:04:19.400  INFO 2530 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-12-07 11:04:19.419  INFO 2530 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-12-07 11:04:19.419  INFO 2530 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-12-07 11:04:19.428  INFO 2530 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/hulimin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-12-07 11:04:19.544  INFO 2530 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-12-07 11:04:19.544  INFO 2530 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1507 ms
+2018-12-07 11:04:19.578  INFO 2530 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-12-07 11:04:19.582  INFO 2530 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-07 11:04:19.582  INFO 2530 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-07 11:04:19.583  INFO 2530 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2018-12-07 11:04:19.583  INFO 2530 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-07 11:04:19.583  INFO 2530 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2018-12-07 11:04:20.222  INFO 2530 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-07 11:04:20.617  INFO 2530 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-12-07 11:04:20.621  INFO 2530 --- [main] com.emall.spring.Application             : Started Application in 17.957 seconds (JVM running for 28.68)
+2018-12-07 11:05:23.885  INFO 2530 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-12-07 11:05:23.887  INFO 2530 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2018-12-07 11:05:23.896  INFO 2530 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2018-12-07 11:05:23.913  WARN 2530 --- [http-nio-8080-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /bannerselectall
+2018-12-07 11:05:28.459  INFO 2530 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-12-07 11:05:29.931  INFO 2530 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-12-07 11:13:44.725  WARN 2530 --- [http-nio-8080-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /banne/selectall
+2018-12-07 11:14:07.276  WARN 2530 --- [http-nio-8080-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /banne/selectall
+2018-12-07 11:30:48.020  INFO 2530 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2018-12-07 11:30:48.020  INFO 2530 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-12-07 11:30:48.029  INFO 2530 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

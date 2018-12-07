@@ -1,8 +1,11 @@
 package com.emall.spring.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import java.util.Date;
 
 public class Customer {
+
     private String customerid;
 
     private String customername;
@@ -17,7 +20,7 @@ public class Customer {
 
     private Date registiontime;
 
-    private Long blance;
+    private Double blance;
 
     private String credit;
 
@@ -77,11 +80,11 @@ public class Customer {
         this.registiontime = registiontime;
     }
 
-    public Long getBlance() {
+    public double getBlance() {
         return blance;
     }
 
-    public void setBlance(Long blance) {
+    public void setBlance(double blance) {
         this.blance = blance;
     }
 

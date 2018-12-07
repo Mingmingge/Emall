@@ -90,4 +90,10 @@
       countprice = #{countprice,jdbcType=DECIMAL}
     where uuid = #{uuid,jdbcType=VARCHAR}
   </update>
+  <select id="selectbyOrderid" resultMap="BaseResultMap" parameterType="java.lang.String">
+    SELECT *
+    FROM
+    orderproduct
+    WHERE orderid = #{orderid,jdbcType=VARCHAR}
+  </select>
 </mapper>

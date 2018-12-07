@@ -1,23 +1,16 @@
 package com.emall.spring.controller;
 
 import com.emall.spring.entity.Admin;
+import com.emall.spring.entity.Customer;
 import com.emall.spring.entity.Distribute;
-import com.emall.spring.entity.Product;
 import com.emall.spring.services.AdminService;
+import com.emall.spring.services.CustomerService;
 import com.emall.spring.services.DistributeService;
-import com.emall.spring.services.Productservice;
 import com.emall.spring.utils.DateToDatetime;
-import com.emall.spring.utils.FileUplaod;
 import net.sf.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.multipart.MultipartFile;
-
 import javax.servlet.http.HttpSession;
-import java.sql.Timestamp;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
 import java.util.UUID;
 
 @RestController
@@ -29,6 +22,9 @@ public class IndexController {
 
     @Autowired
     private DistributeService distributeService;
+
+    @Autowired
+    private CustomerService customerService;
 
 
     /**
@@ -131,5 +127,49 @@ public class IndexController {
         }
         return jsonObject;
     }
+
+    /**
+     * 顾客登陆／注册
+     * @param tel 电话
+     * @param password 密码
+     * @param httpSession
+     * @return
+     */
+
+    @RequestMapping(value = "/customerlogin", method = RequestMethod.POST)
+    public JSONObject customertLogin(@RequestParam("tel") String tel, @RequestParam("password") String password, HttpSession httpSession) {
+        JSONObject jsonObject = new JSONObject();
+        Customer record = customerService.selectByTel(tel);
+        if (record == null) {
+            Customer customer = new Customer();
+            customer.setNickname("还没有昵称呢");
+            customer.setCustomerpassword(password.trim().replace(" ", ""));
+            customer.setTel(tel);
+            customer.setRegistiontime(DateToDatetime.dateToDatetimeNow());
+            customer.setBlance(0d);
+            customer.setCredit("信用一般");
+            try {
+                customerService.insert(customer);
+                httpSession.setAttribute("customer", customer);
+                jsonObject.put("result", 1);
+                jsonObject.put("customer", customer);
+            } catch (Exception e) {
+                System.out.println("顾客登陆异常");
+                e.printStackTrace();
+            }
+
+        } else {
+            if (record.getTel().equals(tel)) {
+               httpSession.setAttribute("customer", record);
+               jsonObject.put("result", 1);
+               jsonObject.put("customer", record);
+            } else {
+                jsonObject.put("result", 0);
+            }
+        }
+        return jsonObject;
+    }
+
+
 
 }

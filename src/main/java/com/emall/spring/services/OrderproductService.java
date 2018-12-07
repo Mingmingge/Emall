@@ -2,37 +2,49 @@ package com.emall.spring.services;
 
 import com.emall.spring.dao.OrderproductMapper;
 import com.emall.spring.entity.Orderproduct;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.ArrayList;
 
 @Service
 public class OrderproductService implements OrderproductMapper {
+
+    @Autowired
+    private OrderproductMapper orderproductMapper;
+
     @Override
     public int deleteByPrimaryKey(String uuid) {
-        return 0;
+        return orderproductMapper.deleteByPrimaryKey(uuid);
     }
 
     @Override
     public int insert(Orderproduct record) {
-        return 0;
+        return orderproductMapper.insert(record);
     }
 
     @Override
     public int insertSelective(Orderproduct record) {
-        return 0;
+        return orderproductMapper.insertSelective(record);
     }
 
     @Override
     public Orderproduct selectByPrimaryKey(String uuid) {
-        return null;
+        return orderproductMapper.selectByPrimaryKey(uuid);
     }
 
     @Override
     public int updateByPrimaryKeySelective(Orderproduct record) {
-        return 0;
+        return orderproductMapper.updateByPrimaryKeySelective(record);
     }
 
     @Override
     public int updateByPrimaryKey(Orderproduct record) {
-        return 0;
+        return updateByPrimaryKey(record);
+    }
+
+    @Override
+    public ArrayList<Orderproduct> selectByOrderid(String orderid) {
+        return orderproductMapper.selectByOrderid(orderid);
     }
 }
