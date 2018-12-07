@@ -1,8 +1,11 @@
 package com.emall.spring.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import java.util.Date;
 
 public class Customer {
+
     private String customerid;
 
     private String customername;

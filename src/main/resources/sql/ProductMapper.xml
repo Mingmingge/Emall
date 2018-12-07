@@ -140,11 +140,16 @@
     </set>
     where productid = #{productid,jdbcType=VARCHAR}
   </update>
-
   <select id="selectByNameLike" resultMap="BaseResultMap" parameterType="java.lang.String">
     SELECT *
     FROM product
     WHERE
     productname LIKE CONCAT(CONCAT('%',#{productname}),'%')
+  </select>
+  <select id="selectByProductclass" resultMap="BaseResultMap">
+    SELECT *
+    FROM
+    product
+    WHERE productclass = #{productclass,jdbcType=VARCHAR}
   </select>
 </mapper>

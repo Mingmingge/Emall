@@ -27,8 +27,10 @@ public class CustomerController {
         JSONObject jsonObject = new JSONObject();
         try {
             ArrayList list = customerService.selectAll();
+            if (list != null) {
+                jsonObject.put("customerlist", list);
+            }
             jsonObject.put("result", 1);
-            jsonObject.put("customerlist", list);
         } catch (Exception e) {
             e.printStackTrace();
             jsonObject.put("result", 0);

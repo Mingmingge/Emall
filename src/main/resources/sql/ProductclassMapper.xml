@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.emall.spring.dao.ProductclassMapper" >
+  <resultMap id="BaseResultMap" type="com.emall.spring.entity.Productclass" >
+    <id column="proclassid" property="proclassid" jdbcType="INTEGER" />
+    <result column="proclassname" property="proclassname" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    proclassid, proclassname
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from productclass
+    where proclassid = #{proclassid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from productclass
+    where proclassid = #{proclassid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.emall.spring.entity.Productclass" >
+    insert into productclass (proclassid, proclassname)
+    values (#{proclassid,jdbcType=INTEGER}, #{proclassname,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.emall.spring.entity.Productclass" >
+    insert into productclass
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="proclassid != null" >
+        proclassid,
+      </if>
+      <if test="proclassname != null" >
+        proclassname,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="proclassid != null" >
+        #{proclassid,jdbcType=INTEGER},
+      </if>
+      <if test="proclassname != null" >
+        #{proclassname,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.emall.spring.entity.Productclass" >
+    update productclass
+    <set >
+      <if test="proclassname != null" >
+        proclassname = #{proclassname,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where proclassid = #{proclassid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.emall.spring.entity.Productclass" >
+    update productclass
+    set proclassname = #{proclassname,jdbcType=VARCHAR}
+    where proclassid = #{proclassid,jdbcType=INTEGER}
+  </update>
+  <select id="selectAll" resultMap="BaseResultMap">
+    SELECT *
+    FROM
+    productclass
+  </select>
+</mapper>
