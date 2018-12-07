@@ -25,4 +25,6 @@ public interface ProductMapper {
 
     ArrayList<Product> selectByNameLike(String productname);
 
+    ArrayList<Product> selectByProductclass(String productclass);
+
 }

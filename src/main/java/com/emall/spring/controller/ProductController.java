@@ -3,13 +3,18 @@ package com.emall.spring.controller;
 import com.emall.spring.dao.ProdisMapper;
 import com.emall.spring.entity.Prodis;
 import com.emall.spring.entity.Product;
+import com.emall.spring.entity.Productclass;
+import com.emall.spring.services.ProductclassService;
 import com.emall.spring.services.Productservice;
 import com.emall.spring.utils.FileUplaod;
+import com.emall.spring.utils.ProductCat;
 import net.sf.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 import java.util.UUID;
 
 @RestController
@@ -20,6 +25,10 @@ public class ProductController {
 
     @Autowired
     private ProdisMapper prodisMapper;
+
+
+    @Autowired
+    private ProductclassService productclassService;
 
 
     /**
@@ -179,6 +188,29 @@ public class ProductController {
         }
         return jsonObject;
 
+    }
+
+    /**
+     * 服务于顾客端的catalog页面
+     * @return 返回超复杂的json
+     */
+    @RequestMapping(value = "/product/searchcat", method = RequestMethod.GET)
+    public JSONObject searchCat() {
+        JSONObject jsonObject = new JSONObject();
+        List<JSONObject> goodsList = new ArrayList<>();
+        ArrayList<Productclass> productclassArrayList = productclassService.selectAll();
+        Iterator<Productclass> productclassIterator = productclassArrayList.iterator();
+        while (productclassIterator.hasNext()) {
+            ProductCat productCat = new ProductCat();
+            JSONObject goodsJsonObjest = new JSONObject();
+            Productclass productclass = productclassIterator.next();
+            productCat.setType(productclass.getProclassname());
+            productCat.setList(productservice.selectByProductclass(productclass.getProclassname()));
+            goodsJsonObjest.put("goods", productCat);
+            goodsList.add(goodsJsonObjest);
+        }
+        jsonObject.put("goodsList", goodsList);
+        return jsonObject;
     }
 
 

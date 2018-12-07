@@ -146,4 +146,10 @@
     WHERE
     productname LIKE CONCAT(CONCAT('%',#{productname}),'%')
   </select>
+  <select id="selectByProductclass" resultMap="BaseResultMap">
+    SELECT *
+    FROM
+    product
+    WHERE productclass = #{productclass,jdbcType=VARCHAR}
+  </select>
 </mapper>
