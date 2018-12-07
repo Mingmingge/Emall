@@ -140,7 +140,6 @@
     </set>
     where productid = #{productid,jdbcType=VARCHAR}
   </update>
-
   <select id="selectByNameLike" resultMap="BaseResultMap" parameterType="java.lang.String">
     SELECT *
     FROM product

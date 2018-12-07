@@ -24,4 +24,5 @@ public interface ProductMapper {
     int updateState(Product record);
 
     ArrayList<Product> selectByNameLike(String productname);
+
 }
