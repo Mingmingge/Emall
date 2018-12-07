@@ -1,20 +1,29 @@
 package com.emall.spring.controller;
 
 import com.emall.spring.entity.Order;
-import com.emall.spring.entity.Orderproduct;
+import com.emall.spring.entity.Reciver;
 import com.emall.spring.services.OrderService;
+import com.emall.spring.services.ProdisService;
+import com.emall.spring.services.ReciverServices;
+import com.emall.spring.utils.ProductTrans;
 import net.sf.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
-import java.util.UUID;
 
 @RestController
 public class OrderController {
 
     @Autowired
     private OrderService orderService;
+
+    @Autowired
+    private ProdisService prodisService;
+
+    @Autowired
+    private ReciverServices reciverServices;
 
     /**
      * 查看所有订单
@@ -39,16 +48,30 @@ public class OrderController {
     }
 
     /**
-     *
-     * @param order
-     * @param orderproduct
+     * 新增订单
+     * @param reciverid 收货人的id
+     * @param list [{},{}]
      * @return
      */
+
     @RequestMapping(value = "/order/insert", method = RequestMethod.POST)
-    public JSONObject orderInser(@ModelAttribute Order order, @ModelAttribute Orderproduct orderproduct) {
-        String orderid = UUID.randomUUID().toString().toLowerCase();
-        String uuid = UUID.randomUUID().toString().toLowerCase();
+    public JSONObject orderInsert(@RequestParam("reciverid") String reciverid, @RequestParam("list") ArrayList<ProductTrans> list ) {
         JSONObject jsonObject = new JSONObject();
+        Order order = new Order();
+        List<String> sendidlist = new ArrayList<>();
+        Iterator<ProductTrans> iterator = list.iterator();
+        while (iterator.hasNext()) {
+            ProductTrans productTrans = iterator.next();
+            Reciver reciver = reciverServices.selectByPrimaryKey(reciverid);
+            sendidlist.add((prodisService.selectByproductid(productTrans.getProductid())).getDistributeid());
+            order.setSendid(sendidlist.toString());
+            order.setReciveid(reciverid);
+            order.setExpressaddr(reciver.getReciveraddr());
+            order.setExpresstel(reciver.getRecivertel());
+
+
+
+        }
         return jsonObject;
     }
 

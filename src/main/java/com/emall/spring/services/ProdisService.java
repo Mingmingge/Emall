@@ -40,4 +40,9 @@ public class ProdisService implements ProdisMapper{
     public int updateByPrimaryKey(Prodis record) {
         return prodisMapper.updateByPrimaryKey(record);
     }
+
+    @Override
+    public Prodis selectByproductid(String productid) {
+        return prodisMapper.selectByproductid(productid);
+    }
 }

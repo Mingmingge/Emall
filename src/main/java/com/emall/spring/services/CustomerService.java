@@ -47,4 +47,9 @@ public class CustomerService implements CustomerMapper{
     public ArrayList<Customer> selectAll() {
         return customerMapper.selectAll();
     }
+
+    @Override
+    public Customer selectByTel(String tel) {
+        return customerMapper.selectByTel(tel);
+    }
 }

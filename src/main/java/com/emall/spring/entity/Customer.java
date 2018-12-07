@@ -20,7 +20,7 @@ public class Customer {
 
     private Date registiontime;
 
-    private Long blance;
+    private Double blance;
 
     private String credit;
 
@@ -80,11 +80,11 @@ public class Customer {
         this.registiontime = registiontime;
     }
 
-    public Long getBlance() {
+    public double getBlance() {
         return blance;
     }
 
-    public void setBlance(Long blance) {
+    public void setBlance(double blance) {
         this.blance = blance;
     }
 
