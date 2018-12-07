@@ -4,6 +4,7 @@ import com.emall.spring.dao.ProdisMapper;
 import com.emall.spring.entity.Prodis;
 import com.emall.spring.entity.Product;
 import com.emall.spring.entity.Productclass;
+import com.emall.spring.services.ProdisService;
 import com.emall.spring.services.ProductclassService;
 import com.emall.spring.services.Productservice;
 import com.emall.spring.utils.FileUplaod;
@@ -24,7 +25,7 @@ public class ProductController {
     private Productservice productservice;
 
     @Autowired
-    private ProdisMapper prodisMapper;
+    private ProdisService prodisMapper;
 
 
     @Autowired
