@@ -11,6 +11,7 @@ import net.sf.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpSession;
+import java.math.BigDecimal;
 import java.util.UUID;
 
 @RestController
@@ -33,7 +34,7 @@ public class IndexController {
      * @return 返回插入结果，json型
      */
     @RequestMapping(value = "/insertadmin", method = RequestMethod.GET)
-    public JSONObject insertAdmin(@RequestParam("name") String name) {
+    public JSONObject insertAdmin(@RequestParam("name") String name, @RequestParam("balance") String balance) {
 
         JSONObject jsonObject = new JSONObject();
         Admin admin = new Admin();
@@ -41,6 +42,7 @@ public class IndexController {
         admin.setRegisttime(DateToDatetime.dateToDatetimeNow());
         admin.setAdminname(name);
         admin.setAdminid(uuid);
+        admin.setBalance(BigDecimal.valueOf(0));
         try {
             adminService.insert(admin);
             jsonObject.put("key", "插入成功！其ID为 "+uuid);
@@ -146,7 +148,7 @@ public class IndexController {
             customer.setCustomerpassword(password.trim().replace(" ", ""));
             customer.setTel(tel);
             customer.setRegistiontime(DateToDatetime.dateToDatetimeNow());
-            customer.setBlance(0d);
+            customer.setBlance(BigDecimal.valueOf(0));
             customer.setCredit("信用一般");
             try {
                 customerService.insert(customer);

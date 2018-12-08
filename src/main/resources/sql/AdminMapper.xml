@@ -8,7 +8,7 @@
     <result column="sex" property="sex" jdbcType="INTEGER" />
     <result column="age" property="age" jdbcType="INTEGER" />
     <result column="registtime" property="registtime" jdbcType="TIMESTAMP" />
-    <result column="balance" property="balance" jdbcType="DECIMAL" />
+    <result column="balance" property="balance" jdbcType="DECIMAL"/>
     <result column="admintel" property="admintel" jdbcType="VARCHAR" />
     <result column="adminemail" property="adminemail" jdbcType="VARCHAR" />
     <result column="admininfo" property="admininfo" jdbcType="VARCHAR" />

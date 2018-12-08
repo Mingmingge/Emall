@@ -40,7 +40,7 @@ public class ProductController {
      * 测试通过
      */
     @RequestMapping(value = "/product/insert", method = RequestMethod.POST)
-    public JSONObject productAdd(@RequestParam(value = "productimg", required = false) MultipartFile productimg, @ModelAttribute Product product, String productadmin) {
+    public JSONObject productAdd(@RequestParam(value = "productimg", required = false) MultipartFile productimg, @ModelAttribute Product product, @RequestParam("productadmin") String productadmin) {
         JSONObject jsonObject = new JSONObject();
         FileUplaod fileUplaod = new FileUplaod();
         Prodis prodis = new Prodis();

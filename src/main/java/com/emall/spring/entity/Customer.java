@@ -2,6 +2,7 @@ package com.emall.spring.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 public class Customer {
@@ -20,7 +21,7 @@ public class Customer {
 
     private Date registiontime;
 
-    private Double blance;
+    private BigDecimal blance;
 
     private String credit;
 
@@ -80,11 +81,11 @@ public class Customer {
         this.registiontime = registiontime;
     }
 
-    public double getBlance() {
+    public BigDecimal getBlance() {
         return blance;
     }
 
-    public void setBlance(double blance) {
+    public void setBlance(BigDecimal blance) {
         this.blance = blance;
     }
 

@@ -28,7 +28,7 @@
     insert into product (productid, productname, price, 
       productclass, imagedir, info, 
       status, nums)
-    values (#{productid,jdbcType=VARCHAR}, #{productname,jdbcType=VARCHAR}, #{price,jdbcType=DECIMAL}, 
+    values (#{productid,jdbcType=VARCHAR}, #{productname,jdbcType=VARCHAR}, #{price,jdbcType=DECIMAL},
       #{productclass,jdbcType=VARCHAR}, #{imagedir,jdbcType=VARCHAR}, #{info,jdbcType=VARCHAR}, 
       #{status,jdbcType=INTEGER}, #{nums,jdbcType=INTEGER})
   </insert>
@@ -125,7 +125,6 @@
       nums = #{nums,jdbcType=INTEGER}
     where productid = #{productid,jdbcType=VARCHAR}
   </update>
-
   <select id="selectAll" resultMap="BaseResultMap">
     select *
     FROM product

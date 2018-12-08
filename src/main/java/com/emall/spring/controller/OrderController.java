@@ -9,6 +9,8 @@ import com.emall.spring.utils.ProductTrans;
 import net.sf.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import javax.servlet.http.HttpSession;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -55,7 +57,7 @@ public class OrderController {
      */
 
     @RequestMapping(value = "/order/insert", method = RequestMethod.POST)
-    public JSONObject orderInsert(@RequestParam("reciverid") String reciverid, @RequestParam("list") ArrayList<ProductTrans> list ) {
+    public JSONObject orderInsert(@RequestParam("reciverid") String reciverid, @RequestParam("list") ArrayList<ProductTrans> list, HttpSession session) {
         JSONObject jsonObject = new JSONObject();
         Order order = new Order();
         List<String> sendidlist = new ArrayList<>();
@@ -77,11 +79,11 @@ public class OrderController {
 
     /**
      * 根据某一个顾客ID查看所有订单
-     * @param customerid 顾客的ID
+     * @param httpSession 顾客的ID
      * @return 成功 失败 order列表
      */
     @RequestMapping(value = "/order/selectbycustomer")
-    public JSONObject orderselectByCustomer(@RequestParam("customerid") String customerid) {
+    public JSONObject orderselectByCustomer(HttpSession httpSession) {
         JSONObject jsonObject = new JSONObject();
         return jsonObject;
     }

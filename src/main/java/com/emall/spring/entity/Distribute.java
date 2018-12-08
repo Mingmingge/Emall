@@ -1,5 +1,6 @@
 package com.emall.spring.entity;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 public class Distribute {
@@ -15,7 +16,7 @@ public class Distribute {
 
     private Integer type;
 
-    private Long balance;
+    private BigDecimal balance;
 
     private Integer status;
 
@@ -73,11 +74,11 @@ public class Distribute {
         this.type = type;
     }
 
-    public Long getBalance() {
+    public BigDecimal getBalance() {
         return balance;
     }
 
-    public void setBalance(Long balance) {
+    public void setBalance(BigDecimal balance) {
         this.balance = balance;
     }
 

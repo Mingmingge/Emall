@@ -1,5 +1,6 @@
 package com.emall.spring.entity;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 public class Admin {
@@ -15,7 +16,7 @@ public class Admin {
 
     private Date registtime;
 
-    private Long balance;
+    private BigDecimal balance;
 
     private String admintel;
 
@@ -71,11 +72,11 @@ public class Admin {
         this.registtime = registtime;
     }
 
-    public Long getBalance() {
+    public BigDecimal getBalance() {
         return balance;
     }
 
-    public void setBalance(Long balance) {
+    public void setBalance(BigDecimal balance) {
         this.balance = balance;
     }
 
