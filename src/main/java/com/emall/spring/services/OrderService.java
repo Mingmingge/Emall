@@ -1,7 +1,9 @@
 package com.emall.spring.services;
 
 import com.emall.spring.dao.OrderMapper;
+import com.emall.spring.dao.ReciverMapper;
 import com.emall.spring.entity.Order;
+import com.emall.spring.entity.Reciver;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,6 +14,7 @@ public class OrderService implements OrderMapper{
 
     @Autowired
     private OrderMapper orderMapper;
+
     @Override
     public int deleteByPrimaryKey(String orderid) {
         return orderMapper.deleteByPrimaryKey(orderid);
@@ -45,5 +48,10 @@ public class OrderService implements OrderMapper{
     @Override
     public ArrayList<Order> selectAll() {
         return orderMapper.selectAll();
+    }
+
+    @Override
+    public ArrayList<Order> selectByreciver(String reciverid) {
+        return orderMapper.selectByreciver(reciverid);
     }
 }

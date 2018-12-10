@@ -1,8 +1,11 @@
 package com.emall.spring.controller;
 
+import com.emall.spring.entity.Customer;
 import com.emall.spring.entity.Order;
+import com.emall.spring.entity.Orderproduct;
 import com.emall.spring.entity.Reciver;
 import com.emall.spring.services.OrderService;
+import com.emall.spring.services.OrderproductService;
 import com.emall.spring.services.ProdisService;
 import com.emall.spring.services.ReciverServices;
 import com.emall.spring.utils.ProductTrans;
@@ -26,6 +29,9 @@ public class OrderController {
 
     @Autowired
     private ReciverServices reciverServices;
+
+    @Autowired
+    private OrderproductService orderproductService;
 
     /**
      * 查看所有订单
@@ -82,9 +88,29 @@ public class OrderController {
      * @param httpSession 顾客的ID
      * @return 成功 失败 order列表
      */
-    @RequestMapping(value = "/order/selectbycustomer")
+    @RequestMapping(value = "/order/selectbycustomer", method = RequestMethod.POST)
     public JSONObject orderselectByCustomer(HttpSession httpSession) {
         JSONObject jsonObject = new JSONObject();
+        Customer customer = (Customer) httpSession.getAttribute("customer");
+        ArrayList<Reciver> list = reciverServices.selectAll(customer.getCustomerid());
+        Iterator<Reciver> iterator = list.iterator();
+        List<JSONObject> list1 = new  ArrayList<JSONObject>();
+        while (iterator.hasNext()) {
+            Reciver reciver = iterator.next();
+            ArrayList<Order> orderArrayList = orderService.selectByreciver(reciver.getReciverid());
+            Iterator<Order> orderIterator = orderArrayList.iterator();
+            while (orderIterator.hasNext()) {
+                Order order = orderIterator.next();
+                ArrayList<Orderproduct> orderproductArrayList = orderproductService.selectByOrderid(order.getOrderid());
+                JSONObject jsonObject1 = new JSONObject();
+                jsonObject1.put("orderproduct", orderproductArrayList);
+                jsonObject1.put("ordermain", order);
+                list1.add(jsonObject1);
+            }// {"orderlist":[{"ordermain":"{}","orderproduct":[{},{}]},{},{}]}
+        }
+        if (list1.size() != 0) {
+            jsonObject.put("orderlist", list1);
+        }
         return jsonObject;
     }
 }

@@ -736,3 +736,42 @@ Caused by: java.lang.ClassNotFoundException: Cannot find class: com.emall.spring
 2018-12-08 13:33:42.678  INFO 1282 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
 2018-12-08 13:33:42.684  INFO 1282 --- [main] com.emall.spring.Application             : Started Application in 17.545 seconds (JVM running for 28.342)
 2018-12-08 13:50:33.495  INFO 1282 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2018-12-08 15:23:21.458  INFO 813 --- [main] com.emall.spring.Application             : Starting Application on My-MacBook-Pro.local with PID 813 (started by Nick in /Users/hulimin/大三学习/需求分析/Emall/Emall)
+2018-12-08 15:23:21.461  INFO 813 --- [main] com.emall.spring.Application             : No active profile set, falling back to default profiles: default
+2018-12-08 15:23:22.656  INFO 813 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-12-08 15:23:22.675  INFO 813 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-12-08 15:23:22.675  INFO 813 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-12-08 15:23:22.683  INFO 813 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/hulimin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-12-08 15:23:22.769  INFO 813 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-12-08 15:23:22.770  INFO 813 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1263 ms
+2018-12-08 15:23:22.798  INFO 813 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-12-08 15:23:22.801  INFO 813 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-08 15:23:22.802  INFO 813 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-08 15:23:22.802  INFO 813 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2018-12-08 15:23:22.802  INFO 813 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-08 15:23:22.802  INFO 813 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2018-12-08 15:23:23.434  INFO 813 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-08 15:23:23.759  INFO 813 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-12-08 15:23:23.762  INFO 813 --- [main] com.emall.spring.Application             : Started Application in 17.707 seconds (JVM running for 28.555)
+2018-12-08 15:23:42.782  INFO 813 --- [http-nio-8080-exec-7] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-12-08 15:23:42.784  INFO 813 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2018-12-08 15:23:42.795  INFO 813 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2018-12-08 15:23:42.816  WARN 813 --- [http-nio-8080-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /img/xian.svg
+2018-12-08 15:23:42.818  WARN 813 --- [http-nio-8080-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /img/banner_3.6d7b02af.jpg
+2018-12-08 15:23:42.821  WARN 813 --- [http-nio-8080-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /img/clothes.svg
+2018-12-08 15:23:42.822  WARN 813 --- [http-nio-8080-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /img/banner_1.9cadaedb.jpg
+2018-12-08 15:23:42.822  WARN 813 --- [http-nio-8080-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /img/market.svg
+2018-12-08 15:23:42.823  WARN 813 --- [http-nio-8080-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /img/tohome.svg
+2018-12-08 15:23:42.933  WARN 813 --- [http-nio-8080-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /apple-touch-icon-precomposed.png
+2018-12-08 15:23:42.960  WARN 813 --- [http-nio-8080-exec-10] o.s.web.servlet.PageNotFound             : No mapping for GET /data.json
+2018-12-08 15:23:42.960  WARN 813 --- [http-nio-8080-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /img/banner_4.ba6fcc5f.jpg
+2018-12-08 15:23:42.961  WARN 813 --- [http-nio-8080-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /img/banner_2.2b6495f9.jpg
+2018-12-08 15:23:42.961  WARN 813 --- [http-nio-8080-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /img/shop.svg
+2018-12-08 15:23:42.966  WARN 813 --- [http-nio-8080-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /app.js
+2018-12-08 15:23:42.967  WARN 813 --- [http-nio-8080-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /img/banner_5.312da388.jpg
+2018-12-08 15:23:43.018  WARN 813 --- [http-nio-8080-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /apple-touch-icon.png
+2018-12-08 15:27:20.369  INFO 813 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-12-08 15:27:22.153  INFO 813 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-12-08 15:29:46.178  INFO 813 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2018-12-08 15:29:46.180  INFO 813 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-12-08 15:29:46.190  INFO 813 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

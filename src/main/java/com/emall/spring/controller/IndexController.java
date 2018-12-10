@@ -144,6 +144,7 @@ public class IndexController {
         Customer record = customerService.selectByTel(tel);
         if (record == null) {
             Customer customer = new Customer();
+            customer.setCustomerid(UUID.randomUUID().toString().toLowerCase());
             customer.setNickname("还没有昵称呢");
             customer.setCustomerpassword(password.trim().replace(" ", ""));
             customer.setTel(tel);

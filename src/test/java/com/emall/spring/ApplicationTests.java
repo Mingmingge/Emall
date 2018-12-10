@@ -14,6 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 
 @RunWith(SpringRunner.class)
@@ -103,7 +104,7 @@ public class ApplicationTests {
 	@Test
 	public void insertCustomer() {
 		Customer customer = new Customer();
-		customer.setBlance(23.22);
+		customer.setBlance(BigDecimal.valueOf(23.22));
 		customer.setRegistiontime(DateToDatetime.dateToDatetimeNow());
 		customer.setCustomerid("qwertyuimnbvcsdfgh");
 		System.out.println(customerService.insert(customer));
