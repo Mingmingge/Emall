@@ -213,5 +213,33 @@ public class ProductController {
         return jsonObject;
     }
 
+    /**
+     * 服务于home页
+     * @return
+     */
+
+    @RequestMapping(value = "/product/searchhome", method = RequestMethod.GET)
+    public JSONObject searchhome() {
+        JSONObject jsonObject = new JSONObject();
+        List<JSONObject> goodsList = new ArrayList<>();
+        ArrayList<Productclass> productclassArrayList = productclassService.selectAll();
+        Iterator<Productclass> productclassIterator = productclassArrayList.iterator();
+        while (productclassIterator.hasNext()) {
+            Productclass productclass = productclassIterator.next();
+            JSONObject jsonObject1 = new JSONObject();
+            ArrayList<Product> productArrayList = productservice.selectByProductclass(productclass.getProclassname());
+            if (productArrayList != null) {
+                jsonObject1.put("type", productclass.getProclassname());
+                jsonObject1.put("list", productArrayList);
+                JSONObject jsonObject2 = new JSONObject();
+                jsonObject2.put("goods", jsonObject1);
+                goodsList.add(jsonObject2);
+            }
+
+        }
+        jsonObject.put("goodsList", goodsList);
+        return jsonObject;
+    }
+
 
 }

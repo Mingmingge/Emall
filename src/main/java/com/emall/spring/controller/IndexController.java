@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpSession;
 import java.math.BigDecimal;
+import java.util.Map;
 import java.util.UUID;
 
 @RestController
@@ -135,11 +136,13 @@ public class IndexController {
      * @param tel 电话
      * @param password 密码
      * @param httpSession
-     * @return
+     * @return @RequestParam("tel") String tel, @RequestParam("password") String password,
      */
 
     @RequestMapping(value = "/customerlogin", method = RequestMethod.POST)
-    public JSONObject customertLogin(@RequestParam("tel") String tel, @RequestParam("password") String password, HttpSession httpSession) {
+    public JSONObject customertLogin(@RequestBody Map map, HttpSession httpSession) {
+        String tel = (String) map.get("tel");
+        String password = (String) map.get("password");
         JSONObject jsonObject = new JSONObject();
         Customer record = customerService.selectByTel(tel);
         if (record == null) {
