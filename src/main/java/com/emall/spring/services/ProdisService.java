@@ -45,4 +45,9 @@ public class ProdisService implements ProdisMapper{
     public Prodis selectByproductid(String productid) {
         return prodisMapper.selectByproductid(productid);
     }
+
+    @Override
+    public int deleteByProductID(String productid) {
+        return prodisMapper.deleteByProductID(productid);
+    }
 }

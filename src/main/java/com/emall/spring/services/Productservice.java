@@ -52,6 +52,11 @@ public class Productservice implements ProductMapper{
     }
 
     @Override
+    public ArrayList<Product> selectPage(int start, int end) {
+        return productMapper.selectPage(start, end);
+    }
+
+    @Override
     public int updateState(Product record) {
         return productMapper.updateState(record);
     }

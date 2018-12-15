@@ -131,6 +131,12 @@
     FROM product
   </select>
 
+  <select id="selectPage" resultMap="BaseResultMap" parameterType="int">
+    select *
+    FROM product
+    LIMIT #{start},#{end}
+  </select>
+
   <update id="updateState" parameterType="com.emall.spring.entity.Product">
     UPDATE product
     <set>

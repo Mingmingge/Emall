@@ -74,4 +74,8 @@
     prodis
     WHERE productid = #{productid,jdbcType=VARCHAR}
   </select>
+  <delete id="deleteByProductID" parameterType="java.lang.String">
+    delete from prodis
+    where productid = #{productid,jdbcType=VARCHAR}
+  </delete>
 </mapper>
