@@ -90,4 +90,10 @@
       recivertel = #{recivertel,jdbcType=VARCHAR}
     where reciverid = #{reciverid,jdbcType=VARCHAR}
   </update>
+  <select id="selectAll" resultMap="BaseResultMap">
+    SELECT *
+    FROM
+    reciver
+    WHERE customerid = #{customerid,jdbcType=VARCHAR}
+  </select>
 </mapper>

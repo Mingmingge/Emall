@@ -11,6 +11,8 @@ import net.sf.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpSession;
+import java.math.BigDecimal;
+import java.util.Map;
 import java.util.UUID;
 
 @RestController
@@ -33,7 +35,7 @@ public class IndexController {
      * @return 返回插入结果，json型
      */
     @RequestMapping(value = "/insertadmin", method = RequestMethod.GET)
-    public JSONObject insertAdmin(@RequestParam("name") String name) {
+    public JSONObject insertAdmin(@RequestParam("name") String name, @RequestParam("balance") String balance) {
 
         JSONObject jsonObject = new JSONObject();
         Admin admin = new Admin();
@@ -41,6 +43,7 @@ public class IndexController {
         admin.setRegisttime(DateToDatetime.dateToDatetimeNow());
         admin.setAdminname(name);
         admin.setAdminid(uuid);
+        admin.setBalance(BigDecimal.valueOf(0));
         try {
             adminService.insert(admin);
             jsonObject.put("key", "插入成功！其ID为 "+uuid);
@@ -130,23 +133,24 @@ public class IndexController {
 
     /**
      * 顾客登陆／注册
-     * @param tel 电话
-     * @param password 密码
      * @param httpSession
-     * @return
+     * @return @RequestParam("tel") String tel, @RequestParam("password") String password,
      */
 
     @RequestMapping(value = "/customerlogin", method = RequestMethod.POST)
-    public JSONObject customertLogin(@RequestParam("tel") String tel, @RequestParam("password") String password, HttpSession httpSession) {
+    public JSONObject customertLogin(@RequestBody Map map, HttpSession httpSession) {
+        String tel = (String) map.get("tel");
+        String password = (String) map.get("password");
         JSONObject jsonObject = new JSONObject();
         Customer record = customerService.selectByTel(tel);
         if (record == null) {
             Customer customer = new Customer();
+            customer.setCustomerid(UUID.randomUUID().toString().toLowerCase());
             customer.setNickname("还没有昵称呢");
             customer.setCustomerpassword(password.trim().replace(" ", ""));
             customer.setTel(tel);
             customer.setRegistiontime(DateToDatetime.dateToDatetimeNow());
-            customer.setBlance(0d);
+            customer.setBlance(BigDecimal.valueOf(0));
             customer.setCredit("信用一般");
             try {
                 customerService.insert(customer);

@@ -2,8 +2,11 @@ package com.emall.spring;
 
 import com.emall.spring.dao.*;
 import com.emall.spring.entity.Admin;
+import com.emall.spring.entity.Customer;
 import com.emall.spring.entity.Distribute;
 import com.emall.spring.services.BannerService;
+import com.emall.spring.services.CustomerService;
+import com.emall.spring.utils.DateToDatetime;
 import net.sf.json.JSONObject;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -11,6 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 
 @RunWith(SpringRunner.class)
@@ -34,6 +38,9 @@ public class ApplicationTests {
 
 	@Autowired
 	private BannerService bannerService;
+
+	@Autowired
+	private CustomerService customerService;
 
 	@Test
 	public void selectByTelPasswordTest() {
@@ -92,5 +99,14 @@ public class ApplicationTests {
 	@Test
 	public void selectAllBanner() {
 		System.out.println(bannerService.selectAll());
+	}
+
+	@Test
+	public void insertCustomer() {
+		Customer customer = new Customer();
+		customer.setBlance(BigDecimal.valueOf(23.22));
+		customer.setRegistiontime(DateToDatetime.dateToDatetimeNow());
+		customer.setCustomerid("qwertyuimnbvcsdfgh");
+		System.out.println(customerService.insert(customer));
 	}
 }

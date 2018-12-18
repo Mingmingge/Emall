@@ -1,98 +1,22 @@
-2018-12-07 09:52:14.151  INFO 799 --- [main] com.emall.spring.ApplicationTests        : Starting ApplicationTests on My-MacBook-Pro.local with PID 799 (started by Nick in /Users/hulimin/大三学习/需求分析/Emall/Emall)
-2018-12-07 09:52:14.156  INFO 799 --- [main] com.emall.spring.ApplicationTests        : No active profile set, falling back to default profiles: default
-2018-12-07 09:52:16.860  INFO 799 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2018-12-07 09:52:17.383  INFO 799 --- [main] com.emall.spring.ApplicationTests        : Started ApplicationTests in 18.694 seconds (JVM running for 20.688)
-2018-12-07 09:52:17.732  INFO 799 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2018-12-07 09:53:35.670  INFO 804 --- [main] com.emall.spring.ApplicationTests        : Starting ApplicationTests on My-MacBook-Pro.local with PID 804 (started by Nick in /Users/hulimin/大三学习/需求分析/Emall/Emall)
-2018-12-07 09:53:35.672  INFO 804 --- [main] com.emall.spring.ApplicationTests        : No active profile set, falling back to default profiles: default
-2018-12-07 09:53:38.420  INFO 804 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2018-12-07 09:53:39.023  INFO 804 --- [main] com.emall.spring.ApplicationTests        : Started ApplicationTests in 18.847 seconds (JVM running for 21.112)
-2018-12-07 09:53:39.391  INFO 804 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2018-12-07 09:53:41.525  INFO 804 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2018-12-07 09:53:41.721  INFO 804 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2018-12-07 09:53:41.730  INFO 804 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2018-12-07 09:53:42.526  INFO 804 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2018-12-07 10:01:41.803  INFO 827 --- [main] com.emall.spring.Application             : Starting Application on My-MacBook-Pro.local with PID 827 (started by Nick in /Users/hulimin/大三学习/需求分析/Emall/Emall)
-2018-12-07 10:01:41.806  INFO 827 --- [main] com.emall.spring.Application             : No active profile set, falling back to default profiles: default
-2018-12-07 10:01:42.954  INFO 827 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2018-12-07 10:01:42.974  INFO 827 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2018-12-07 10:01:42.974  INFO 827 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
-2018-12-07 10:01:42.982  INFO 827 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/hulimin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
-2018-12-07 10:01:43.072  INFO 827 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2018-12-07 10:01:43.072  INFO 827 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1220 ms
-2018-12-07 10:01:43.122  INFO 827 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
-2018-12-07 10:01:43.126  INFO 827 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-12-07 10:01:43.127  INFO 827 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-12-07 10:01:43.127  INFO 827 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
-2018-12-07 10:01:43.127  INFO 827 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
-2018-12-07 10:01:43.127  INFO 827 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
-2018-12-07 10:01:43.701  INFO 827 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2018-12-07 10:01:44.062  INFO 827 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2018-12-07 10:01:44.066  INFO 827 --- [main] com.emall.spring.Application             : Started Application in 17.572 seconds (JVM running for 28.225)
-2018-12-07 10:03:21.423  INFO 827 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2018-12-07 10:03:21.424  INFO 827 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2018-12-07 10:03:21.434  INFO 827 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
-2018-12-07 10:03:33.084  INFO 827 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2018-12-07 10:03:34.860  INFO 827 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2018-12-07 10:43:05.363  INFO 827 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2018-12-07 10:43:05.365  INFO 827 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2018-12-07 10:43:05.374  INFO 827 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2018-12-07 11:03:30.886  INFO 2523 --- [main] com.emall.spring.ApplicationTests        : Starting ApplicationTests on My-MacBook-Pro.local with PID 2523 (started by Nick in /Users/hulimin/大三学习/需求分析/Emall/Emall)
-2018-12-07 11:03:30.887  INFO 2523 --- [main] com.emall.spring.ApplicationTests        : No active profile set, falling back to default profiles: default
-2018-12-07 11:03:34.099  INFO 2523 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2018-12-07 11:03:34.607  INFO 2523 --- [main] com.emall.spring.ApplicationTests        : Started ApplicationTests in 19.264 seconds (JVM running for 21.067)
-2018-12-07 11:03:34.945  INFO 2523 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2018-12-07 11:03:36.734  INFO 2523 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2018-12-07 11:03:36.873  INFO 2523 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2018-12-07 11:03:36.877  INFO 2523 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2018-12-07 11:03:37.674  INFO 2523 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2018-12-07 11:04:17.989  INFO 2530 --- [main] com.emall.spring.Application             : Starting Application on My-MacBook-Pro.local with PID 2530 (started by Nick in /Users/hulimin/大三学习/需求分析/Emall/Emall)
-2018-12-07 11:04:17.993  INFO 2530 --- [main] com.emall.spring.Application             : No active profile set, falling back to default profiles: default
-2018-12-07 11:04:19.400  INFO 2530 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2018-12-07 11:04:19.419  INFO 2530 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2018-12-07 11:04:19.419  INFO 2530 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
-2018-12-07 11:04:19.428  INFO 2530 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/hulimin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
-2018-12-07 11:04:19.544  INFO 2530 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2018-12-07 11:04:19.544  INFO 2530 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1507 ms
-2018-12-07 11:04:19.578  INFO 2530 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
-2018-12-07 11:04:19.582  INFO 2530 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-12-07 11:04:19.582  INFO 2530 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-12-07 11:04:19.583  INFO 2530 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
-2018-12-07 11:04:19.583  INFO 2530 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
-2018-12-07 11:04:19.583  INFO 2530 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
-2018-12-07 11:04:20.222  INFO 2530 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2018-12-07 11:04:20.617  INFO 2530 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2018-12-07 11:04:20.621  INFO 2530 --- [main] com.emall.spring.Application             : Started Application in 17.957 seconds (JVM running for 28.68)
-2018-12-07 11:05:23.885  INFO 2530 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2018-12-07 11:05:23.887  INFO 2530 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2018-12-07 11:05:23.896  INFO 2530 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
-2018-12-07 11:05:23.913  WARN 2530 --- [http-nio-8080-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /bannerselectall
-2018-12-07 11:05:28.459  INFO 2530 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2018-12-07 11:05:29.931  INFO 2530 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2018-12-07 11:13:44.725  WARN 2530 --- [http-nio-8080-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /banne/selectall
-2018-12-07 11:14:07.276  WARN 2530 --- [http-nio-8080-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /banne/selectall
-2018-12-07 11:30:48.020  INFO 2530 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2018-12-07 11:30:48.020  INFO 2530 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2018-12-07 11:30:48.029  INFO 2530 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2018-12-07 23:22:09.655  INFO 18233 --- [main] com.emall.spring.Application             : Starting Application on MarvelousdeMBP.lan with PID 18233 (/Users/home/IntelliJIDEAProjects/a/target/classes started by home in /Users/home/IntelliJIDEAProjects/a)
-2018-12-07 23:22:09.660  INFO 18233 --- [main] com.emall.spring.Application             : No active profile set, falling back to default profiles: default
-2018-12-07 23:22:11.041  INFO 18233 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2018-12-07 23:22:11.064  INFO 18233 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2018-12-07 23:22:11.064  INFO 18233 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
-2018-12-07 23:22:11.073  INFO 18233 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/home/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
-2018-12-07 23:22:11.175  INFO 18233 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2018-12-07 23:22:11.175  INFO 18233 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1456 ms
-2018-12-07 23:22:11.205  INFO 18233 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
-2018-12-07 23:22:11.210  INFO 18233 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-12-07 23:22:11.210  INFO 18233 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-12-07 23:22:11.210  INFO 18233 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
-2018-12-07 23:22:11.210  INFO 18233 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
-2018-12-07 23:22:11.210  INFO 18233 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
-2018-12-07 23:22:12.029  INFO 18233 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2018-12-07 23:22:12.388  INFO 18233 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2018-12-07 23:22:12.392  INFO 18233 --- [main] com.emall.spring.Application             : Started Application in 3.274 seconds (JVM running for 5.105)
-2018-12-07 23:22:31.931  INFO 18233 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2018-12-07 23:22:31.932  INFO 18233 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2018-12-07 23:22:31.942  INFO 18233 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
-2018-12-07 23:22:52.183  INFO 18233 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2018-12-07 23:22:53.061  INFO 18233 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-12-18 13:58:07.598  INFO 30348 --- [main] com.emall.spring.Application             : Starting Application on MarvelousdeMacBook-Pro.local with PID 30348 (/Users/home/IntelliJIDEAProjects/a/target/classes started by home in /Users/home/IntelliJIDEAProjects/a)
+2018-12-18 13:58:07.606  INFO 30348 --- [main] com.emall.spring.Application             : No active profile set, falling back to default profiles: default
+2018-12-18 13:58:09.094  INFO 30348 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-12-18 13:58:09.111  INFO 30348 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-12-18 13:58:09.111  INFO 30348 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-12-18 13:58:09.118  INFO 30348 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/home/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-12-18 13:58:09.208  INFO 30348 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-12-18 13:58:09.208  INFO 30348 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1527 ms
+2018-12-18 13:58:09.238  INFO 30348 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-12-18 13:58:09.241  INFO 30348 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-18 13:58:09.242  INFO 30348 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-18 13:58:09.242  INFO 30348 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2018-12-18 13:58:09.242  INFO 30348 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-18 13:58:09.242  INFO 30348 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2018-12-18 13:58:10.057  INFO 30348 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-18 13:58:10.313  INFO 30348 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-12-18 13:58:10.317  INFO 30348 --- [main] com.emall.spring.Application             : Started Application in 3.528 seconds (JVM running for 4.928)
+2018-12-18 13:59:26.444  INFO 30348 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-12-18 13:59:26.445  INFO 30348 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2018-12-18 13:59:26.456  INFO 30348 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2018-12-18 13:59:26.557  INFO 30348 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-12-18 13:59:29.463  INFO 30348 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.

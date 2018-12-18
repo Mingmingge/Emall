@@ -8,14 +8,14 @@
     <result column="sex" property="sex" jdbcType="INTEGER" />
     <result column="age" property="age" jdbcType="INTEGER" />
     <result column="registtime" property="registtime" jdbcType="TIMESTAMP" />
-    <result column="balance" property="balance" jdbcType="DECIMAL" />
+    <result column="balance" property="balance" jdbcType="DECIMAL"/>
     <result column="admintel" property="admintel" jdbcType="VARCHAR" />
     <result column="adminemail" property="adminemail" jdbcType="VARCHAR" />
     <result column="admininfo" property="admininfo" jdbcType="VARCHAR" />
   </resultMap>
   <sql id="Base_Column_List" >
     adminid, adminname, adminnickname, sex, age, registtime, balance, admintel, adminemail, 
-    admininfo
+    admininfo, adminpwd
   </sql>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
     select 
@@ -31,11 +31,12 @@
     insert into admin (adminid, adminname, adminnickname, 
       sex, age, registtime, 
       balance, admintel, adminemail, 
-      admininfo)
+      admininfo, adminpwd)
     values (#{adminid,jdbcType=VARCHAR}, #{adminname,jdbcType=VARCHAR}, #{adminnickname,jdbcType=VARCHAR}, 
       #{sex,jdbcType=INTEGER}, #{age,jdbcType=INTEGER}, #{registtime,jdbcType=TIMESTAMP}, 
       #{balance,jdbcType=DECIMAL}, #{admintel,jdbcType=VARCHAR}, #{adminemail,jdbcType=VARCHAR}, 
-      #{admininfo,jdbcType=VARCHAR})
+      #{admininfo,jdbcType=VARCHAR},
+      #{adminpwd,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.emall.spring.entity.Admin" >
     insert into admin
@@ -70,6 +71,9 @@
       <if test="admininfo != null" >
         admininfo,
       </if>
+      <if test="adminpwd != null">
+        adminpwd,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides="," >
       <if test="adminid != null" >
@@ -101,6 +105,9 @@
       </if>
       <if test="admininfo != null" >
         #{admininfo,jdbcType=VARCHAR},
+      </if>
+      <if test="adminpwd != null">
+        #{adminpwd,jdbcType=VARCHAR},
       </if>
     </trim>
   </insert>
@@ -134,6 +141,9 @@
       <if test="admininfo != null" >
         admininfo = #{admininfo,jdbcType=VARCHAR},
       </if>
+      <if test="adminpwd != null">
+        #{adminpwd,jdbcType=VARCHAR},
+      </if>
     </set>
     where adminid = #{adminid,jdbcType=VARCHAR}
   </update>
@@ -147,7 +157,8 @@
       balance = #{balance,jdbcType=DECIMAL},
       admintel = #{admintel,jdbcType=VARCHAR},
       adminemail = #{adminemail,jdbcType=VARCHAR},
-      admininfo = #{admininfo,jdbcType=VARCHAR}
+      admininfo = #{admininfo,jdbcType=VARCHAR},
+      adminpwd = #{adminpwd,jdbcType=VARCHAR}
     where adminid = #{adminid,jdbcType=VARCHAR}
   </update>
 
