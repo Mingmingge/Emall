@@ -12,6 +12,7 @@
     <result column="admintel" property="admintel" jdbcType="VARCHAR" />
     <result column="adminemail" property="adminemail" jdbcType="VARCHAR" />
     <result column="admininfo" property="admininfo" jdbcType="VARCHAR" />
+    <result column="adminpwd" property="adminpwd" jdbcType="VARCHAR"/>
   </resultMap>
   <sql id="Base_Column_List" >
     adminid, adminname, adminnickname, sex, age, registtime, balance, admintel, adminemail, 
