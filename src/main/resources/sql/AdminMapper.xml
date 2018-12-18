@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.emall.spring.dele.AdminMapper" >
+<mapper namespace="com.emall.spring.dao.AdminMapper" >
   <resultMap id="BaseResultMap" type="com.emall.spring.entity.Admin" >
     <id column="adminid" property="adminid" jdbcType="VARCHAR" />
     <result column="adminname" property="adminname" jdbcType="VARCHAR" />
@@ -8,11 +8,10 @@
     <result column="sex" property="sex" jdbcType="INTEGER" />
     <result column="age" property="age" jdbcType="INTEGER" />
     <result column="registtime" property="registtime" jdbcType="TIMESTAMP" />
-    <result column="balance" property="balance" jdbcType="DECIMAL" />
+    <result column="balance" property="balance" jdbcType="DECIMAL"/>
     <result column="admintel" property="admintel" jdbcType="VARCHAR" />
     <result column="adminemail" property="adminemail" jdbcType="VARCHAR" />
     <result column="admininfo" property="admininfo" jdbcType="VARCHAR" />
-    <result column="adminpwd" property="adminpwd" jdbcType="VARCHAR" />
   </resultMap>
   <sql id="Base_Column_List" >
     adminid, adminname, adminnickname, sex, age, registtime, balance, admintel, adminemail, 
@@ -36,7 +35,8 @@
     values (#{adminid,jdbcType=VARCHAR}, #{adminname,jdbcType=VARCHAR}, #{adminnickname,jdbcType=VARCHAR}, 
       #{sex,jdbcType=INTEGER}, #{age,jdbcType=INTEGER}, #{registtime,jdbcType=TIMESTAMP}, 
       #{balance,jdbcType=DECIMAL}, #{admintel,jdbcType=VARCHAR}, #{adminemail,jdbcType=VARCHAR}, 
-      #{admininfo,jdbcType=VARCHAR}, #{adminpwd,jdbcType=VARCHAR})
+      #{admininfo,jdbcType=VARCHAR},
+      #{adminpwd,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.emall.spring.entity.Admin" >
     insert into admin
@@ -71,7 +71,7 @@
       <if test="admininfo != null" >
         admininfo,
       </if>
-      <if test="adminpwd != null" >
+      <if test="adminpwd != null">
         adminpwd,
       </if>
     </trim>
@@ -106,7 +106,7 @@
       <if test="admininfo != null" >
         #{admininfo,jdbcType=VARCHAR},
       </if>
-      <if test="adminpwd != null" >
+      <if test="adminpwd != null">
         #{adminpwd,jdbcType=VARCHAR},
       </if>
     </trim>
@@ -141,8 +141,8 @@
       <if test="admininfo != null" >
         admininfo = #{admininfo,jdbcType=VARCHAR},
       </if>
-      <if test="adminpwd != null" >
-        adminpwd = #{adminpwd,jdbcType=VARCHAR},
+      <if test="adminpwd != null">
+        #{adminpwd,jdbcType=VARCHAR},
       </if>
     </set>
     where adminid = #{adminid,jdbcType=VARCHAR}
@@ -161,7 +161,8 @@
       adminpwd = #{adminpwd,jdbcType=VARCHAR}
     where adminid = #{adminid,jdbcType=VARCHAR}
   </update>
-  <select id="selectByTel" resultMap="BaseResultMap">
+
+  <select id="selectByTel" resultMap="BaseResultMap" parameterType="java.lang.String">
     SELECT *
     FROM admin
     WHERE admintel = #{admintel,jdbcType=VARCHAR}

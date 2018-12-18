@@ -133,8 +133,6 @@ public class IndexController {
 
     /**
      * 顾客登陆／注册
-     * @param tel 电话
-     * @param password 密码
      * @param httpSession
      * @return @RequestParam("tel") String tel, @RequestParam("password") String password,
      */

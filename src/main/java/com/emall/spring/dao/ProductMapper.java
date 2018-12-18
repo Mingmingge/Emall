@@ -21,6 +21,8 @@ public interface ProductMapper {
 
     ArrayList<Product> selectAll();
 
+    ArrayList<Product> selectPage(int start, int end);
+
     int updateState(Product record);
 
     ArrayList<Product> selectByNameLike(String productname);

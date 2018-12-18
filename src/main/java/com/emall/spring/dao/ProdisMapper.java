@@ -18,4 +18,6 @@ public interface ProdisMapper {
     int updateByPrimaryKey(Prodis record);
 
     Prodis selectByproductid(String productid);
+
+    int deleteByProductID(String id);
 }

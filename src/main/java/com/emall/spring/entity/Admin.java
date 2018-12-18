@@ -26,6 +26,14 @@ public class Admin {
 
     private String adminpwd;
 
+    public String getAdminpwd() {
+        return adminpwd;
+    }
+
+    public void setAdminpwd(String adminpwd) {
+        this.adminpwd = adminpwd;
+    }
+
     public String getAdminid() {
         return adminid;
     }
@@ -104,13 +112,5 @@ public class Admin {
 
     public void setAdmininfo(String admininfo) {
         this.admininfo = admininfo;
-    }
-
-    public String getAdminpwd() {
-        return adminpwd;
-    }
-
-    public void setAdminpwd(String adminpwd) {
-        this.adminpwd = adminpwd;
     }
 }
