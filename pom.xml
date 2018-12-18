@@ -6,8 +6,7 @@
 	<groupId>com.emall</groupId>
 	<artifactId>spring</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
-	<!--<packaging>war</packaging>-->
+	<packaging>war</packaging>
 
 	<name>spring</name>
 	<description>Demo project for Spring Boot</description>
@@ -74,7 +73,7 @@
         </dependency>
 	</dependencies>
 	<build>
-		<finalName>emalltwo</finalName>
+		<finalName>emall</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
