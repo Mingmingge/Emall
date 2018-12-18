@@ -775,3 +775,27 @@ Caused by: java.lang.ClassNotFoundException: Cannot find class: com.emall.spring
 2018-12-08 15:29:46.178  INFO 813 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
 2018-12-08 15:29:46.180  INFO 813 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2018-12-08 15:29:46.190  INFO 813 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-12-18 14:37:53.129  INFO 2203 --- [main] com.emall.spring.Application             : Starting Application on My-MacBook-Pro.local with PID 2203 (started by Nick in /Users/hulimin/大三学习/需求分析/Emall/Emall)
+2018-12-18 14:37:53.134  INFO 2203 --- [main] com.emall.spring.Application             : No active profile set, falling back to default profiles: default
+2018-12-18 14:37:54.226  INFO 2203 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-12-18 14:37:54.245  INFO 2203 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-12-18 14:37:54.246  INFO 2203 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-12-18 14:37:54.251  INFO 2203 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/hulimin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-12-18 14:37:54.361  INFO 2203 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-12-18 14:37:54.361  INFO 2203 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1186 ms
+2018-12-18 14:37:54.384  INFO 2203 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-12-18 14:37:54.387  INFO 2203 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-18 14:37:54.387  INFO 2203 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-18 14:37:54.388  INFO 2203 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2018-12-18 14:37:54.388  INFO 2203 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-18 14:37:54.388  INFO 2203 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2018-12-18 14:37:54.920  INFO 2203 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-18 14:37:55.261  INFO 2203 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-12-18 14:37:55.265  INFO 2203 --- [main] com.emall.spring.Application             : Started Application in 17.422 seconds (JVM running for 28.091)
+2018-12-18 14:38:04.361  INFO 2203 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-12-18 14:38:04.365  INFO 2203 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2018-12-18 14:38:04.377  INFO 2203 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2018-12-18 14:38:04.417  WARN 2203 --- [http-nio-8080-exec-2] o.s.web.servlet.PageNotFound             : No mapping for POST /productclass/selectall
+2018-12-18 14:38:04.452  INFO 2203 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-12-18 14:38:06.337  INFO 2203 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-12-18 14:38:09.587  WARN 2203 --- [http-nio-8080-exec-4] o.s.web.servlet.PageNotFound             : No mapping for POST /productclass/selectall
