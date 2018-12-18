@@ -16,4 +16,8 @@ public interface ProdisMapper {
     int updateByPrimaryKeySelective(Prodis record);
 
     int updateByPrimaryKey(Prodis record);
+
+    Prodis selectByproductid(String productid);
+
+    int deleteByProductID(String id);
 }

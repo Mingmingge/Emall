@@ -1,5 +1,6 @@
 package com.emall.spring.entity;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 public class Order {
@@ -13,7 +14,7 @@ public class Order {
 
     private String expresstel;
 
-    private Long orderprice;
+    private BigDecimal orderprice;
 
     private Integer state;
 
@@ -61,11 +62,11 @@ public class Order {
         this.expresstel = expresstel;
     }
 
-    public Long getOrderprice() {
+    public BigDecimal getOrderprice() {
         return orderprice;
     }
 
-    public void setOrderprice(Long orderprice) {
+    public void setOrderprice(BigDecimal orderprice) {
         this.orderprice = orderprice;
     }
 

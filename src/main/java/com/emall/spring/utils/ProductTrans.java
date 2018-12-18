@@ -1,13 +1,12 @@
-package com.emall.spring.entity;
+package com.emall.spring.utils;
 
-import java.math.BigDecimal;
+public class ProductTrans {
 
-public class Product {
     private String productid;
 
     private String productname;
 
-    private BigDecimal price;
+    private Long price;
 
     private String productclass;
 
@@ -18,6 +17,8 @@ public class Product {
     private Integer status;
 
     private Integer nums;
+
+    private Integer num;
 
     public String getProductid() {
         return productid;
@@ -35,11 +36,11 @@ public class Product {
         this.productname = productname;
     }
 
-    public BigDecimal getPrice() {
+    public Long getPrice() {
         return price;
     }
 
-    public void setPrice(BigDecimal price) {
+    public void setPrice(Long price) {
         this.price = price;
     }
 
@@ -83,17 +84,11 @@ public class Product {
         this.nums = nums;
     }
 
-    @Override
-    public String toString() {
-        return "{" +
-                "productid:'" + productid + '\'' +
-                ", productname:'" + productname + '\'' +
-                ", price:'" + price +'\''+
-                ", productclass:'" + productclass + '\'' +
-                ", imagedir:'" + imagedir + '\'' +
-                ", info:'" + info + '\'' +
-                ", status:'" + status + '\''+
-                ", nums:'" + nums +'\''+
-                '}';
+    public Integer getNum() {
+        return num;
+    }
+
+    public void setNum(Integer num) {
+        this.num = num;
     }
 }

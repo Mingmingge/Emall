@@ -1,5 +1,6 @@
 package com.emall.spring.entity;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 public class Admin {
@@ -15,13 +16,23 @@ public class Admin {
 
     private Date registtime;
 
-    private Long balance;
+    private BigDecimal balance;
 
     private String admintel;
 
     private String adminemail;
 
     private String admininfo;
+
+    private String adminpwd;
+
+    public String getAdminpwd() {
+        return adminpwd;
+    }
+
+    public void setAdminpwd(String adminpwd) {
+        this.adminpwd = adminpwd;
+    }
 
     public String getAdminid() {
         return adminid;
@@ -71,11 +82,11 @@ public class Admin {
         this.registtime = registtime;
     }
 
-    public Long getBalance() {
+    public BigDecimal getBalance() {
         return balance;
     }
 
-    public void setBalance(Long balance) {
+    public void setBalance(BigDecimal balance) {
         this.balance = balance;
     }
 

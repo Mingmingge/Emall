@@ -1,23 +1,17 @@
 package com.emall.spring.controller;
 
 import com.emall.spring.entity.Admin;
+import com.emall.spring.entity.Customer;
 import com.emall.spring.entity.Distribute;
-import com.emall.spring.entity.Product;
 import com.emall.spring.services.AdminService;
+import com.emall.spring.services.CustomerService;
 import com.emall.spring.services.DistributeService;
-import com.emall.spring.services.Productservice;
 import com.emall.spring.utils.DateToDatetime;
-import com.emall.spring.utils.FileUplaod;
 import net.sf.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.multipart.MultipartFile;
-
 import javax.servlet.http.HttpSession;
-import java.sql.Timestamp;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
+import java.math.BigDecimal;
 import java.util.UUID;
 
 @RestController
@@ -30,6 +24,9 @@ public class IndexController {
     @Autowired
     private DistributeService distributeService;
 
+    @Autowired
+    private CustomerService customerService;
+
 
     /**
      * 测试数据库以及mybatis
@@ -37,7 +34,7 @@ public class IndexController {
      * @return 返回插入结果，json型
      */
     @RequestMapping(value = "/insertadmin", method = RequestMethod.GET)
-    public JSONObject insertAdmin(@RequestParam("name") String name) {
+    public JSONObject insertAdmin(@RequestParam("name") String name, @RequestParam("balance") String balance) {
 
         JSONObject jsonObject = new JSONObject();
         Admin admin = new Admin();
@@ -45,6 +42,7 @@ public class IndexController {
         admin.setRegisttime(DateToDatetime.dateToDatetimeNow());
         admin.setAdminname(name);
         admin.setAdminid(uuid);
+        admin.setBalance(BigDecimal.valueOf(0));
         try {
             adminService.insert(admin);
             jsonObject.put("key", "插入成功！其ID为 "+uuid);
@@ -131,5 +129,48 @@ public class IndexController {
         }
         return jsonObject;
     }
+
+    /**
+     * 顾客登陆／注册
+     * @param httpSession
+     * @return
+     */
+
+    @RequestMapping(value = "/customerlogin", method = RequestMethod.POST)
+    public JSONObject customertLogin(@RequestParam("tel") String tel, @RequestParam("password") String password, HttpSession httpSession) {
+        JSONObject jsonObject = new JSONObject();
+        Customer record = customerService.selectByTel(tel);
+        if (record == null) {
+            Customer customer = new Customer();
+            customer.setCustomerid(UUID.randomUUID().toString().toLowerCase());
+            customer.setNickname("还没有昵称呢");
+            customer.setCustomerpassword(password.trim().replace(" ", ""));
+            customer.setTel(tel);
+            customer.setRegistiontime(DateToDatetime.dateToDatetimeNow());
+            customer.setBlance(BigDecimal.valueOf(0));
+            customer.setCredit("信用一般");
+            try {
+                customerService.insert(customer);
+                httpSession.setAttribute("customer", customer);
+                jsonObject.put("result", 1);
+                jsonObject.put("customer", customer);
+            } catch (Exception e) {
+                System.out.println("顾客登陆异常");
+                e.printStackTrace();
+            }
+
+        } else {
+            if (record.getTel().equals(tel)) {
+               httpSession.setAttribute("customer", record);
+               jsonObject.put("result", 1);
+               jsonObject.put("customer", record);
+            } else {
+                jsonObject.put("result", 0);
+            }
+        }
+        return jsonObject;
+    }
+
+
 
 }

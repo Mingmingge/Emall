@@ -20,4 +20,6 @@ public interface CustomerMapper {
     int updateByPrimaryKey(Customer record);
 
     ArrayList<Customer> selectAll();
+
+    Customer selectByTel(String tel);
 }

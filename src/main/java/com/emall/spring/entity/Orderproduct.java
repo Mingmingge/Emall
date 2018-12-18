@@ -1,5 +1,7 @@
 package com.emall.spring.entity;
 
+import java.math.BigDecimal;
+
 public class Orderproduct {
     private String uuid;
 
@@ -9,7 +11,7 @@ public class Orderproduct {
 
     private Integer count;
 
-    private Long countprice;
+    private BigDecimal countprice;
 
     public String getUuid() {
         return uuid;
@@ -43,11 +45,11 @@ public class Orderproduct {
         this.count = count;
     }
 
-    public Long getCountprice() {
+    public BigDecimal getCountprice() {
         return countprice;
     }
 
-    public void setCountprice(Long countprice) {
+    public void setCountprice(BigDecimal countprice) {
         this.countprice = countprice;
     }
 }

@@ -140,4 +140,10 @@
     FROM
     customer
   </select>
+  <select id="selectByTel" resultMap="BaseResultMap">
+    SELECT *
+    FROM
+    customer
+    WHERE tel = #{tel,jdbcType=VARCHAR}
+  </select>
 </mapper>
