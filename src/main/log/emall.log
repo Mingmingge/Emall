@@ -48,3 +48,27 @@
 2018-12-11 15:11:28.405  INFO 1924 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
 2018-12-11 15:11:28.409  INFO 1924 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2018-12-11 15:11:28.425  INFO 1924 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-12-18 14:21:34.026  INFO 1990 --- [main] com.emall.spring.Application             : Starting Application on My-MacBook-Pro.local with PID 1990 (started by Nick in /Users/hulimin/大三学习/需求分析/Emall/Emall)
+2018-12-18 14:21:34.029  INFO 1990 --- [main] com.emall.spring.Application             : No active profile set, falling back to default profiles: default
+2018-12-18 14:21:35.102  INFO 1990 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-12-18 14:21:35.122  INFO 1990 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-12-18 14:21:35.123  INFO 1990 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-12-18 14:21:35.131  INFO 1990 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/hulimin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-12-18 14:21:35.245  INFO 1990 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-12-18 14:21:35.245  INFO 1990 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1180 ms
+2018-12-18 14:21:35.280  INFO 1990 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-12-18 14:21:35.284  INFO 1990 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-18 14:21:35.284  INFO 1990 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-18 14:21:35.284  INFO 1990 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2018-12-18 14:21:35.284  INFO 1990 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-18 14:21:35.285  INFO 1990 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2018-12-18 14:21:35.851  INFO 1990 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-18 14:21:36.179  INFO 1990 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-12-18 14:21:36.182  INFO 1990 --- [main] com.emall.spring.Application             : Started Application in 17.467 seconds (JVM running for 28.205)
+2018-12-18 14:21:58.382  INFO 1990 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-12-18 14:21:58.385  INFO 1990 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2018-12-18 14:21:58.396  INFO 1990 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2018-12-18 14:21:58.449  WARN 1990 --- [http-nio-8080-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /product/searchhome
+2018-12-18 14:21:58.488  INFO 1990 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-12-18 14:22:02.428  INFO 1990 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-12-18 14:22:06.389  WARN 1990 --- [http-nio-8080-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /product/searchhome
