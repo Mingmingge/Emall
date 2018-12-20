@@ -4,7 +4,6 @@ import com.emall.spring.dao.ProdisMapper;
 import com.emall.spring.entity.Prodis;
 import com.emall.spring.entity.Product;
 import com.emall.spring.entity.Productclass;
-import com.emall.spring.services.ProdisService;
 import com.emall.spring.services.ProductclassService;
 import com.emall.spring.services.Productservice;
 import com.emall.spring.utils.FileUplaod;
@@ -25,7 +24,8 @@ public class ProductController {
     private Productservice productservice;
 
     @Autowired
-    private ProdisService prodisMapper;
+    private ProdisMapper prodisMapper;
+
 
     @Autowired
     private ProductclassService productclassService;
@@ -40,14 +40,13 @@ public class ProductController {
      * 测试通过
      */
     @RequestMapping(value = "/product/insert", method = RequestMethod.POST)
-    public JSONObject productAdd(@RequestParam(value = "productimg", required = false) MultipartFile productimg, @ModelAttribute Product product, String productadmin) {
+    public JSONObject productAdd(@RequestParam(value = "productimg", required = false) MultipartFile productimg, @ModelAttribute Product product, @RequestParam("productadmin") String productadmin) {
         JSONObject jsonObject = new JSONObject();
         FileUplaod fileUplaod = new FileUplaod();
         Prodis prodis = new Prodis();
         StringBuilder stringBuilder = new StringBuilder();
         String parentpath = "src/main/resources/static/productimg/";
         String productuuid = UUID.randomUUID().toString().toLowerCase();
-        // 通过session获得供应商id
         String prodisuuid = UUID.randomUUID().toString().toLowerCase();
         String imgname = stringBuilder.append(productuuid).append(".png").toString();
         product.setProductid(productuuid);
@@ -69,33 +68,6 @@ public class ProductController {
         return jsonObject;
     }
 
-    /**
-     * 产品下架, 产品表和经销商表
-     * @param id 产品id
-     * @return 成功 失败
-     */
-
-    @RequestMapping(value = "/product/deletebyid", method = RequestMethod.POST)
-    public JSONObject deleteByid(@RequestParam(value = "id") String id) {
-        JSONObject jsonObject = new JSONObject();
-        System.out.println("id = [" + id + "]");
-        try{
-            Product list = productservice.selectByPrimaryKey(id);
-            if (list == null) {
-                jsonObject.put("result", 0);
-            }
-            else {
-                productservice.deleteByPrimaryKey(id);
-                prodisMapper.deleteByProductID(id);
-                jsonObject.put("result", 1);
-            }
-        }
-        catch (Exception e) {
-            e.printStackTrace();
-            jsonObject.put("result", 0);
-        }
-        return jsonObject;
-    }
 
     /**
      * 修改产品信息
@@ -198,32 +170,6 @@ public class ProductController {
     }
 
     /**
-     * 查询部分产品信息
-     * @param page 分页
-     * @return 成功 失败 实体列表
-     * 测试通过
-     */
-    @RequestMapping(value = "/product/searchPage", method = RequestMethod.GET)
-    public JSONObject searchPage(@RequestParam(value = "page") int page) {
-        JSONObject jsonObject = new JSONObject();
-        try {
-            int start = page*10-10;
-            int end = page*10-1;
-            ArrayList list = productservice.selectPage(start, end);
-            if(list.isEmpty())
-                jsonObject.put("result", 0);
-            else {
-                jsonObject.put("result", 1);
-                jsonObject.put("productlist", list);
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-            jsonObject.put("result", 0);
-        }
-        return jsonObject;
-    }
-
-    /**
      * 模糊查询productname
      * @param productname name
      * @return 成功 失败 实体列表
@@ -268,29 +214,32 @@ public class ProductController {
     }
 
     /**
-     * 产品类别
-     * @return 返回产品类别
+     * 服务于home页
+     * @return
      */
-    @RequestMapping(value = "/product/searchclasses", method = RequestMethod.GET)
-    public JSONObject searchClasses() {
-        int count = 0;
+
+    @RequestMapping(value = "/product/searchhome", method = RequestMethod.GET)
+    public JSONObject searchhome() {
         JSONObject jsonObject = new JSONObject();
-        List<JSONObject> classes = new ArrayList<>();
+        List<JSONObject> goodsList = new ArrayList<>();
         ArrayList<Productclass> productclassArrayList = productclassService.selectAll();
         Iterator<Productclass> productclassIterator = productclassArrayList.iterator();
         while (productclassIterator.hasNext()) {
             Productclass productclass = productclassIterator.next();
-            JSONObject classesJsonObjest = new JSONObject();
-            int id = productclass.getProclassid();
-            String name = productclass.getProclassname();
-            classesJsonObjest.put("id", id);
-            classesJsonObjest.put("name", name);
-            classes.add(classesJsonObjest);
-            count++;
+            JSONObject jsonObject1 = new JSONObject();
+            ArrayList<Product> productArrayList = productservice.selectByProductclass(productclass.getProclassname());
+            if (productArrayList != null) {
+                jsonObject1.put("type", productclass.getProclassname());
+                jsonObject1.put("list", productArrayList);
+                JSONObject jsonObject2 = new JSONObject();
+                jsonObject2.put("goods", jsonObject1);
+                goodsList.add(jsonObject2);
+            }
+
         }
-        jsonObject.put("classes", classes);
-        jsonObject.put("result", count);
+        jsonObject.put("goodsList", goodsList);
         return jsonObject;
     }
+
 
 }

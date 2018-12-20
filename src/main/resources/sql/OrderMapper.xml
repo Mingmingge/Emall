@@ -144,4 +144,10 @@
     FROM
     ordermain
   </select>
+  <select id="selectByreciver" resultMap="BaseResultMap">
+    SELECT *
+    FROM
+    ordermain
+    WHERE reciveid = #{reciveid,jdbcType=VARCHAR}
+  </select>
 </mapper>

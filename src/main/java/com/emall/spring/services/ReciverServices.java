@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+
 @Service
 public class ReciverServices implements ReciverMapper{
 
@@ -40,5 +42,10 @@ public class ReciverServices implements ReciverMapper{
     @Override
     public int updateByPrimaryKey(Reciver record) {
         return reciverMapper.updateByPrimaryKey(record);
+    }
+
+    @Override
+    public ArrayList<Reciver> selectAll(String customerid) {
+        return reciverMapper.selectAll(customerid);
     }
 }

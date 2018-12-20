@@ -1,11 +1,13 @@
 package com.emall.spring.entity;
 
+import java.math.BigDecimal;
+
 public class Product {
     private String productid;
 
     private String productname;
 
-    private Long price;
+    private BigDecimal price;
 
     private String productclass;
 
@@ -33,11 +35,11 @@ public class Product {
         this.productname = productname;
     }
 
-    public Long getPrice() {
+    public BigDecimal getPrice() {
         return price;
     }
 
-    public void setPrice(Long price) {
+    public void setPrice(BigDecimal price) {
         this.price = price;
     }
 

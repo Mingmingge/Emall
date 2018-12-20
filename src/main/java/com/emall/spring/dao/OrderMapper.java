@@ -20,4 +20,6 @@ public interface OrderMapper {
     int updateByPrimaryKey(Order record);
 
     ArrayList<Order> selectAll();
+
+    ArrayList<Order> selectByreciver(String reciverid);
 }
