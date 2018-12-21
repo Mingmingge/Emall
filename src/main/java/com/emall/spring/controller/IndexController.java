@@ -133,12 +133,12 @@ public class IndexController {
 
     /**
      * 顾客登陆／注册
-     * @param httpSession
+     * @param
      * @return
      */
 
     @RequestMapping(value = "/customerlogin", method = RequestMethod.POST)
-    public JSONObject customertLogin(@RequestBody Map map, HttpSession httpSession) {
+    public JSONObject customertLogin(@RequestBody Map map) {
         String tel = (String) map.get("tel");
         String password = (String) map.get("password");
         JSONObject jsonObject = new JSONObject();
@@ -154,9 +154,14 @@ public class IndexController {
             customer.setCredit("信用一般");
             try {
                 customerService.insert(customer);
-                httpSession.setAttribute("customer", customer);
+//                httpSession.setAttribute("customer", customer);
                 jsonObject.put("result", 1);
                 jsonObject.put("customer", customer);
+//                if (httpSession.getAttribute("customer") != null) {
+////                    System.out.println(((Customer)httpSession.getAttribute("customer")).getCredit());
+//                } else {
+//                    System.out.println("session is null");
+//                }
             } catch (Exception e) {
                 System.out.println("顾客登陆异常");
                 e.printStackTrace();
@@ -164,9 +169,14 @@ public class IndexController {
 
         } else {
             if (record.getTel().equals(tel)) {
-               httpSession.setAttribute("customer", record);
+//               httpSession.setAttribute("customer", record);
                jsonObject.put("result", 1);
                jsonObject.put("customer", record);
+//                if (httpSession.getAttribute("customer") != null) {
+//                    System.out.println(httpSession.getAttribute("customer").toString());
+//                } else {
+//                    System.out.println("session is null");
+//                }
             } else {
                 jsonObject.put("result", 0);
             }

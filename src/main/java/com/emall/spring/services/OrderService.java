@@ -54,4 +54,9 @@ public class OrderService implements OrderMapper{
     public ArrayList<Order> selectByreciver(String reciverid) {
         return orderMapper.selectByreciver(reciverid);
     }
+
+    @Override
+    public ArrayList<Order> selectByreciverandstate(Order order) {
+        return orderMapper.selectByreciverandstate(order);
+    }
 }

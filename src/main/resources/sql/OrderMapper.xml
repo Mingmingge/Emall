@@ -150,4 +150,10 @@
     ordermain
     WHERE reciveid = #{reciveid,jdbcType=VARCHAR}
   </select>
+  <select id="selectByreciverandstate" resultMap="BaseResultMap">
+    select *
+    from
+    ordermain
+    WHERE reciveid = #{reciveid,jdbcType=VARCHAR} AND state = #{state,jdbcType=INTEGER}
+  </select>
 </mapper>
