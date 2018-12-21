@@ -6,6 +6,7 @@ import com.emall.spring.entity.Orderproduct;
 import com.emall.spring.entity.Product;
 import com.emall.spring.services.*;
 import com.emall.spring.utils.DateToDatetime;
+import com.emall.spring.utils.TokenAuth;
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -240,6 +241,11 @@ public class MingController {
     }
 
 
+    /**
+     * 订单查询
+     * @param map
+     * @return
+     */
     @RequestMapping(value = "/searchorder", method = RequestMethod.POST)
     public JSONObject searchOrder(@RequestBody Map map) {
         JSONObject jsonObject = new JSONObject();
@@ -259,11 +265,29 @@ public class MingController {
                     System.out.println(orderArrayList);
                     Iterator<Order> orderIterator  = orderArrayList.iterator();
                     while (orderIterator.hasNext()) {
+                        int count = 0;
                         Order order1 = orderIterator.next();
                         JSONObject jsonObject1 = new JSONObject();
                         jsonObject1.put("ordermain", order1);
                         orderproductArrayList = orderproductService.selectByOrderid(order1.getOrderid());
+                        List<Product> products = new ArrayList<>();
                         if (orderproductArrayList != null) {
+                            //
+                            Iterator<Orderproduct> orderproductIterator = orderproductArrayList.iterator();
+                            while (orderproductIterator.hasNext()) {
+                                Orderproduct orderproduct = orderproductIterator.next();
+                                count = count+orderproduct.getCount();
+                                Product product = productservice.selectByPrimaryKey(orderproduct.getProductid());
+                                products.add(product);
+                            }
+                            jsonObject1.put("productlist", products);
+                            jsonObject1.put("ordercount", count);
+
+
+
+
+
+                            //
                             jsonObject1.put("orderlist", orderproductArrayList);
                         }
                         orderlist.add(jsonObject1);
@@ -288,4 +312,32 @@ public class MingController {
         return jsonObject;
 
     }
+
+
+    /**
+     * 确认收货
+     * @param map
+     * @return
+     */
+    @RequestMapping(value = "/confirmorder", method = RequestMethod.POST)
+    public JSONObject confirmOrder(@RequestBody Map map) {
+        JSONObject jsonObject = new JSONObject();
+        if (TokenAuth.auth(map)) {
+            JSONObject orderjsonobject = JSONObject.fromObject(map.get("ordermain"));
+            Order order = new Order();
+            order.setState(1);
+            order.setOrderid(orderjsonobject.get("orderid").toString());
+            try {
+                orderService.updateByPrimaryKeySelective(order);
+                jsonObject.put("result", 1);
+            } catch (Exception e) {
+                e.printStackTrace();
+                jsonObject.put("result", 0);
+            }
+        } else {
+            jsonObject.put("result", "-1");
+        }
+        return jsonObject;
+    }
+
 }
