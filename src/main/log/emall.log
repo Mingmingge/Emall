@@ -1,53 +1,29 @@
-2018-12-20 08:34:45.993  INFO 1217 --- [main] com.emall.spring.Application             : Starting Application on My-MacBook-Pro.local with PID 1217 (started by Nick in /Users/hulimin/大三学习/需求分析/Emall/Emall)
-2018-12-20 08:34:46.001  INFO 1217 --- [main] com.emall.spring.Application             : No active profile set, falling back to default profiles: default
-2018-12-20 08:34:47.457  INFO 1217 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2018-12-20 08:34:47.473  INFO 1217 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2018-12-20 08:34:47.473  INFO 1217 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
-2018-12-20 08:34:47.480  INFO 1217 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/hulimin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
-2018-12-20 08:34:47.571  INFO 1217 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2018-12-20 08:34:47.571  INFO 1217 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1516 ms
-2018-12-20 08:34:47.602  INFO 1217 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
-2018-12-20 08:34:47.605  INFO 1217 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-12-20 08:34:47.606  INFO 1217 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-12-20 08:34:47.606  INFO 1217 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
-2018-12-20 08:34:47.606  INFO 1217 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
-2018-12-20 08:34:47.606  INFO 1217 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
-2018-12-20 08:34:48.345  INFO 1217 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2018-12-20 08:34:48.754  INFO 1217 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2018-12-20 08:34:48.758  INFO 1217 --- [main] com.emall.spring.Application             : Started Application in 18.167 seconds (JVM running for 28.975)
-2018-12-20 08:36:09.204  INFO 1217 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2018-12-20 08:36:09.204  INFO 1217 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2018-12-20 08:36:09.213  INFO 1217 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
-2018-12-20 08:57:11.159  INFO 1217 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2018-12-20 08:57:40.766  INFO 1263 --- [main] com.emall.spring.Application             : Starting Application on My-MacBook-Pro.local with PID 1263 (started by Nick in /Users/hulimin/大三学习/需求分析/Emall/Emall)
-2018-12-20 08:57:40.770  INFO 1263 --- [main] com.emall.spring.Application             : No active profile set, falling back to default profiles: default
-2018-12-20 08:57:41.738  INFO 1263 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2018-12-20 08:57:41.753  INFO 1263 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2018-12-20 08:57:41.753  INFO 1263 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
-2018-12-20 08:57:41.759  INFO 1263 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/hulimin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
-2018-12-20 08:57:41.845  INFO 1263 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2018-12-20 08:57:41.846  INFO 1263 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1048 ms
-2018-12-20 08:57:41.883  INFO 1263 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
-2018-12-20 08:57:41.887  INFO 1263 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-12-20 08:57:41.888  INFO 1263 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-12-20 08:57:41.888  INFO 1263 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
-2018-12-20 08:57:41.888  INFO 1263 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
-2018-12-20 08:57:41.889  INFO 1263 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
-2018-12-20 08:57:42.484  INFO 1263 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2018-12-20 08:57:42.916  INFO 1263 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2018-12-20 08:57:42.921  INFO 1263 --- [main] com.emall.spring.Application             : Started Application in 17.427 seconds (JVM running for 28.001)
-2018-12-20 09:01:01.066  INFO 1263 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2018-12-20 09:01:01.067  INFO 1263 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2018-12-20 09:01:01.073  INFO 1263 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
-2018-12-20 09:02:27.476 ERROR 1263 --- [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is net.sf.json.JSONException: A JSONArray text must start with '[' at character 1 of {"list":[{"imagedir":"http://guxiaoyue.cn/emall/static/productimg/clothes1.png","productname":"productnam","num":"23","price":"2322"},{"imagedir":"http://aoyue.cn/emall/static/productimg/clothes1.png","productname":"productnam","num":"23","price":"2322"}]}] with root cause
+2018-12-21 09:44:03.945  INFO 703 --- [main] com.emall.spring.Application             : Starting Application on My-MacBook-Pro.local with PID 703 (started by Nick in /Users/hulimin/大三学习/需求分析/Emall/Emall)
+2018-12-21 09:44:03.952  INFO 703 --- [main] com.emall.spring.Application             : No active profile set, falling back to default profiles: default
+2018-12-21 09:44:05.259  INFO 703 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-12-21 09:44:05.281  INFO 703 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-12-21 09:44:05.281  INFO 703 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-12-21 09:44:05.290  INFO 703 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/hulimin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-12-21 09:44:05.372  INFO 703 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-12-21 09:44:05.372  INFO 703 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1372 ms
+2018-12-21 09:44:05.410  INFO 703 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-12-21 09:44:05.415  INFO 703 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-21 09:44:05.416  INFO 703 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-21 09:44:05.416  INFO 703 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2018-12-21 09:44:05.416  INFO 703 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-21 09:44:05.416  INFO 703 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2018-12-21 09:44:06.247  INFO 703 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-21 09:44:06.491  INFO 703 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-12-21 09:44:06.494  INFO 703 --- [main] com.emall.spring.Application             : Started Application in 17.928 seconds (JVM running for 28.809)
+2018-12-21 09:46:37.862  INFO 703 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-12-21 09:46:37.863  INFO 703 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2018-12-21 09:46:37.876  INFO 703 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2018-12-21 09:47:27.758  INFO 703 --- [http-nio-8080-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-12-21 09:47:28.600  INFO 703 --- [http-nio-8080-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-12-21 09:49:06.400 ERROR 703 --- [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 
-net.sf.json.JSONException: A JSONArray text must start with '[' at character 1 of {"list":[{"imagedir":"http://guxiaoyue.cn/emall/static/productimg/clothes1.png","productname":"productnam","num":"23","price":"2322"},{"imagedir":"http://aoyue.cn/emall/static/productimg/clothes1.png","productname":"productnam","num":"23","price":"2322"}]}
-	at net.sf.json.util.JSONTokener.syntaxError(JSONTokener.java:499) ~[json-lib-2.4-jdk15.jar:na]
-	at net.sf.json.JSONArray._fromJSONTokener(JSONArray.java:1116) ~[json-lib-2.4-jdk15.jar:na]
-	at net.sf.json.JSONArray._fromString(JSONArray.java:1197) ~[json-lib-2.4-jdk15.jar:na]
-	at net.sf.json.JSONArray.fromObject(JSONArray.java:127) ~[json-lib-2.4-jdk15.jar:na]
-	at net.sf.json.JSONArray.fromObject(JSONArray.java:105) ~[json-lib-2.4-jdk15.jar:na]
-	at com.emall.spring.controller.MingController.re(MingController.java:39) ~[classes/:na]
+java.lang.NullPointerException: null
+	at com.emall.spring.controller.MingController.re(MingController.java:79) ~[classes/:na]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
@@ -61,8 +37,8 @@ net.sf.json.JSONException: A JSONArray text must start with '[' at character 1 o
 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:998) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:890) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:901) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:875) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
@@ -107,458 +83,184 @@ net.sf.json.JSONException: A JSONArray text must start with '[' at character 1 o
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.12.jar:9.0.12]
 	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
 
-2018-12-20 09:18:47.155  WARN 1263 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
-2018-12-20 09:20:16.380  WARN 1263 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'list' is not present]
-2018-12-20 09:21:46.522  WARN 1263 --- [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'list' is not present]
-2018-12-20 09:22:45.312  WARN 1263 --- [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'list' is not present]
-2018-12-20 09:22:52.550  WARN 1263 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'list' is not present]
-2018-12-20 09:22:54.717  WARN 1263 --- [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'list' is not present]
-2018-12-20 09:22:56.536  WARN 1263 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'list' is not present]
-2018-12-20 09:22:58.610  WARN 1263 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'list' is not present]
-2018-12-20 09:27:45.870  WARN 1263 --- [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'list' is not present]
-2018-12-20 09:27:52.713  WARN 1263 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'list' is not present]
-2018-12-20 09:31:12.032  INFO 1263 --- [http-nio-8080-exec-6] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
- Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
-
-java.lang.IllegalArgumentException: Invalid character found in the request target. The valid characters are defined in RFC 7230 and RFC 3986
-	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:467) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:294) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_131]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_131]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
-
-2018-12-20 09:49:59.073  WARN 1263 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'list' is not present]
-2018-12-20 09:51:42.640 ERROR 1263 --- [http-nio-8080-exec-10] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is net.sf.json.JSONException: A JSONArray text must start with '[' at character 1 of {"imagedir":"http://localhost:8080/static/productimg/clothes2.png","info":"晚餐都是 v 错误的","nums":123,"price":11,"productclass":"休闲零食","productid":"clothes1","productname":"碧根果","status":0,"num":1,"chooseStatus":true}] with root cause
-
-net.sf.json.JSONException: A JSONArray text must start with '[' at character 1 of {"imagedir":"http://localhost:8080/static/productimg/clothes2.png","info":"晚餐都是 v 错误的","nums":123,"price":11,"productclass":"休闲零食","productid":"clothes1","productname":"碧根果","status":0,"num":1,"chooseStatus":true}
-	at net.sf.json.util.JSONTokener.syntaxError(JSONTokener.java:499) ~[json-lib-2.4-jdk15.jar:na]
-	at net.sf.json.JSONArray._fromJSONTokener(JSONArray.java:1116) ~[json-lib-2.4-jdk15.jar:na]
-	at net.sf.json.JSONArray._fromString(JSONArray.java:1197) ~[json-lib-2.4-jdk15.jar:na]
-	at net.sf.json.JSONArray.fromObject(JSONArray.java:127) ~[json-lib-2.4-jdk15.jar:na]
-	at net.sf.json.JSONArray.fromObject(JSONArray.java:105) ~[json-lib-2.4-jdk15.jar:na]
-	at com.emall.spring.controller.MingController.re(MingController.java:39) ~[classes/:na]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:215) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:142) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:998) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:890) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:875) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_131]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_131]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
-
-2018-12-20 10:02:00.580  INFO 1263 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2018-12-20 10:02:30.548  INFO 1603 --- [main] com.emall.spring.Application             : Starting Application on My-MacBook-Pro.local with PID 1603 (started by Nick in /Users/hulimin/大三学习/需求分析/Emall/Emall)
-2018-12-20 10:02:30.552  INFO 1603 --- [main] com.emall.spring.Application             : No active profile set, falling back to default profiles: default
-2018-12-20 10:02:31.858  INFO 1603 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2018-12-20 10:02:31.876  INFO 1603 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2018-12-20 10:02:31.877  INFO 1603 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
-2018-12-20 10:02:31.883  INFO 1603 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/hulimin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
-2018-12-20 10:02:31.974  INFO 1603 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2018-12-20 10:02:31.975  INFO 1603 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1387 ms
-2018-12-20 10:02:32.010  INFO 1603 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
-2018-12-20 10:02:32.014  INFO 1603 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-12-20 10:02:32.014  INFO 1603 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-12-20 10:02:32.014  INFO 1603 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
-2018-12-20 10:02:32.014  INFO 1603 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
-2018-12-20 10:02:32.014  INFO 1603 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
-2018-12-20 10:02:32.752  INFO 1603 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2018-12-20 10:02:33.193  INFO 1603 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2018-12-20 10:02:33.198  INFO 1603 --- [main] com.emall.spring.Application             : Started Application in 17.949 seconds (JVM running for 28.601)
-2018-12-20 10:02:42.943  INFO 1603 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2018-12-20 10:02:42.944  INFO 1603 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2018-12-20 10:02:42.952  INFO 1603 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
-2018-12-20 10:04:39.520  WARN 1603 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'list' is not present]
-2018-12-20 10:06:03.788  INFO 1603 --- [http-nio-8080-exec-6] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
- Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
-
-java.lang.IllegalArgumentException: Invalid character found in the request target. The valid characters are defined in RFC 7230 and RFC 3986
-	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:467) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:294) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_131]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_131]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
-
-2018-12-20 10:25:58.933 ERROR 1603 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is net.sf.json.JSONException: A JSONArray text must start with '[' at character 1 of %5B%7B%22imagedir%22%3A%22http%3A%2F%2Flocalhost%3A8080%2Fstatic%2Fproductimg%2Fclothes2.png%22%2C%22info%22%3A%22%E6%99%9A%E9%A4%90%E9%83%BD%E6%98%AF%20v%20%E9%94%99%E8%AF%AF%E7%9A%84%22%2C%22nums%22%3A123%2C%22price%22%3A11%2C%22productclass%22%3A%22%E4%BC%91%E9%97%B2%E9%9B%B6%E9%A3%9F%22%2C%22productid%22%3A%22clothes1%22%2C%22productname%22%3A%22%E7%A2%A7%E6%A0%B9%E6%9E%9C%22%2C%22status%22%3A0%2C%22num%22%3A1%2C%22chooseStatus%22%3Atrue%7D%5D] with root cause
-
-net.sf.json.JSONException: A JSONArray text must start with '[' at character 1 of %5B%7B%22imagedir%22%3A%22http%3A%2F%2Flocalhost%3A8080%2Fstatic%2Fproductimg%2Fclothes2.png%22%2C%22info%22%3A%22%E6%99%9A%E9%A4%90%E9%83%BD%E6%98%AF%20v%20%E9%94%99%E8%AF%AF%E7%9A%84%22%2C%22nums%22%3A123%2C%22price%22%3A11%2C%22productclass%22%3A%22%E4%BC%91%E9%97%B2%E9%9B%B6%E9%A3%9F%22%2C%22productid%22%3A%22clothes1%22%2C%22productname%22%3A%22%E7%A2%A7%E6%A0%B9%E6%9E%9C%22%2C%22status%22%3A0%2C%22num%22%3A1%2C%22chooseStatus%22%3Atrue%7D%5D
-	at net.sf.json.util.JSONTokener.syntaxError(JSONTokener.java:499) ~[json-lib-2.4-jdk15.jar:na]
-	at net.sf.json.JSONArray._fromJSONTokener(JSONArray.java:1116) ~[json-lib-2.4-jdk15.jar:na]
-	at net.sf.json.JSONArray._fromString(JSONArray.java:1197) ~[json-lib-2.4-jdk15.jar:na]
-	at net.sf.json.JSONArray.fromObject(JSONArray.java:127) ~[json-lib-2.4-jdk15.jar:na]
-	at net.sf.json.JSONArray.fromObject(JSONArray.java:105) ~[json-lib-2.4-jdk15.jar:na]
-	at com.emall.spring.controller.MingController.re(MingController.java:39) ~[classes/:na]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:215) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:142) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:998) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:890) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:875) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_131]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_131]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
-
-2018-12-20 10:27:54.198 ERROR 1603 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is net.sf.json.JSONException: A JSONArray text must start with '[' at character 1 of %5B%7B%22imagedir%22%3A%22http%3A%2F%2Flocalhost%3A8080%2Fstatic%2Fproductimg%2Fclothes2.png%22%2C%22info%22%3A%22%E6%99%9A%E9%A4%90%E9%83%BD%E6%98%AF%20v%20%E9%94%99%E8%AF%AF%E7%9A%84%22%2C%22nums%22%3A123%2C%22price%22%3A11%2C%22productclass%22%3A%22%E4%BC%91%E9%97%B2%E9%9B%B6%E9%A3%9F%22%2C%22productid%22%3A%22clothes1%22%2C%22productname%22%3A%22%E7%A2%A7%E6%A0%B9%E6%9E%9C%22%2C%22status%22%3A0%2C%22num%22%3A1%2C%22chooseStatus%22%3Atrue%7D%5D] with root cause
-
-net.sf.json.JSONException: A JSONArray text must start with '[' at character 1 of %5B%7B%22imagedir%22%3A%22http%3A%2F%2Flocalhost%3A8080%2Fstatic%2Fproductimg%2Fclothes2.png%22%2C%22info%22%3A%22%E6%99%9A%E9%A4%90%E9%83%BD%E6%98%AF%20v%20%E9%94%99%E8%AF%AF%E7%9A%84%22%2C%22nums%22%3A123%2C%22price%22%3A11%2C%22productclass%22%3A%22%E4%BC%91%E9%97%B2%E9%9B%B6%E9%A3%9F%22%2C%22productid%22%3A%22clothes1%22%2C%22productname%22%3A%22%E7%A2%A7%E6%A0%B9%E6%9E%9C%22%2C%22status%22%3A0%2C%22num%22%3A1%2C%22chooseStatus%22%3Atrue%7D%5D
-	at net.sf.json.util.JSONTokener.syntaxError(JSONTokener.java:499) ~[json-lib-2.4-jdk15.jar:na]
-	at net.sf.json.JSONArray._fromJSONTokener(JSONArray.java:1116) ~[json-lib-2.4-jdk15.jar:na]
-	at net.sf.json.JSONArray._fromString(JSONArray.java:1197) ~[json-lib-2.4-jdk15.jar:na]
-	at net.sf.json.JSONArray.fromObject(JSONArray.java:127) ~[json-lib-2.4-jdk15.jar:na]
-	at net.sf.json.JSONArray.fromObject(JSONArray.java:105) ~[json-lib-2.4-jdk15.jar:na]
-	at com.emall.spring.controller.MingController.re(MingController.java:39) ~[classes/:na]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:215) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:142) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:998) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:890) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:875) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_131]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_131]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
-
-2018-12-20 10:29:01.163 ERROR 1603 --- [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is net.sf.json.JSONException: A JSONArray text must start with '[' at character 1 of %5B%7B%22imagedir%22%3A%22http%3A%2F%2Flocalhost%3A8080%2Fstatic%2Fproductimg%2Fclothes2.png%22%2C%22info%22%3A%22%E6%99%9A%E9%A4%90%E9%83%BD%E6%98%AF%20v%20%E9%94%99%E8%AF%AF%E7%9A%84%22%2C%22nums%22%3A123%2C%22price%22%3A11%2C%22productclass%22%3A%22%E4%BC%91%E9%97%B2%E9%9B%B6%E9%A3%9F%22%2C%22productid%22%3A%22clothes1%22%2C%22productname%22%3A%22%E7%A2%A7%E6%A0%B9%E6%9E%9C%22%2C%22status%22%3A0%2C%22num%22%3A1%2C%22chooseStatus%22%3Atrue%7D%5D] with root cause
-
-net.sf.json.JSONException: A JSONArray text must start with '[' at character 1 of %5B%7B%22imagedir%22%3A%22http%3A%2F%2Flocalhost%3A8080%2Fstatic%2Fproductimg%2Fclothes2.png%22%2C%22info%22%3A%22%E6%99%9A%E9%A4%90%E9%83%BD%E6%98%AF%20v%20%E9%94%99%E8%AF%AF%E7%9A%84%22%2C%22nums%22%3A123%2C%22price%22%3A11%2C%22productclass%22%3A%22%E4%BC%91%E9%97%B2%E9%9B%B6%E9%A3%9F%22%2C%22productid%22%3A%22clothes1%22%2C%22productname%22%3A%22%E7%A2%A7%E6%A0%B9%E6%9E%9C%22%2C%22status%22%3A0%2C%22num%22%3A1%2C%22chooseStatus%22%3Atrue%7D%5D
-	at net.sf.json.util.JSONTokener.syntaxError(JSONTokener.java:499) ~[json-lib-2.4-jdk15.jar:na]
-	at net.sf.json.JSONArray._fromJSONTokener(JSONArray.java:1116) ~[json-lib-2.4-jdk15.jar:na]
-	at net.sf.json.JSONArray._fromString(JSONArray.java:1197) ~[json-lib-2.4-jdk15.jar:na]
-	at net.sf.json.JSONArray.fromObject(JSONArray.java:127) ~[json-lib-2.4-jdk15.jar:na]
-	at net.sf.json.JSONArray.fromObject(JSONArray.java:105) ~[json-lib-2.4-jdk15.jar:na]
-	at com.emall.spring.controller.MingController.re(MingController.java:39) ~[classes/:na]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_131]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_131]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_131]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_131]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:215) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:142) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:998) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:890) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:875) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_131]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_131]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
-
-2018-12-20 10:46:49.388  INFO 1603 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2018-12-20 10:47:18.830  INFO 1646 --- [main] com.emall.spring.Application             : Starting Application on My-MacBook-Pro.local with PID 1646 (started by Nick in /Users/hulimin/大三学习/需求分析/Emall/Emall)
-2018-12-20 10:47:18.834  INFO 1646 --- [main] com.emall.spring.Application             : No active profile set, falling back to default profiles: default
-2018-12-20 10:47:19.833  INFO 1646 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2018-12-20 10:47:19.849  INFO 1646 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2018-12-20 10:47:19.850  INFO 1646 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
-2018-12-20 10:47:19.857  INFO 1646 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/hulimin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
-2018-12-20 10:47:19.972  INFO 1646 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2018-12-20 10:47:19.972  INFO 1646 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1105 ms
-2018-12-20 10:47:20.006  INFO 1646 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
-2018-12-20 10:47:20.010  INFO 1646 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-12-20 10:47:20.010  INFO 1646 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-12-20 10:47:20.010  INFO 1646 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
-2018-12-20 10:47:20.011  INFO 1646 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
-2018-12-20 10:47:20.011  INFO 1646 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
-2018-12-20 10:47:20.669  INFO 1646 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2018-12-20 10:47:21.012  INFO 1646 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2018-12-20 10:47:21.016  INFO 1646 --- [main] com.emall.spring.Application             : Started Application in 17.461 seconds (JVM running for 28.058)
-2018-12-20 10:48:00.336  INFO 1646 --- [http-nio-8080-exec-1] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
- Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
-
-java.lang.IllegalArgumentException: Invalid character found in the request target. The valid characters are defined in RFC 7230 and RFC 3986
-	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:467) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:294) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_131]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_131]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
-
-2018-12-20 11:00:24.280  INFO 1646 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2018-12-20 11:00:54.085  INFO 1661 --- [main] com.emall.spring.Application             : Starting Application on My-MacBook-Pro.local with PID 1661 (started by Nick in /Users/hulimin/大三学习/需求分析/Emall/Emall)
-2018-12-20 11:00:54.088  INFO 1661 --- [main] com.emall.spring.Application             : No active profile set, falling back to default profiles: default
-2018-12-20 11:00:55.323  INFO 1661 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2018-12-20 11:00:55.337  INFO 1661 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2018-12-20 11:00:55.337  INFO 1661 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
-2018-12-20 11:00:55.342  INFO 1661 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/hulimin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
-2018-12-20 11:00:55.424  INFO 1661 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2018-12-20 11:00:55.424  INFO 1661 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1289 ms
-2018-12-20 11:00:55.456  INFO 1661 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
-2018-12-20 11:00:55.461  INFO 1661 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-12-20 11:00:55.461  INFO 1661 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-12-20 11:00:55.461  INFO 1661 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
-2018-12-20 11:00:55.461  INFO 1661 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
-2018-12-20 11:00:55.461  INFO 1661 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
-2018-12-20 11:00:56.275  INFO 1661 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2018-12-20 11:00:56.508  INFO 1661 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2018-12-20 11:00:56.512  INFO 1661 --- [main] com.emall.spring.Application             : Started Application in 17.773 seconds (JVM running for 28.419)
-2018-12-20 11:02:19.241  INFO 1661 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2018-12-20 11:02:19.242  INFO 1661 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2018-12-20 11:02:19.250  INFO 1661 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
-2018-12-20 11:05:32.056  INFO 1661 --- [http-nio-8080-exec-6] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
- Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
-
-java.lang.IllegalArgumentException: Invalid character found in the request target. The valid characters are defined in RFC 7230 and RFC 3986
-	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:467) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:294) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_131]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_131]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.12.jar:9.0.12]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_131]
-
-2018-12-20 11:18:19.834  INFO 1661 --- [Thread-38] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2018-12-20 11:18:49.467  INFO 1685 --- [main] com.emall.spring.Application             : Starting Application on My-MacBook-Pro.local with PID 1685 (started by Nick in /Users/hulimin/大三学习/需求分析/Emall/Emall)
-2018-12-20 11:18:49.470  INFO 1685 --- [main] com.emall.spring.Application             : No active profile set, falling back to default profiles: default
-2018-12-20 11:18:50.477  INFO 1685 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2018-12-20 11:18:50.493  INFO 1685 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2018-12-20 11:18:50.493  INFO 1685 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
-2018-12-20 11:18:50.499  INFO 1685 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/hulimin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
-2018-12-20 11:18:50.597  INFO 1685 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2018-12-20 11:18:50.597  INFO 1685 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1092 ms
-2018-12-20 11:18:50.629  INFO 1685 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
-2018-12-20 11:18:50.633  INFO 1685 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-12-20 11:18:50.634  INFO 1685 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-12-20 11:18:50.634  INFO 1685 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
-2018-12-20 11:18:50.634  INFO 1685 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
-2018-12-20 11:18:50.634  INFO 1685 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
-2018-12-20 11:18:51.212  INFO 1685 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2018-12-20 11:18:51.573  INFO 1685 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2018-12-20 11:18:51.577  INFO 1685 --- [main] com.emall.spring.Application             : Started Application in 17.382 seconds (JVM running for 28.034)
-2018-12-20 11:19:27.149  INFO 1685 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2018-12-20 11:19:27.150  INFO 1685 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2018-12-20 11:19:27.157  INFO 1685 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2018-12-20 11:19:27.204  WARN 1685 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'list' is not present]
-2018-12-20 11:19:43.069  WARN 1685 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'list' is not present]
-2018-12-20 11:20:03.073  WARN 1685 --- [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'list' is not present]
-2018-12-20 11:20:43.644  WARN 1685 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'list' is not present]
-2018-12-20 11:22:05.287  WARN 1685 --- [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'list' is not present]
-2018-12-20 11:22:26.140  WARN 1685 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'list' is not present]
-2018-12-20 11:23:15.363  WARN 1685 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'list' is not present]
-2018-12-20 11:25:25.586  WARN 1685 --- [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'list' is not present]
-2018-12-20 11:25:29.231  WARN 1685 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
-2018-12-20 11:27:01.501  INFO 1685 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2018-12-20 11:27:32.042  INFO 1698 --- [main] com.emall.spring.Application             : Starting Application on My-MacBook-Pro.local with PID 1698 (started by Nick in /Users/hulimin/大三学习/需求分析/Emall/Emall)
-2018-12-20 11:27:32.051  INFO 1698 --- [main] com.emall.spring.Application             : No active profile set, falling back to default profiles: default
-2018-12-20 11:27:33.523  INFO 1698 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2018-12-20 11:27:33.538  INFO 1698 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2018-12-20 11:27:33.538  INFO 1698 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
-2018-12-20 11:27:33.543  INFO 1698 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/hulimin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
-2018-12-20 11:27:33.635  INFO 1698 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2018-12-20 11:27:33.635  INFO 1698 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1521 ms
-2018-12-20 11:27:33.662  INFO 1698 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
-2018-12-20 11:27:33.666  INFO 1698 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-12-20 11:27:33.666  INFO 1698 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-12-20 11:27:33.666  INFO 1698 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
-2018-12-20 11:27:33.666  INFO 1698 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
-2018-12-20 11:27:33.666  INFO 1698 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
-2018-12-20 11:27:34.276  INFO 1698 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2018-12-20 11:27:34.623  INFO 1698 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2018-12-20 11:27:34.627  INFO 1698 --- [main] com.emall.spring.Application             : Started Application in 17.914 seconds (JVM running for 28.516)
-2018-12-20 11:32:49.695  INFO 1698 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2018-12-20 11:32:49.697  INFO 1698 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2018-12-20 11:32:49.705  INFO 1698 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2018-12-21 09:51:15.638  INFO 703 --- [Thread-39] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2018-12-21 09:51:15.639  INFO 703 --- [Thread-39] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-12-21 09:51:15.650  INFO 703 --- [Thread-39] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-12-21 09:51:45.493  INFO 785 --- [main] com.emall.spring.Application             : Starting Application on My-MacBook-Pro.local with PID 785 (started by Nick in /Users/hulimin/大三学习/需求分析/Emall/Emall)
+2018-12-21 09:51:45.495  INFO 785 --- [main] com.emall.spring.Application             : No active profile set, falling back to default profiles: default
+2018-12-21 09:51:46.496  INFO 785 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-12-21 09:51:46.508  INFO 785 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-12-21 09:51:46.509  INFO 785 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-12-21 09:51:46.514  INFO 785 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/hulimin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-12-21 09:51:46.599  INFO 785 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-12-21 09:51:46.600  INFO 785 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1072 ms
+2018-12-21 09:51:46.625  INFO 785 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-12-21 09:51:46.630  INFO 785 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-21 09:51:46.631  INFO 785 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-21 09:51:46.632  INFO 785 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2018-12-21 09:51:46.632  INFO 785 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-21 09:51:46.632  INFO 785 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2018-12-21 09:51:47.182  INFO 785 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-21 09:51:47.517  INFO 785 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-12-21 09:51:47.521  INFO 785 --- [main] com.emall.spring.Application             : Started Application in 17.316 seconds (JVM running for 27.921)
+2018-12-21 09:51:54.659  INFO 785 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-12-21 09:51:54.660  INFO 785 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2018-12-21 09:51:54.667  INFO 785 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2018-12-21 09:51:54.785  INFO 785 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-12-21 09:51:55.542  INFO 785 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-12-21 10:03:44.737  INFO 785 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2018-12-21 10:03:44.739  INFO 785 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-12-21 10:03:44.748  INFO 785 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-12-21 10:04:14.507  INFO 815 --- [main] com.emall.spring.Application             : Starting Application on My-MacBook-Pro.local with PID 815 (started by Nick in /Users/hulimin/大三学习/需求分析/Emall/Emall)
+2018-12-21 10:04:14.512  INFO 815 --- [main] com.emall.spring.Application             : No active profile set, falling back to default profiles: default
+2018-12-21 10:04:15.536  INFO 815 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-12-21 10:04:15.560  INFO 815 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-12-21 10:04:15.561  INFO 815 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-12-21 10:04:15.570  INFO 815 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/hulimin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-12-21 10:04:15.698  INFO 815 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-12-21 10:04:15.699  INFO 815 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1151 ms
+2018-12-21 10:04:15.737  INFO 815 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-12-21 10:04:15.745  INFO 815 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-21 10:04:15.745  INFO 815 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-21 10:04:15.745  INFO 815 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2018-12-21 10:04:15.745  INFO 815 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-21 10:04:15.745  INFO 815 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2018-12-21 10:04:16.398  INFO 815 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-21 10:04:16.808  INFO 815 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-12-21 10:04:16.813  INFO 815 --- [main] com.emall.spring.Application             : Started Application in 17.631 seconds (JVM running for 28.209)
+2018-12-21 10:04:41.517  INFO 815 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-12-21 10:04:41.518  INFO 815 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2018-12-21 10:04:41.529  INFO 815 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2018-12-21 10:04:41.691  INFO 815 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-12-21 10:04:42.611  INFO 815 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-12-21 11:00:24.817  INFO 815 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2018-12-21 11:00:24.818  INFO 815 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-12-21 11:00:24.826  INFO 815 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-12-21 11:01:00.341  INFO 894 --- [main] com.emall.spring.Application             : Starting Application on My-MacBook-Pro.local with PID 894 (started by Nick in /Users/hulimin/大三学习/需求分析/Emall/Emall)
+2018-12-21 11:01:00.344  INFO 894 --- [main] com.emall.spring.Application             : No active profile set, falling back to default profiles: default
+2018-12-21 11:01:01.341  INFO 894 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-12-21 11:01:01.362  INFO 894 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-12-21 11:01:01.363  INFO 894 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-12-21 11:01:01.372  INFO 894 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/hulimin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-12-21 11:01:01.465  INFO 894 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-12-21 11:01:01.465  INFO 894 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1086 ms
+2018-12-21 11:01:01.494  INFO 894 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-12-21 11:01:01.498  INFO 894 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-21 11:01:01.498  INFO 894 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-21 11:01:01.499  INFO 894 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2018-12-21 11:01:01.499  INFO 894 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-21 11:01:01.499  INFO 894 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2018-12-21 11:01:02.087  INFO 894 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-21 11:01:02.410  INFO 894 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-12-21 11:01:02.414  INFO 894 --- [main] com.emall.spring.Application             : Started Application in 17.684 seconds (JVM running for 28.371)
+2018-12-21 11:04:01.006  INFO 894 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-12-21 11:04:01.008  INFO 894 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2018-12-21 11:04:01.016  INFO 894 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2018-12-21 11:04:09.652  WARN 894 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public net.sf.json.JSONObject com.emall.spring.controller.MingController.searchByName(java.util.Map)]
+2018-12-21 11:07:49.688  WARN 894 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public net.sf.json.JSONObject com.emall.spring.controller.MingController.searchByName(java.util.Map)]
+2018-12-21 11:09:08.419  WARN 894 --- [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public net.sf.json.JSONObject com.emall.spring.controller.MingController.searchByName(java.util.Map)]
+2018-12-21 11:09:35.503  WARN 894 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public net.sf.json.JSONObject com.emall.spring.controller.MingController.searchByName(java.util.Map)]
+2018-12-21 11:10:34.075  WARN 894 --- [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public net.sf.json.JSONObject com.emall.spring.controller.MingController.searchByName(java.util.Map)]
+2018-12-21 11:11:39.108  INFO 894 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2018-12-21 11:12:08.946  INFO 914 --- [main] com.emall.spring.Application             : Starting Application on My-MacBook-Pro.local with PID 914 (started by Nick in /Users/hulimin/大三学习/需求分析/Emall/Emall)
+2018-12-21 11:12:08.950  INFO 914 --- [main] com.emall.spring.Application             : No active profile set, falling back to default profiles: default
+2018-12-21 11:12:10.010  INFO 914 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-12-21 11:12:10.032  INFO 914 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-12-21 11:12:10.032  INFO 914 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-12-21 11:12:10.039  INFO 914 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/hulimin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-12-21 11:12:10.169  INFO 914 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-12-21 11:12:10.170  INFO 914 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1185 ms
+2018-12-21 11:12:10.202  INFO 914 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-12-21 11:12:10.205  INFO 914 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-21 11:12:10.206  INFO 914 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-21 11:12:10.206  INFO 914 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2018-12-21 11:12:10.207  INFO 914 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-21 11:12:10.207  INFO 914 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2018-12-21 11:12:10.968  INFO 914 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-21 11:12:11.323  INFO 914 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-12-21 11:12:11.327  INFO 914 --- [main] com.emall.spring.Application             : Started Application in 17.739 seconds (JVM running for 28.487)
+2018-12-21 11:12:17.451  INFO 914 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-12-21 11:12:17.452  INFO 914 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2018-12-21 11:12:17.458  INFO 914 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2018-12-21 11:12:17.487  WARN 914 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2018-12-21 11:12:45.935  INFO 914 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-12-21 11:12:46.715  INFO 914 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-12-21 12:01:24.530  WARN 914 --- [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'multipart/form-data;boundary=----WebKitFormBoundaryl8dWBbAc4r0Bhktd;charset=UTF-8' not supported]
+2018-12-21 12:01:47.797  WARN 914 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported]
+2018-12-21 12:02:03.489  WARN 914 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported]
+2018-12-21 12:02:33.695  WARN 914 --- [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public net.sf.json.JSONObject com.emall.spring.controller.MingController.searchOrder(java.util.Map)]
+2018-12-21 12:09:02.255  INFO 914 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2018-12-21 12:09:02.257  INFO 914 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-12-21 12:09:02.267  INFO 914 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-12-21 14:47:36.982  INFO 661 --- [main] com.emall.spring.Application             : Starting Application on My-MacBook-Pro.local with PID 661 (started by Nick in /Users/hulimin/大三学习/需求分析/Emall/Emall)
+2018-12-21 14:47:36.985  INFO 661 --- [main] com.emall.spring.Application             : No active profile set, falling back to default profiles: default
+2018-12-21 14:47:38.246  INFO 661 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-12-21 14:47:38.263  INFO 661 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-12-21 14:47:38.263  INFO 661 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-12-21 14:47:38.271  INFO 661 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/hulimin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-12-21 14:47:38.353  INFO 661 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-12-21 14:47:38.354  INFO 661 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1323 ms
+2018-12-21 14:47:38.380  INFO 661 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-12-21 14:47:38.384  INFO 661 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-21 14:47:38.384  INFO 661 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-21 14:47:38.384  INFO 661 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2018-12-21 14:47:38.384  INFO 661 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-21 14:47:38.384  INFO 661 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2018-12-21 14:47:39.020  INFO 661 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-21 14:47:39.367  INFO 661 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-12-21 14:47:39.370  INFO 661 --- [main] com.emall.spring.Application             : Started Application in 17.78 seconds (JVM running for 28.642)
+2018-12-21 14:47:46.155  INFO 661 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-12-21 14:47:46.156  INFO 661 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2018-12-21 14:47:46.165  INFO 661 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2018-12-21 14:47:46.335  INFO 661 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-12-21 14:47:47.351  INFO 661 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-12-21 16:04:57.663  INFO 661 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2018-12-21 16:04:57.664  INFO 661 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-12-21 16:04:57.668  INFO 661 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-12-21 16:05:28.347  INFO 833 --- [main] com.emall.spring.Application             : Starting Application on My-MacBook-Pro.local with PID 833 (started by Nick in /Users/hulimin/大三学习/需求分析/Emall/Emall)
+2018-12-21 16:05:28.350  INFO 833 --- [main] com.emall.spring.Application             : No active profile set, falling back to default profiles: default
+2018-12-21 16:05:29.380  INFO 833 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-12-21 16:05:29.400  INFO 833 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-12-21 16:05:29.400  INFO 833 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-12-21 16:05:29.408  INFO 833 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/hulimin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-12-21 16:05:29.522  INFO 833 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-12-21 16:05:29.522  INFO 833 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1137 ms
+2018-12-21 16:05:29.559  INFO 833 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-12-21 16:05:29.565  INFO 833 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-21 16:05:29.565  INFO 833 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-21 16:05:29.566  INFO 833 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2018-12-21 16:05:29.566  INFO 833 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-21 16:05:29.566  INFO 833 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2018-12-21 16:05:30.154  INFO 833 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-21 16:05:30.481  INFO 833 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-12-21 16:05:30.485  INFO 833 --- [main] com.emall.spring.Application             : Started Application in 17.489 seconds (JVM running for 28.141)
+2018-12-21 16:05:40.969  INFO 833 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-12-21 16:05:40.970  INFO 833 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2018-12-21 16:05:40.979  INFO 833 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2018-12-21 16:05:41.099  INFO 833 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-12-21 16:05:41.866  INFO 833 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-12-21 17:13:48.870  INFO 833 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2018-12-21 17:13:48.871  INFO 833 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-12-21 17:13:48.874  INFO 833 --- [Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-12-21 17:14:19.642  INFO 892 --- [main] com.emall.spring.Application             : Starting Application on My-MacBook-Pro.local with PID 892 (started by Nick in /Users/hulimin/大三学习/需求分析/Emall/Emall)
+2018-12-21 17:14:19.645  INFO 892 --- [main] com.emall.spring.Application             : No active profile set, falling back to default profiles: default
+2018-12-21 17:14:20.729  INFO 892 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-12-21 17:14:20.744  INFO 892 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-12-21 17:14:20.744  INFO 892 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-12-21 17:14:20.750  INFO 892 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/hulimin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-12-21 17:14:20.843  INFO 892 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-12-21 17:14:20.843  INFO 892 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1163 ms
+2018-12-21 17:14:20.873  INFO 892 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-12-21 17:14:20.877  INFO 892 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-21 17:14:20.877  INFO 892 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-21 17:14:20.877  INFO 892 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2018-12-21 17:14:20.877  INFO 892 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-21 17:14:20.877  INFO 892 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2018-12-21 17:14:21.522  INFO 892 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-21 17:14:21.852  INFO 892 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-12-21 17:14:21.855  INFO 892 --- [main] com.emall.spring.Application             : Started Application in 17.539 seconds (JVM running for 28.169)
+2018-12-21 17:15:04.494  INFO 892 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-12-21 17:15:04.495  INFO 892 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2018-12-21 17:15:04.501  INFO 892 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2018-12-21 17:15:04.616  INFO 892 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-12-21 17:15:05.371  INFO 892 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.

@@ -22,4 +22,6 @@ public interface OrderMapper {
     ArrayList<Order> selectAll();
 
     ArrayList<Order> selectByreciver(String reciverid);
+
+    ArrayList<Order> selectByreciverandstate(Order order);
 }
