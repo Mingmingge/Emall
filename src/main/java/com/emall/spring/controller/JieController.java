@@ -6,6 +6,7 @@ import com.emall.spring.services.ProdisService;
 import com.emall.spring.services.ProductclassService;
 import com.emall.spring.services.Productservice;
 import net.sf.json.JSONObject;
+import net.sf.json.JsonConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -13,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 @RestController
@@ -23,7 +23,7 @@ public class JieController {
     private Productservice productservice;
 
     @Autowired
-    private ProdisService prodisMapper;
+    private ProdisService prodisService;
 
 
     @Autowired
@@ -46,7 +46,7 @@ public class JieController {
                 jsonObject.put("result", 0);
             } else {
                 productservice.deleteByPrimaryKey(id);
-                prodisMapper.deleteByProductID(id);
+                prodisService.deleteByProductID(id);
                 jsonObject.put("result", 1);
             }
         } catch (Exception e) {
@@ -78,6 +78,23 @@ public class JieController {
         }
         jsonObject.put("classes", classes);
         jsonObject.put("result", count);
+        return jsonObject;
+    }
+
+    @RequestMapping(value = "/product/searchbyid", method = RequestMethod.GET)
+    public JSONObject searchById(@RequestParam String id) {
+        JSONObject jsonObject = new JSONObject();
+        int state = 0;
+        try {
+            Product product = productservice.selectByPrimaryKey(id);
+            if (product != null) {
+                state = 1;
+                jsonObject.put("data", product);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        jsonObject.put("state", state);
         return jsonObject;
     }
 }

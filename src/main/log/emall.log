@@ -264,3 +264,156 @@ java.lang.NullPointerException: null
 2018-12-21 17:15:04.501  INFO 892 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
 2018-12-21 17:15:04.616  INFO 892 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
 2018-12-21 17:15:05.371  INFO 892 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-12-22 10:33:51.218  INFO 5374 --- [main] com.emall.spring.Application             : Starting Application on MarvelousdeMBP.lan with PID 5374 (/Users/home/IntelliJIDEAProjects/a/target/classes started by home in /Users/home/IntelliJIDEAProjects/a)
+2018-12-22 10:33:51.221  INFO 5374 --- [main] com.emall.spring.Application             : No active profile set, falling back to default profiles: default
+2018-12-22 10:33:52.806  INFO 5374 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-12-22 10:33:52.825  INFO 5374 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-12-22 10:33:52.826  INFO 5374 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-12-22 10:33:52.833  INFO 5374 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/home/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-12-22 10:33:52.914  INFO 5374 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-12-22 10:33:52.914  INFO 5374 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1567 ms
+2018-12-22 10:33:52.943  INFO 5374 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-12-22 10:33:52.947  INFO 5374 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-22 10:33:52.947  INFO 5374 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-22 10:33:52.947  INFO 5374 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2018-12-22 10:33:52.947  INFO 5374 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-22 10:33:52.948  INFO 5374 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2018-12-22 10:33:53.668  INFO 5374 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-22 10:33:54.000  INFO 5374 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-12-22 10:33:54.004  INFO 5374 --- [main] com.emall.spring.Application             : Started Application in 3.482 seconds (JVM running for 4.993)
+2018-12-22 10:39:35.550  INFO 5374 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-12-22 10:39:35.551  INFO 5374 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2018-12-22 10:39:35.563  INFO 5374 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2018-12-22 10:39:35.642  INFO 5374 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-12-22 10:39:43.144  INFO 5374 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-12-22 11:19:38.473  WARN 5374 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m24s923ms).
+2018-12-22 11:20:08.210  WARN 5374 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s737ms), soft-evicting connections from pool.
+2018-12-22 11:35:25.825  WARN 5374 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=47s488ms).
+2018-12-22 11:55:23.527  WARN 5374 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m27s544ms).
+2018-12-22 12:49:32.899  INFO 5374 --- [Thread-11] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2018-12-22 12:49:32.902  INFO 5374 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-12-22 12:49:32.905  INFO 5374 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-12-22 12:49:39.598  INFO 6304 --- [main] com.emall.spring.Application             : Starting Application on MarvelousdeMBP.lan with PID 6304 (/Users/home/IntelliJIDEAProjects/a/target/classes started by home in /Users/home/IntelliJIDEAProjects/a)
+2018-12-22 12:49:39.601  INFO 6304 --- [main] com.emall.spring.Application             : No active profile set, falling back to default profiles: default
+2018-12-22 12:49:41.001  INFO 6304 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-12-22 12:49:41.015  INFO 6304 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-12-22 12:49:41.015  INFO 6304 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-12-22 12:49:41.020  INFO 6304 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/home/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-12-22 12:49:41.083  INFO 6304 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-12-22 12:49:41.083  INFO 6304 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1344 ms
+2018-12-22 12:49:41.109  INFO 6304 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-12-22 12:49:41.113  INFO 6304 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-22 12:49:41.113  INFO 6304 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-22 12:49:41.113  INFO 6304 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2018-12-22 12:49:41.113  INFO 6304 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-22 12:49:41.114  INFO 6304 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2018-12-22 12:49:41.825  INFO 6304 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-22 12:49:42.239  INFO 6304 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-12-22 12:49:42.244  INFO 6304 --- [main] com.emall.spring.Application             : Started Application in 3.332 seconds (JVM running for 5.047)
+2018-12-22 12:50:04.332  INFO 6304 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-12-22 12:50:04.333  INFO 6304 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2018-12-22 12:50:04.339  INFO 6304 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2018-12-22 12:50:04.387  INFO 6304 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-12-22 12:50:05.140  INFO 6304 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-12-22 12:50:56.337  INFO 6304 --- [Thread-11] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2018-12-22 12:50:56.338  INFO 6304 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-12-22 12:50:56.353  INFO 6304 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-12-22 12:51:01.613  INFO 6321 --- [main] com.emall.spring.Application             : Starting Application on MarvelousdeMBP.lan with PID 6321 (/Users/home/IntelliJIDEAProjects/a/target/classes started by home in /Users/home/IntelliJIDEAProjects/a)
+2018-12-22 12:51:01.616  INFO 6321 --- [main] com.emall.spring.Application             : No active profile set, falling back to default profiles: default
+2018-12-22 12:51:02.685  INFO 6321 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-12-22 12:51:02.698  INFO 6321 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-12-22 12:51:02.699  INFO 6321 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-12-22 12:51:02.704  INFO 6321 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/home/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-12-22 12:51:02.789  INFO 6321 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-12-22 12:51:02.790  INFO 6321 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1123 ms
+2018-12-22 12:51:02.822  INFO 6321 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-12-22 12:51:02.827  INFO 6321 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-22 12:51:02.827  INFO 6321 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-22 12:51:02.827  INFO 6321 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2018-12-22 12:51:02.828  INFO 6321 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-22 12:51:02.828  INFO 6321 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2018-12-22 12:51:03.498  INFO 6321 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-22 12:51:03.695  INFO 6321 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-12-22 12:51:03.699  INFO 6321 --- [main] com.emall.spring.Application             : Started Application in 2.538 seconds (JVM running for 3.963)
+2018-12-22 12:51:26.067  INFO 6321 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-12-22 12:51:26.067  INFO 6321 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2018-12-22 12:51:26.073  INFO 6321 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2018-12-22 12:51:26.113  INFO 6321 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-12-22 12:51:26.868  INFO 6321 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-12-22 12:52:12.078  INFO 6321 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2018-12-22 12:52:12.080  INFO 6321 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-12-22 12:52:12.093  INFO 6321 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-12-22 12:52:16.569  INFO 6336 --- [main] com.emall.spring.Application             : Starting Application on MarvelousdeMBP.lan with PID 6336 (/Users/home/IntelliJIDEAProjects/a/target/classes started by home in /Users/home/IntelliJIDEAProjects/a)
+2018-12-22 12:52:16.573  INFO 6336 --- [main] com.emall.spring.Application             : No active profile set, falling back to default profiles: default
+2018-12-22 12:52:18.056  INFO 6336 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-12-22 12:52:18.070  INFO 6336 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-12-22 12:52:18.070  INFO 6336 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-12-22 12:52:18.076  INFO 6336 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/home/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-12-22 12:52:18.166  INFO 6336 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-12-22 12:52:18.166  INFO 6336 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1512 ms
+2018-12-22 12:52:18.193  INFO 6336 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-12-22 12:52:18.197  INFO 6336 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-22 12:52:18.197  INFO 6336 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-22 12:52:18.198  INFO 6336 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2018-12-22 12:52:18.198  INFO 6336 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-22 12:52:18.198  INFO 6336 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2018-12-22 12:52:18.983  INFO 6336 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-22 12:52:19.326  INFO 6336 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-12-22 12:52:19.329  INFO 6336 --- [main] com.emall.spring.Application             : Started Application in 3.223 seconds (JVM running for 3.895)
+2018-12-22 12:52:24.989  INFO 6336 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-12-22 12:52:24.990  INFO 6336 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2018-12-22 12:52:24.996  INFO 6336 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2018-12-22 12:52:25.037  INFO 6336 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-12-22 12:52:25.845  INFO 6336 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-12-22 13:03:10.971  INFO 6336 --- [Thread-10] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2018-12-22 13:03:10.973  INFO 6336 --- [Thread-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-12-22 13:03:10.983  INFO 6336 --- [Thread-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-12-22 13:03:16.601  INFO 6407 --- [main] com.emall.spring.Application             : Starting Application on MarvelousdeMBP.lan with PID 6407 (/Users/home/IntelliJIDEAProjects/a/target/classes started by home in /Users/home/IntelliJIDEAProjects/a)
+2018-12-22 13:03:16.605  INFO 6407 --- [main] com.emall.spring.Application             : No active profile set, falling back to default profiles: default
+2018-12-22 13:03:18.111  INFO 6407 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-12-22 13:03:18.125  INFO 6407 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-12-22 13:03:18.125  INFO 6407 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-12-22 13:03:18.131  INFO 6407 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/home/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-12-22 13:03:18.217  INFO 6407 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-12-22 13:03:18.217  INFO 6407 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1540 ms
+2018-12-22 13:03:18.249  INFO 6407 --- [main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-12-22 13:03:18.252  INFO 6407 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-22 13:03:18.252  INFO 6407 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-22 13:03:18.252  INFO 6407 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2018-12-22 13:03:18.252  INFO 6407 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-22 13:03:18.252  INFO 6407 --- [main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'corsFilter' to: [/*]
+2018-12-22 13:03:18.834  INFO 6407 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-22 13:03:19.135  INFO 6407 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-12-22 13:03:19.138  INFO 6407 --- [main] com.emall.spring.Application             : Started Application in 3.091 seconds (JVM running for 4.517)
+2018-12-22 13:08:40.447  INFO 6407 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-12-22 13:08:40.448  INFO 6407 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2018-12-22 13:08:40.458  INFO 6407 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2018-12-22 13:15:32.759  INFO 6407 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-12-22 13:15:33.688  INFO 6407 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-12-22 13:42:34.004  WARN 6407 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m30s26ms).
+2018-12-22 13:44:21.444  WARN 6407 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m16s286ms).
+2018-12-22 13:45:50.177  WARN 6407 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=58s718ms).
+2018-12-22 13:59:25.960  WARN 6407 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m5s770ms).
+2018-12-22 14:01:10.288  WARN 6407 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m14s324ms).
+2018-12-22 15:24:40.247  WARN 6407 --- [http-nio-8080-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /static3f78bedb-525b-45e8-97ef-1f2e9dcfd734.png
+2018-12-22 15:25:35.532  WARN 6407 --- [http-nio-8080-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /static95a64f2c-a702-4c5d-952b-981784fdd69d.png
+2018-12-22 15:26:27.765  WARN 6407 --- [http-nio-8080-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /static95a64f2c-a702-4c5d-952b-981784fdd69d.png
+2018-12-22 15:28:09.086  WARN 6407 --- [http-nio-8080-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /static95a64f2c-a702-4c5d-952b-981784fdd69d.png
+2018-12-22 15:28:15.057  WARN 6407 --- [http-nio-8080-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /statica5eb6de0-7790-473f-86f6-256a05ae9a9f.png
+2018-12-22 15:28:16.369  WARN 6407 --- [http-nio-8080-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /static3f78bedb-525b-45e8-97ef-1f2e9dcfd734.png
+2018-12-22 15:28:23.171  WARN 6407 --- [http-nio-8080-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /statica5eb6de0-7790-473f-86f6-256a05ae9a9f.png
+2018-12-22 15:29:39.222  WARN 6407 --- [http-nio-8080-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /static9
+2018-12-22 15:30:31.880  WARN 6407 --- [http-nio-8080-exec-10] o.s.w.s.r.ResourceHttpRequestHandler     : Path represents URL or has "url:" prefix: [http:/localhost:8080/static/productimg/clothes1.png]
+2018-12-22 15:30:51.193  WARN 6407 --- [http-nio-8080-exec-2] o.s.w.s.r.ResourceHttpRequestHandler     : Path represents URL or has "url:" prefix: [http:/localhost:8080/static/productimg/clothes2.png]
+2018-12-22 15:31:55.089  WARN 6407 --- [http-nio-8080-exec-9] o.s.w.s.r.ResourceHttpRequestHandler     : Path represents URL or has "url:" prefix: [http:/localhost:8080/static/productimg/clothes2.png]
+2018-12-22 16:00:14.528  WARN 6407 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 1 errors
+Field error in object 'product' on field 'nums': rejected value [undefined]; codes [typeMismatch.product.nums,typeMismatch.nums,typeMismatch.java.lang.Integer,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [product.nums,nums]; arguments []; default message [nums]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Integer' for property 'nums'; nested exception is java.lang.NumberFormatException: For input string: "undefined"]]
+2018-12-22 17:17:45.842  WARN 6407 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=30m29s288ms).
+2018-12-22 17:48:56.281  WARN 6407 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=30m40s424ms).
+2018-12-22 18:01:45.428  WARN 6407 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m19s107ms).
+2018-12-22 18:26:01.791  WARN 6407 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=22m46s300ms).
+2018-12-22 19:44:04.178  WARN 6407 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h14m32s195ms).
+2018-12-22 23:50:54.030  WARN 6407 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4h6m49s852ms).
+2018-12-22 23:51:02.758  INFO 6407 --- [Thread-10] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2018-12-22 23:51:02.760  INFO 6407 --- [Thread-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-12-22 23:51:02.772  INFO 6407 --- [Thread-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
