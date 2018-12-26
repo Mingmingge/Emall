@@ -5,6 +5,7 @@ import com.emall.spring.dao.ReciverMapper;
 import com.emall.spring.entity.Order;
 import com.emall.spring.entity.Reciver;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.format.datetime.joda.DateTimeFormatterFactoryBean;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -59,4 +60,10 @@ public class OrderService implements OrderMapper{
     public ArrayList<Order> selectByreciverandstate(Order order) {
         return orderMapper.selectByreciverandstate(order);
     }
+
+    @Override
+    public ArrayList<Order> selectAllByTime(Order order, String begin, String end) {
+        return orderMapper.selectAllByTime(order, begin, end);
+    }
+
 }

@@ -1,12 +1,8 @@
 package com.emall.spring.controller;
 
-import com.emall.spring.entity.Product;
-import com.emall.spring.entity.Productclass;
-import com.emall.spring.services.ProdisService;
-import com.emall.spring.services.ProductclassService;
-import com.emall.spring.services.Productservice;
+import com.emall.spring.entity.*;
+import com.emall.spring.services.*;
 import net.sf.json.JSONObject;
-import net.sf.json.JsonConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -25,9 +21,23 @@ public class JieController {
     @Autowired
     private ProdisService prodisService;
 
-
     @Autowired
     private ProductclassService productclassService;
+
+    @Autowired
+    private OrderService orderService;
+
+    @Autowired
+    private OrderproductService orderproductService;
+
+    @Autowired
+    private AdminService adminService;
+
+    @Autowired
+    private CustomerService customerService;
+
+    @Autowired
+    private DistributeService distributeService;
 
     /**
      * 产品下架, 产品表和经销商表
@@ -95,6 +105,97 @@ public class JieController {
             e.printStackTrace();
         }
         jsonObject.put("state", state);
+        return jsonObject;
+    }
+
+    @RequestMapping(value = "/order/productid", method = RequestMethod.GET)
+    public JSONObject productid(@RequestParam String id) {
+        JSONObject jsonObject = new JSONObject();
+        int result = 0;
+        try {
+            Orderproduct orderproduct = orderproductService.selectByPrimaryKey(id);
+            if (orderproduct != null) {
+                String pid = orderproduct.getProductid();
+                String name = productservice.selectByPrimaryKey(pid).getProductname();
+                if (name != null) {
+                    jsonObject.put("id", pid);
+                    jsonObject.put("name", name);
+                    result = 1;
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        jsonObject.put("reult", result);
+        return jsonObject;
+    }
+
+    /**
+     * 根据admin id 获取 admin name
+     * @param id
+     * @return
+     */
+    @RequestMapping(value = "/order/getid", method = RequestMethod.GET)
+    public JSONObject getid(@RequestParam String id) {
+        JSONObject jsonObject = new JSONObject();
+        int result = 0;
+        try {
+            Admin admin = adminService.selectByPrimaryKey(id);
+            if (admin != null) {
+                String name = admin.getAdminname();
+                if (name != null) {
+                    jsonObject.put("name", name);
+                    result = 1;
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        jsonObject.put("reult", result);
+        return jsonObject;
+    }
+
+    /**
+     * userid 得到 username
+     * @param id
+     * @return
+     */
+    @RequestMapping(value = "/order/getuserid", method = RequestMethod.GET)
+    public JSONObject getuserid(@RequestParam String id) {
+        JSONObject jsonObject = new JSONObject();
+        int result = 0;
+        try {
+            Customer customer = customerService.selectByPrimaryKey(id);
+            if (customer != null) {
+                String name = customer.getCustomername();
+                if (name != null) {
+                    jsonObject.put("name", name);
+                    result = 1;
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        jsonObject.put("reult", result);
+        return jsonObject;
+    }
+
+    /**
+     *
+     */
+    @RequestMapping(value = "/dis/info", method = RequestMethod.GET)
+    public JSONObject dis_info(@RequestParam String id) {
+        JSONObject jsonObject = new JSONObject();
+        int result = 0;
+        try {
+            Distribute distribute = distributeService.selectByPrimaryKey(id);
+            if (distribute != null) {
+                jsonObject.put("dislist", distribute);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        jsonObject.put("result", result);
         return jsonObject;
     }
 }
